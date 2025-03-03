@@ -1,0 +1,46 @@
+.sidebar {
+  height: 2rem;
+  background-color: transparent;
+  padding: 0.5rem;
+  border-bottom: 2px solid var(--primary);
+  justify-content: space-between;
+
+  /* Shared styles throught screen sizes */
+  display: flex;
+
+  .imaratLogoContainer {
+    border: 1px solid black;
+    padding: 2px;
+    
+    .logoTitle {
+      width: 100%;
+      font-size: 14px;
+      text-align: center;
+    }
+    
+    .logoUnderline {
+      height: 20px;
+      width: 100%;
+      background-color: black;
+      margin-top: 2px;
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .sidebar {
+    height: 100%;
+    width: 10%;
+    max-width: 180px;
+    z-index: 1; 
+    position: fixed; 
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    overflow-x: hidden;
+    border-left: 2px solid var(--primary);
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
