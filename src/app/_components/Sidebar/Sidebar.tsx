@@ -1,3 +1,4 @@
+import Bulletin from "../Bulletin/Bulletin";
 import styles from "./Sidebar.module.css";
 
 import React from "react";
@@ -12,7 +13,7 @@ function Sidebar() {
       </div>
 
       {/* BULLETIN */}
-      {/* <div>BULLEIN HERE</div> */}
+      <Bulletin />
     </div>
   );
 }
