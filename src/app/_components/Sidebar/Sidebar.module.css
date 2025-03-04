@@ -1,12 +1,16 @@
 .sidebar {
-  background-color: transparent;
+  width: 20%;
+  max-width: 195px;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  height: 100dvh;
+  overflow-y: auto;
+  border-left: 2px solid var(--primary);
   padding: 0.5rem;
-  border-bottom: 2px solid var(--primary);
-  border-left: none;
-  justify-content: space-between;
-
-  /* Shared styles throught screen sizes */
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   .imaratLogoContainer {
     border: 1px solid black;
@@ -27,21 +31,15 @@
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media screen and (max-width: 992px) {
   .sidebar {
-    height: 100%;
-    width: 20%;
-    max-width: 195px;
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: transparent;
-    overflow-x: hidden;
-    border-left: 2px solid var(--primary);
-    border-bottom: none;
-    flex-direction: column;
+    width: 100%;
+    max-width: none;
+    position: static;
+    height: auto;
+    margin-bottom: 20px;
+    flex-direction: row;
     justify-content: space-between;
+    order: -1; /* Moves sidebar to the top */
   }
 }
