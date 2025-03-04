@@ -2,6 +2,7 @@
   background-color: transparent;
   padding: 0.5rem;
   border-bottom: 2px solid var(--primary);
+  border-left: none;
   justify-content: space-between;
 
   /* Shared styles throught screen sizes */
@@ -10,13 +11,13 @@
   .imaratLogoContainer {
     border: 1px solid black;
     padding: 2px;
-    
+
     .logoTitle {
       width: 100%;
       font-size: 14px;
       text-align: center;
     }
-    
+
     .logoUnderline {
       height: 20px;
       width: 100%;
@@ -32,13 +33,14 @@
     height: 100%;
     width: 20%;
     max-width: 195px;
-    z-index: 1; 
-    position: fixed; 
+    z-index: 1;
+    position: fixed;
     top: 0;
     right: 0;
     background-color: transparent;
     overflow-x: hidden;
     border-left: 2px solid var(--primary);
+    border-bottom: none;
     flex-direction: column;
     justify-content: space-between;
   }
