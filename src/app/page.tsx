@@ -1,28 +1,34 @@
-import Image from "next/image";
+import Landing from "./_components/Landing/Landing";
+import Landing2 from "./_components/Landing2/Landing2";
 import styles from "./page.module.css";
-import EarthCenterMudBuilding from "../../public/assets/landing01.jpg";
 
 export default function Home() {
   return (
     <>
-      <div className={styles.column1}>
-        <div className={styles.landingImgContainer}>
-          <Image
-            alt="A picture of a mud building at Earth Center"
-            src={EarthCenterMudBuilding}
-            layout="fill"
-            objectFit="cover"
-            style={{ filter: "grayscale(1)" }}
-          />
-          <div className={styles.bgDark}></div>
-          <div className={styles.imaratLogoContainer}>
-            <div className={styles.logoTitle}>IMARAT ARCHITECTS</div>
-            <div className={styles.logoUnderline}></div>
-          </div>
+      {/* INTRO INTERACTION  */}
+      <section className={styles.section1}>
+        <div className={styles.column1}>
+          <Landing />
         </div>
-        <p className={styles.subtitle}>mud walls that curve, avoiding felling of trees, constructing amorphous spaces</p>
-      </div>
-      <div className={styles.column2}></div>
+        <div className={styles.column2}></div>
+        <div className={styles.column3}></div>
+      </section>
+
+      {/* AXONOMATRIC SECTION */}
+      <section className={styles.section2}>
+        <div className={styles.column1}>
+          <Landing2 />
+        </div>
+        <div className={styles.column2}></div>
+        <div className={styles.column3}></div>
+      </section>
+
+      {/* SECTION 3 */}
+      <section>
+        <div className={styles.column1}></div>
+        <div className={styles.column2}></div>
+        <div className={styles.column3}></div>
+      </section>
     </>
   );
 }

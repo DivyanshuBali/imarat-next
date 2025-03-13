@@ -1,0 +1,14 @@
+.landing2Container {
+  display: flex;
+  gap: 1rem;
+
+  .img1 {
+    flex: 1;
+    height: 300px;
+  }
+  
+  .img2 {
+    flex: 1;
+    height: 600px;
+  }
+}

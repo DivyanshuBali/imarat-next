@@ -1,61 +1,35 @@
+.section1 {
+  height: 100vh;
+  display: flex;
+}
+
+.section2 {
+  display: flex;
+}
+
 .column1 {
   width: 70%;
-  padding: 20px;
+  padding: 0.5rem;
 }
 
 .column2 {
   flex-grow: 1;
-  padding-right: 20px;
+  padding: 0.5rem;
+}
+
+.column3 {
+  width: 20%;
+  max-width: 195px;
 }
 
 @media screen and (max-width: 992px) {
   .column1, .column2 {
     width: 100%;
     max-width: none;
-    position: static;
     height: auto;
-    padding-right: 0;
-  }
-}
-
-.landingImgContainer {
-  height: 80%;
-  width: 100%;
-  position: relative;
-
-  .bgDark {
-    position: absolute;
-    inset: 0;
-    background-color: #00000050;
   }
 
-  .imaratLogoContainer {
-    border: 2px solid white;
-    padding: 0.5rem;
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-  
-    .logoTitle {
-      width: 100%;
-      font-size: 3rem;
-      text-align: center;
-      color: white;
-      padding: 0 1rem 0 1rem;
-    }
-  
-    .logoUnderline {
-      height: 40px;
-      width: 100%;
-      background-color: white;
-      margin-top: 2px;
-    }
+  .column3 {
+    display: none;
   }
-}
-
-p.subtitle {
-  text-align: end;
-  font-size: 14px;
-  letter-spacing: 1px;
-  margin-top: 1rem;
 }

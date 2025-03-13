@@ -43,6 +43,7 @@ function Bulletin() {
           tabIndex={0}
           aria-expanded={isExpanded}
           aria-controls={`bulletin-content-${b.id}`}
+          
           >
             <div className={styles.date}>{b.date}</div>
             <div className={styles.title}>{b.title}</div>
@@ -53,7 +54,7 @@ function Bulletin() {
                 animate={{ height: isExpanded ? "200px" : 0, opacity: isExpanded ? 1 : 0 }}
                 exit={{ height: 0, opacity: 0 }}
                 className={styles.bulletinContent}
-                transition={{ duration: 0.2}}
+                transition={{ duration: 0.2 }}
               />
             </AnimatePresence>
           </div>
