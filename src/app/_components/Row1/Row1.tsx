@@ -5,14 +5,14 @@ import React from "react";
 import EarthCenterMudBuilding from "../../../../public/assets/landing01.jpg";
 import Image from "next/image";
 
-import styles from "./Landing.module.css";
+import styles from "./Row1.module.css";
 import { useToggle } from "@/app/_hooks/useToggle";
 import { useAppContext } from "@/app/_contexts/AppContext";
 import { AnimatePresence } from "motion/react";
-import BackgroundGrid from "./BackgroundGrid/BackgroundGrid";
+import BackgroundGrid from "../BackgroundGrid/BackgroundGrid";
 import { motion } from "motion/react";
 
-function Landing() {
+function Row1() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [hover, _, setHoverTrue, setHoverFalse] = useToggle();
   const { interactionEnabled, setInteractionEnabled } = useAppContext();
@@ -86,4 +86,4 @@ function Landing() {
   );
 }
 
-export default Landing;
+export default Row1;

@@ -13,6 +13,7 @@
   &.interactionEnabled {
     visibility: visible;
     opacity: 1;
+    overflow-x: hidden;
   }
 
   .sidebarInner {

@@ -16,13 +16,13 @@
 
 @font-face {
   font-family: 'Regular';
-  src: url('./fonts/Menlo-Regular.ttf');
+  src: url('./_fonts/Menlo-Regular.ttf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Bold';
-  src: url('./fonts/Menlo-Bold.ttf'); 
+  src: url('./_fonts/Menlo-Bold.ttf'); 
   font-weight: bold;
 }
 
