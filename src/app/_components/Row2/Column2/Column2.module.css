@@ -3,23 +3,27 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
+  padding-bottom: 1rem;
 
   .writing1 {
+    width: 90%;
+    max-width: 400px;
+    padding: 0.5rem;
+    text-align: justify;
+    border: 1px solid black;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .writing2 {
     height: 200px;
-    width: 80%;
+    width: 90%;
+    max-width: 400px;
     padding: 0.5rem;
     border: 1px solid black;
 
     & > h3 {
       text-align: center;
     }
-  }
-
-  .writing2 {
-    width: 80%;
-    padding: 0.5rem;
-    text-align: justify;
-    border: 1px solid black;
   }
 }
