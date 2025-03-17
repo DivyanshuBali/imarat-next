@@ -35,12 +35,13 @@ function Row1() {
         <Image
           alt="A picture of a mud building at Earth Center"
           src={EarthCenterMudBuilding}
-          layout="fill"
-          objectFit="cover"
           className={styles.landingImg}
           style={{
+            objectFit: "cover",
             filter: interactionEnabled ? "" : "grayscale(100%)",
             transition: "filter 1s",
+            height: "100%",
+            width: "100%",
           }}
         />
 
