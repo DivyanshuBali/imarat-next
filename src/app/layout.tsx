@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { AppProvider } from "./_contexts/AppContext";
 import ClientRootLayout from "./ClientRootLayout";
 
@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+};
+
+export const viewport: Viewport = {
+  width: "1024",
+  initialScale: 1,
+  maximumScale: 1,
 };
 
 export default function RootLayout(
