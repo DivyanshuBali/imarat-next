@@ -23,6 +23,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
+    .sidebarInner__logoAndNav {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
   }
 
   .imaratLogoContainer {

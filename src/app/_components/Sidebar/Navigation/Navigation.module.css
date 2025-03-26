@@ -1,0 +1,14 @@
+.navigationContainer {
+  margin-top: 1rem;
+  flex: 1;
+
+  & > ul {
+    list-style: none;
+
+    & > li {
+      padding: 4px 0;
+      cursor: pointer;
+      font-size: 0.8rem;
+    }
+  }
+}

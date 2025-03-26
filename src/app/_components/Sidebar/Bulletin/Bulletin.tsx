@@ -11,12 +11,6 @@ const BULLETINS_DATA = [
     date: "4 APRIL",
     title: "WORKSHOP ON WOOD",
   },
-
-  {
-    id: 1,
-    date: "10 JULY",
-    title: "EARTH BUILDER'S ASSN. PLAN",
-  },
 ];
 
 function Bulletin() {
