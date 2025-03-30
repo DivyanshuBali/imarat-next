@@ -79,9 +79,9 @@ function RailNav() {
 
     return (
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.3 }}
+        initial={{ opacity: 0, display: "none" }}
+        animate={{ opacity: 1, display: "block" }}
+        transition={{ duration: 0.3, delay: 0.2 }}
         className={styles.contactContainer}
       >
         <div className={styles.contactInfo}>

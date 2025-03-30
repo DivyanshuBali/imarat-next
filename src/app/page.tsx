@@ -68,6 +68,9 @@ export default function Home() {
             }}
           />
         </div>
+
+        {/* Just a margin Container */}
+        <div className={styles.column2} />
       </section>
     </>
   );
