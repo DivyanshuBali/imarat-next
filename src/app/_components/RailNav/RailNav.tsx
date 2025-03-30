@@ -140,7 +140,7 @@ function RailNav() {
     <div className={styles.railNavContainer}>
       <div className={styles.railNav}>
         <motion.section
-          animate={{ width: selectedRailItem ? "500px" : "0px" }}
+          animate={{ width: selectedRailItem ? "380px" : "0px" }}
           className={styles.selectedNavContent}
         >
           {selectedRailItem && (

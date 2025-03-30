@@ -1,0 +1,105 @@
+.projectContainer {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  .mainColumn {
+    width: 80%;
+    height: 100%;
+    padding: 0.5rem;
+    overflow-y: auto;
+    box-sizing: border-box;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none; /* Chrome, Safari and Opera */
+    }
+  }
+
+  .sideColumn {
+    flex: 1;
+    min-width: 250px;
+    height: 100%;
+    padding: 0.5rem;
+    overflow-y: auto;
+    box-sizing: border-box;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none; /* Chrome, Safari and Opera */
+    }
+
+    .projectTitle {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      font-weight: 600;
+    }
+
+    .projectDetails {
+      margin-bottom: 2rem;
+
+      .detailRow {
+        text-align: justify;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: var(--black-faded);
+        padding-bottom: 0.5rem;
+
+        .detailLabel {
+          color: #000;
+          font-weight: 500;
+          width: 100px;
+          flex-shrink: 0;
+          font-weight: bold;
+        }
+
+        .detailValue {
+          flex-grow: 1;
+        }
+      }
+    }
+
+    .projectDescription {
+
+      .descriptionTitle {
+        color: var(--black-faded);
+        letter-spacing: 1.2px;
+        font-size: 12px;
+      }
+
+      & > h4 {
+        font-size: 12px;
+        margin-bottom: 1rem;
+        color: var(--black-faded);
+        letter-spacing: 1.1px;
+      }
+
+      & > p {
+        line-height: 1.6;
+        font-size: 12px;
+        letter-spacing: 1.2px;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+
+.imageContainer {
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.projectImage {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  max-height: 800px;
+  object-fit: contain;
+}

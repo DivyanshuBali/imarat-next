@@ -4,6 +4,7 @@ import styles from "./Sidebar.module.css";
 import { motion } from "motion/react";
 
 import React from "react";
+import Link from "next/link";
 
 function Sidebar() {
   const { interactionEnabled } = useAppContext();
@@ -29,10 +30,12 @@ function Sidebar() {
             transition={{ duration: 1, ease: "easeOut" }}
           />
           {/* IMARAT ARCHITECTS LOGO */}
-          <div className={styles.imaratLogoContainer}>
-            <div className={styles.logoTitle}>IMARAT ARCHITECTS</div>
-            <div className={styles.logoUnderline}></div>
-          </div>
+          <Link href="/">
+            <div className={styles.imaratLogoContainer}>
+              <div className={styles.logoTitle}>IMARAT ARCHITECTS</div>
+              <div className={styles.logoUnderline}></div>
+            </div>
+          </Link>
         </div>
 
         {/* BULLETIN */}

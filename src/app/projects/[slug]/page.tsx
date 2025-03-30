@@ -1,5 +1,10 @@
+import styles from "@/app/page.module.css";
+import stylesLocal from "./page.module.css";
+
+import * as motion from "motion/react-client";
 import { PROJECT_DATA, PROJECT_KEYS } from "@/app/_utils/constants";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 
 // Define params type for generateStaticParams
 type Params = {
@@ -19,9 +24,104 @@ export default function ProjectPage({ params }: Params) {
   }
 
   return (
-    <div>
-      <h1>{projectData.title}</h1>
-    </div>
+    <section className={styles.section1}>
+      <div className={styles.column1}>
+        <div className={stylesLocal.projectContainer}>
+          {/* IMAGES COLUMN */}
+          <div className={stylesLocal.mainColumn}>
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+            >
+              {projectData.images &&
+                projectData.images.map((image, index) => (
+                  <div key={index} className={stylesLocal.imageContainer}>
+                    <Image
+                      src={image.src || ""}
+                      alt={image.alt}
+                      className={stylesLocal.projectImage}
+                    />
+                  </div>
+                ))}
+            </motion.div>
+          </div>
+
+          {/* CONTENT COLUMN */}
+          <motion.div
+            className={stylesLocal.sideColumn}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, ease: "easeOut", delay: 0.2 }}
+          >
+            <h1 className={stylesLocal.projectTitle}>{projectData.title}</h1>
+
+            <div className={stylesLocal.projectDetails}>
+              {projectData.date && (
+                <div className={stylesLocal.detailRow}>
+                  <span className={stylesLocal.detailValue}>
+                    {projectData.date}
+                  </span>
+                </div>
+              )}
+
+              {projectData.type && (
+                <div className={stylesLocal.detailRow}>
+                  <span className={stylesLocal.detailLabel}>TYPE </span>
+                  <span className={stylesLocal.detailValue}>
+                    {projectData.type}
+                  </span>
+                </div>
+              )}
+
+              {projectData.location && (
+                <div className={stylesLocal.detailRow}>
+                  <span className={stylesLocal.detailLabel}>Location </span>
+                  <span className={stylesLocal.detailValue}>
+                    {projectData.location}
+                  </span>
+                </div>
+              )}
+
+              {projectData.area && (
+                <div className={stylesLocal.detailRow}>
+                  <span className={stylesLocal.detailLabel}>Area </span>
+                  <span className={stylesLocal.detailValue}>
+                    {projectData.area}
+                  </span>
+                </div>
+              )}
+
+              {projectData.methodology && (
+                <div className={stylesLocal.detailRow}>
+                  <span className={stylesLocal.detailLabel}>Methodology </span>
+                  <span className={stylesLocal.detailValue}>
+                    {projectData.methodology}
+                  </span>
+                </div>
+              )}
+
+              {projectData.materials && (
+                <div className={stylesLocal.detailRow}>
+                  <span className={stylesLocal.detailLabel}>Materials </span>
+                  <span className={stylesLocal.detailValue}>
+                    {projectData.materials}
+                  </span>
+                </div>
+              )}
+            </div>
+
+            {projectData.description && (
+              <div className={stylesLocal.projectDescription}>
+                <h4 className={stylesLocal.descriptionTitle}>NOTES</h4>
+                <p>{projectData.description}</p>
+              </div>
+            )}
+          </motion.div>
+        </div>
+      </div>
+      <div className={styles.column2}></div>
+    </section>
   );
 }
 
