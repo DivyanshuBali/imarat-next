@@ -120,7 +120,7 @@ export const PROJECT_DATA = {
     materials: "Adobe Blocks, Lime Plaster, Filler Slab, Bamboo, Wood, Stone",
     description:
       "The Imarat Earth Centre represents a pioneering effort to revive traditional building techniques while addressing contemporary spatial needs. Located in a peri-urban setting, the centre serves as both a cultural hub and a living laboratory for sustainable construction practices.\n\nThe design incorporates passive cooling strategies, with thick adobe walls providing thermal mass and carefully positioned courtyards enhancing natural ventilation. Local artisans were extensively involved in the construction process, allowing for knowledge transfer and skill development within the community.\n\nThe Centre houses exhibition spaces, workshops, a library, and residential quarters for visiting researchers. Its architecture responds sensitively to the surroundings, minimizing environmental impact while creating spaces that foster learning and cultural exchange.",
-    images: [], // To be populated with StaticImageData imports
+    images: PROJECT_IMAGES[PROJECT_KEYS.IMARAT_EARTH_CENTRE],
   },
   [PROJECT_KEYS.STUDIO_1252]: {
     title: "201701 - STUDIO 1252",
@@ -132,7 +132,7 @@ export const PROJECT_DATA = {
     materials: "Reclaimed Brick, Steel, Glass, Wood, Concrete, Local Stone",
     description:
       "Studio 1252 transforms an abandoned industrial structure into a vibrant creative workspace, preserving the building's character while adapting it to contemporary needs. The project demonstrates how thoughtful intervention can breathe new life into neglected urban spaces.\n\nThe design approach maintains the original structural framework while introducing flexible interior arrangements that can accommodate various work modes. Large skylights and strategically positioned windows flood the spaces with natural light, while exposed services celebrate the building's industrial heritage.\n\nThe studio houses a mix of private workspaces, collaborative areas, and public-facing galleries. Outdoor courtyards carved from the original building footprint provide natural ventilation and create spaces for informal interaction and events.",
-    images: PROJECT_IMAGES[PROJECT_KEYS.IMARAT_EARTH_CENTRE],
+    images: PROJECT_IMAGES[PROJECT_KEYS.STUDIO_1252],
   },
   [PROJECT_KEYS.BUDDHIST_MONASTRY]: {
     title: "202308 - BUDDHIST MONASTRY",
