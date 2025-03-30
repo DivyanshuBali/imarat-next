@@ -56,7 +56,10 @@ function RailNav() {
                 },
               }}
             >
-              <Link href={`/projects/${PROJECT_DATA[project].link}`}>
+              <Link
+                onClick={() => setSelectedRailItem(null)}
+                href={`/projects/${PROJECT_DATA[project].link}`}
+              >
                 {PROJECT_DATA[project].title}
               </Link>
             </motion.li>
@@ -93,40 +96,40 @@ function RailNav() {
 
           <div className={styles.contactItem}>
             <p>
-              <a href="mailto:info@imaratarchitects.com">
+              <Link href="mailto:info@imaratarchitects.com">
                 info@imaratarchitects.com
-              </a>
+              </Link>
             </p>
           </div>
 
           <div className={styles.contactItem}>
-            <a href="tel:+919988111252">
+            <Link href="tel:+919988111252">
               <p>+91 99881 11252</p>
-            </a>
+            </Link>
           </div>
 
           <div className={styles.socialLinks}>
-            <a
+            <Link
               href="https://www.facebook.com/earth.misaal/"
               target="_blank"
               rel="noopener noreferrer"
             >
               FACEBOOK
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.instagram.com/imarat_earth"
               target="_blank"
               rel="noopener noreferrer"
             >
               INSTAGRAM
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.linkedin.com/in/ar-savneet-kaur-72419a19"
               target="_blank"
               rel="noopener noreferrer"
             >
               LINKEDIN
-            </a>
+            </Link>
           </div>
         </div>
       </motion.div>
