@@ -19,7 +19,7 @@ interface AppProviderProps {
 }
 
 export const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
-  const [interactionEnabled, setInteractionEnabled] = useState<boolean>(false);
+  const [interactionEnabled, setInteractionEnabled] = useState<boolean>(true);
 
   const value = {
     interactionEnabled,

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Imarat Architects",
   keywords: `architecture, building design, sustainable architecture, homes, construction, residence, design, interior design, exterior design`,
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.png",
   },
 };
 

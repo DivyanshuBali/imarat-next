@@ -50,17 +50,3 @@
   }
 }
 
-@media screen and (max-width: 992px) {
-  .sidebar {
-    width: 100%;
-    max-width: none;
-    height: auto;
-    margin-bottom: 20px;
-    order: -1; /* Moves sidebar to the top */
-  }
-  
-  .sidebarInner {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}

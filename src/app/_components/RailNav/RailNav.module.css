@@ -1,0 +1,111 @@
+.railNavContainer {
+  display: flex;
+
+  .railNav {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 35px;
+
+    nav.navItemContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 100%;
+      background-color: #f6edc399;
+      backdrop-filter: blur(4px);
+
+      .navItem {
+        width: 100%;
+        background: none;
+        border: none;
+        padding: 0;
+        font: inherit;
+        outline: inherit;
+        text-align: inherit;
+        position: relative;
+        cursor: pointer;
+        writing-mode: vertical-rl;
+        margin: 1.5rem 0;
+      }
+    }
+
+    .selectedNavContent {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      padding: 1rem 0 1rem 1rem;
+      backdrop-filter: blur(4px);
+      background-color: #f6edc399;
+      border-left: 0.75px solid #fbeded;
+
+      & ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        & li {
+          color: var(--black);
+          cursor: pointer;
+          transition: color 0.2s ease;
+          padding: 8px 0;
+
+          &:hover {
+            color: #000;
+          }
+        }
+      }
+
+      .closeButton {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #000;
+        transition: transform 0.2s ease;
+        transform: translateX(-10px);
+        margin-bottom: 0.5rem;
+        color: var(--black-faded);
+      }
+
+      .closeButton:hover {
+        transform: translateX(0px);
+        color: #000;
+      }
+    }
+
+    /* CONTACT SECTION STYLES */
+    .contactContainer {
+      .contactInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .contactItem {
+          & a {
+            text-decoration: underline;
+          }
+        }
+
+        .socialLinks {
+          display: flex;
+          flex-direction: column;
+
+          & a {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .gapColumn {
+    height: 100dvh;
+    width: calc(100vw * 0.2);
+    max-width: 195px; /* Sidebar and Railnav total width*/
+    height: 100dvh;
+  }
+}

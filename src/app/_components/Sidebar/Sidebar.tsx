@@ -4,7 +4,6 @@ import styles from "./Sidebar.module.css";
 import { motion } from "motion/react";
 
 import React from "react";
-import Navigation from "./Navigation/Navigation";
 
 function Sidebar() {
   const { interactionEnabled } = useAppContext();
@@ -34,9 +33,6 @@ function Sidebar() {
             <div className={styles.logoTitle}>IMARAT ARCHITECTS</div>
             <div className={styles.logoUnderline}></div>
           </div>
-
-          {/* NAVIGATION */}
-          <Navigation />
         </div>
 
         {/* BULLETIN */}

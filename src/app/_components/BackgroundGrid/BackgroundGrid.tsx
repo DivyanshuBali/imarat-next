@@ -13,7 +13,7 @@ export default function BackgroundGrid() {
       className={styles.bgGrid}
       initial={{ opacity: 0 }}
       animate={{ opacity: interactionEnabled ? 1 : 0 }}
-      transition={{ duration: 2}}
+      transition={{ duration: 2 }}
     />
   );
 }
