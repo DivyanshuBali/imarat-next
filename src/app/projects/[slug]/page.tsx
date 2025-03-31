@@ -6,16 +6,13 @@ import { PROJECT_DATA, PROJECT_KEYS } from "@/app/_utils/constants";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 
-// Define params type for generateStaticParams
-type Params = {
-  params: {
-    slug: string;
-  };
-};
-
 // This becomes a Server Component by default
-export default function ProjectPage({ params }: Params) {
-  const { slug } = params;
+export default async function ProjectPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
   const projectData = PROJECT_DATA[slug as PROJECT_KEYS];
 
   // Handle case when project doesn't exist
@@ -125,7 +122,6 @@ export default function ProjectPage({ params }: Params) {
   );
 }
 
-// Replace getStaticPaths with generateStaticParams
 export async function generateStaticParams() {
   const projects = Object.values(PROJECT_KEYS);
 
