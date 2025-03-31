@@ -135,6 +135,11 @@ export const PROJECT_IMAGES = {
   ],
   [PROJECT_KEYS.NYAYPURI_HOUSE]: [
     {
+      src: NYH03,
+      alt: "Nyaypuri House - Interior View",
+      link: PROJECT_KEYS.NYAYPURI_HOUSE,
+    },
+    {
       src: NYH_SKETCH01,
       alt: "Nyaypuri House - Design Sketch",
       link: PROJECT_KEYS.NYAYPURI_HOUSE,
@@ -147,11 +152,6 @@ export const PROJECT_IMAGES = {
     {
       src: NYH02,
       alt: "Nyaypuri House - Courtyard View",
-      link: PROJECT_KEYS.NYAYPURI_HOUSE,
-    },
-    {
-      src: NYH03,
-      alt: "Nyaypuri House - Interior View",
       link: PROJECT_KEYS.NYAYPURI_HOUSE,
     },
     {
