@@ -5,6 +5,9 @@ import { motion } from "motion/react";
 import styles from "./RailNav.module.css";
 import Link from "next/link";
 import { PROJECT_DATA, PROJECT_KEYS } from "@/app/_utils/constants";
+import Image from "next/image";
+
+import AR_SK from "../../../../public/assets/AR_SAVNEET_KAUR.jpeg";
 
 enum RailItems {
   PROJECTS = "PROJECTS",
@@ -73,7 +76,62 @@ function RailNav() {
   const AboutContent = () => {
     if (selectedRailItem !== RailItems.ABOUT) return null;
 
-    return <h1>About</h1>;
+    return (
+      <motion.div
+        initial={{ opacity: 0, display: "none" }}
+        animate={{ opacity: 1, display: "block" }}
+        transition={{ duration: 0.3, delay: 0.3 }}
+        className={`${styles.aboutContainer} ${styles.hiddenScrollbar}`}
+      >
+        <div className={styles.imageContainer}>
+          <Image src={AR_SK} alt="Ar. Savneet Kaur" className={styles.image} />
+        </div>
+
+        <motion.div
+          initial={{ y: 10 }}
+          animate={{ y: 0 }}
+          transition={{ delay: 0.3, ease: "easeOut" }}
+          className={styles.content}
+        >
+          <p>
+            Ar. Savneet Kaur established IMARAT ARCHITECTS in 1995, after
+            graduating from the Chandigarh College of Architecture. The firm
+            went on for the next 20 years to do over 250 built projects, mainly
+            residences. During the last decade and a half, the practice shifted
+            its perspective towards Sustainability and Research.
+          </p>
+          <p>
+            Savneet, now also a visiting Faculty at CCA, heads a small team of
+            architects devoted to limited projects.
+          </p>
+          <p>
+            Alongside, she heads the Imarat which is devoted to preserving and
+            nourishing the venracular knowledge systems by employing artisans
+            and local craftsmen at the Earth Centre (ICEA).
+          </p>
+        </motion.div>
+
+        <div className={styles.teamInfo}>
+          <div className={styles.bold}>CURRENT TEAM</div>
+
+          <div>
+            <div className={styles.bold}>ARCHITECTS</div>
+            <div>MANNAT SINGH</div>
+            <div>NEHA DAHIYA</div>
+            <div>KAPILDEV KHANDELWAL</div>
+            <div>GAMANPREET KAUR</div>
+          </div>
+
+          <div>
+            <div className={styles.bold}>ARTISANS</div>
+            <div>MANNAT SINGH</div>
+            <div>NEHA DAHIYA</div>
+            <div>KAPILDEV KHANDELWAL</div>
+            <div>GAMANPREET KAUR</div>
+          </div>
+        </div>
+      </motion.div>
+    );
   };
 
   // CONTACT CONTENT
@@ -141,7 +199,7 @@ function RailNav() {
       <div className={styles.railNav}>
         <motion.section
           animate={{ width: selectedRailItem ? "380px" : "0px" }}
-          className={styles.selectedNavContent}
+          className={`${styles.selectedNavContent} ${styles.hiddenScrollbar}`}
         >
           {selectedRailItem && (
             <motion.button
