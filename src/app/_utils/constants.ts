@@ -51,149 +51,149 @@ export const PROJECT_IMAGES = {
     {
       src: EC01,
       alt: "Imarat Earth Centre - Main View",
-      link: PROJECT_KEYS.IMARAT_EARTH_CENTRE,
+      link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
     },
     {
       src: EC02,
       alt: "Imarat Earth Centre - Interior View",
-      link: PROJECT_KEYS.IMARAT_EARTH_CENTRE,
+      link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
     },
   ],
   [PROJECT_KEYS.STUDIO_1252]: [
     {
       src: IMO_01,
       alt: "Studio 1252 - Exterior View",
-      link: PROJECT_KEYS.STUDIO_1252,
+      link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
     },
     {
       src: IMO_AXO01,
       alt: "Studio 1252 - Axonometric View 1",
-      link: PROJECT_KEYS.STUDIO_1252,
+      link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
     },
     {
       src: IMO_02,
       alt: "Studio 1252 - Workspace Interior",
-      link: PROJECT_KEYS.STUDIO_1252,
+      link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
     },
     {
       src: IMO_03,
       alt: "Studio 1252 - View 3",
-      link: PROJECT_KEYS.STUDIO_1252,
+      link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
     },
     {
       src: IMO_04,
       alt: "Studio 1252 - View 4",
-      link: PROJECT_KEYS.STUDIO_1252,
+      link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
     },
     {
       src: IMO_05,
       alt: "Studio 1252 - View 5",
-      link: PROJECT_KEYS.STUDIO_1252,
+      link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
     },
     {
       src: IMO_06,
       alt: "Studio 1252 - View 6",
-      link: PROJECT_KEYS.STUDIO_1252,
+      link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
     },
     {
       src: IMO_AXO02,
       alt: "Studio 1252 - Axonometric View 2",
-      link: PROJECT_KEYS.STUDIO_1252,
+      link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
     },
     {
       src: IMO_DRAWING01,
       alt: "Studio 1252 - Technical Drawing",
-      link: PROJECT_KEYS.STUDIO_1252,
+      link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
     },
   ],
   [PROJECT_KEYS.BUDDHIST_MONASTERY]: [
     {
       src: BTM_SKETCH01,
       alt: "Buddhist Monastery - Concept Sketch",
-      link: PROJECT_KEYS.BUDDHIST_MONASTERY,
+      link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
     },
     {
       src: BTM_SKETCH02,
       alt: "Buddhist Monastery - Elevation Sketch",
-      link: PROJECT_KEYS.BUDDHIST_MONASTERY,
+      link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
     },
     {
       src: BTM_AXO01,
       alt: "Buddhist Monastery - Axonometric View",
-      link: PROJECT_KEYS.BUDDHIST_MONASTERY,
+      link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
     },
     {
       src: BTM_01,
       alt: "Buddhist Monastery - Draft Board",
-      link: PROJECT_KEYS.BUDDHIST_MONASTERY,
+      link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
     },
     {
       src: BTM_SKETCH03,
       alt: "Buddhist Monastery - Sketch 3",
-      link: PROJECT_KEYS.BUDDHIST_MONASTERY,
+      link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
     },
   ],
   [PROJECT_KEYS.NYAYPURI_HOUSE]: [
     {
       src: NYH03,
       alt: "Nyaypuri House - Interior View",
-      link: PROJECT_KEYS.NYAYPURI_HOUSE,
+      link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
     },
     {
       src: NYH_SKETCH01,
       alt: "Nyaypuri House - Design Sketch",
-      link: PROJECT_KEYS.NYAYPURI_HOUSE,
+      link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
     },
     {
       src: NYH01,
       alt: "Nyaypuri House - Exterior View",
-      link: PROJECT_KEYS.NYAYPURI_HOUSE,
+      link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
     },
     {
       src: NYH02,
       alt: "Nyaypuri House - Courtyard View",
-      link: PROJECT_KEYS.NYAYPURI_HOUSE,
+      link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
     },
     {
       src: NYH04,
       alt: "Nyaypuri House - Landscape View",
-      link: PROJECT_KEYS.NYAYPURI_HOUSE,
+      link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
     },
   ],
   [PROJECT_KEYS.VRINDAVAN]: [
     {
       src: VVC_SKETCH03,
       alt: "Vrindavan Project - Design Sketch 3",
-      link: PROJECT_KEYS.VRINDAVAN,
+      link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
     },
     {
       src: VVC01,
       alt: "Vrindavan Project - Concept View",
-      link: PROJECT_KEYS.VRINDAVAN,
+      link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
     },
     {
       src: VVC_SKETCH01,
       alt: "Vrindavan Project - Design Sketch 1",
-      link: PROJECT_KEYS.VRINDAVAN,
+      link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
     },
     {
       src: VVC_SKETCH02,
       alt: "Vrindavan Project - Design Sketch 2",
-      link: PROJECT_KEYS.VRINDAVAN,
+      link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
     },
   ],
   [PROJECT_KEYS.PPS_KINDERGARTEN]: [
     {
       src: PPS_AXO_01,
       alt: "Kindergarten - Design Render",
-      link: PROJECT_KEYS.PPS_KINDERGARTEN,
+      link: `projects/${PROJECT_KEYS.PPS_KINDERGARTEN}`,
     },
   ],
   // [PROJECT_KEYS.DBH_HOUSE]: [
   //   {
   //     src: null, // Placeholder for future images
   //     alt: "DBH House - Concept Sketch",
-  //     link: PROJECT_KEYS.DBH_HOUSE,
+  //     link: `projects/${PROJECT_KEYS.DBH_HOUSE}`,
   //   },
   // ],
 };
@@ -305,132 +305,132 @@ export const ALL_PROJECT_IMAGES = {
   EC01: {
     src: EC01,
     alt: "Imarat Earth Centre - Main View",
-    link: PROJECT_KEYS.IMARAT_EARTH_CENTRE,
+    link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
   },
   EC02: {
     src: EC02,
     alt: "Imarat Earth Centre - Interior View",
-    link: PROJECT_KEYS.IMARAT_EARTH_CENTRE,
+    link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
   },
 
-  // Buddhist Monastry
+  // Buddhist Monastery
   BTM_SKETCH01: {
     src: BTM_SKETCH01,
     alt: "Buddhist Monastery - Concept Sketch",
-    link: PROJECT_KEYS.BUDDHIST_MONASTERY,
+    link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
   },
   BTM_SKETCH02: {
     src: BTM_SKETCH02,
     alt: "Buddhist Monastery - Elevation Sketch",
-    link: PROJECT_KEYS.BUDDHIST_MONASTERY,
+    link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
   },
   BTM_AXO01: {
     src: BTM_AXO01,
     alt: "Buddhist Monastery - Axonometric View",
-    link: PROJECT_KEYS.BUDDHIST_MONASTERY,
+    link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
   },
 
   // Studio 1252
   IMO_01: {
     src: IMO_01,
     alt: "Studio 1252 - Exterior View",
-    link: PROJECT_KEYS.STUDIO_1252,
+    link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
   },
   IMO_02: {
     src: IMO_02,
     alt: "Studio 1252 - Workspace Interior",
-    link: PROJECT_KEYS.STUDIO_1252,
+    link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
   },
   IMO_03: {
     src: IMO_03,
     alt: "Studio 1252 - View 3",
-    link: PROJECT_KEYS.STUDIO_1252,
+    link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
   },
   IMO_04: {
     src: IMO_04,
     alt: "Studio 1252 - View 4",
-    link: PROJECT_KEYS.STUDIO_1252,
+    link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
   },
   IMO_05: {
     src: IMO_05,
     alt: "Studio 1252 - View 5",
-    link: PROJECT_KEYS.STUDIO_1252,
+    link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
   },
   IMO_06: {
     src: IMO_06,
     alt: "Studio 1252 - View 6",
-    link: PROJECT_KEYS.STUDIO_1252,
+    link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
   },
   IMO_AXO01: {
     src: IMO_AXO01,
     alt: "Studio 1252 - Axonometric View 1",
-    link: PROJECT_KEYS.STUDIO_1252,
+    link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
   },
   IMO_AXO02: {
     src: IMO_AXO02,
     alt: "Studio 1252 - Axonometric View 2",
-    link: PROJECT_KEYS.STUDIO_1252,
+    link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
   },
   IMO_DRAWING01: {
     src: IMO_DRAWING01,
     alt: "Studio 1252 - Technical Drawing",
-    link: PROJECT_KEYS.STUDIO_1252,
+    link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
   },
 
   // Nyaypuri House
   NYH01: {
     src: NYH01,
     alt: "Nyaypuri House - Exterior View",
-    link: PROJECT_KEYS.NYAYPURI_HOUSE,
+    link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
   },
   NYH02: {
     src: NYH02,
     alt: "Nyaypuri House - Courtyard View",
-    link: PROJECT_KEYS.NYAYPURI_HOUSE,
+    link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
   },
   NYH_SKETCH01: {
     src: NYH_SKETCH01,
     alt: "Nyaypuri House - Design Sketch",
-    link: PROJECT_KEYS.NYAYPURI_HOUSE,
+    link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
   },
   NYH03: {
     src: NYH03,
     alt: "Nyaypuri House - Interior View",
-    link: PROJECT_KEYS.NYAYPURI_HOUSE,
+    link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
   },
   NYH04: {
     src: NYH04,
     alt: "Nyaypuri House - Landscape View",
-    link: PROJECT_KEYS.NYAYPURI_HOUSE,
+    link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
   },
 
   // Vrindavan
   VVC01: {
     src: VVC01,
     alt: "Vrindavan Project - Concept View",
-    link: PROJECT_KEYS.VRINDAVAN,
+    link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
   },
   VVC_SKETCH01: {
     src: VVC_SKETCH01,
     alt: "Vrindavan Project - Design Sketch 1",
-    link: PROJECT_KEYS.VRINDAVAN,
+    link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
   },
   VVC_SKETCH02: {
     src: VVC_SKETCH02,
     alt: "Vrindavan Project - Design Sketch 2",
-    link: PROJECT_KEYS.VRINDAVAN,
+    link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
   },
   VVC_SKETCH03: {
     src: VVC_SKETCH03,
     alt: "Vrindavan Project - Design Sketch 3",
-    link: PROJECT_KEYS.VRINDAVAN,
+    link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
   },
 
   // Kindergarten
   PPS_AXO_01: {
     src: PPS_AXO_01,
     alt: "Kindergarten - Design Render",
-    link: PROJECT_KEYS.PPS_KINDERGARTEN,
+    link: `projects/${PROJECT_KEYS.PPS_KINDERGARTEN}`,
   },
 };
 

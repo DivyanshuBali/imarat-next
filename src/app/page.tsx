@@ -20,10 +20,12 @@ export default function Home() {
               {
                 src: ALL_PROJECT_IMAGES["EC01"].src,
                 alt: ALL_PROJECT_IMAGES["EC01"].alt,
+                link: ALL_PROJECT_IMAGES["EC01"].link,
               },
               {
                 src: ALL_PROJECT_IMAGES["EC02"].src,
                 alt: ALL_PROJECT_IMAGES["EC02"].alt,
+                link: ALL_PROJECT_IMAGES["EC01"].link,
               },
             ]}
           />
@@ -31,6 +33,7 @@ export default function Home() {
             image={{
               src: ALL_PROJECT_IMAGES["BTM_SKETCH02"].src,
               alt: ALL_PROJECT_IMAGES["BTM_SKETCH02"].alt,
+              link: ALL_PROJECT_IMAGES["BTM_SKETCH02"].link,
             }}
           />
           <ImagesLayoutB
@@ -38,10 +41,12 @@ export default function Home() {
               {
                 src: ALL_PROJECT_IMAGES["BTM_SKETCH01"].src,
                 alt: ALL_PROJECT_IMAGES["BTM_SKETCH01"].alt,
+                link: ALL_PROJECT_IMAGES["BTM_SKETCH01"].link,
               },
               {
                 src: ALL_PROJECT_IMAGES["IMO_01"].src,
                 alt: ALL_PROJECT_IMAGES["IMO_01"].alt,
+                link: ALL_PROJECT_IMAGES["IMO_01"].link,
               },
             ]}
           />
@@ -50,14 +55,17 @@ export default function Home() {
               {
                 src: ALL_PROJECT_IMAGES["NYH01"].src,
                 alt: ALL_PROJECT_IMAGES["NYH01"].alt,
+                link: ALL_PROJECT_IMAGES["NYH01"].link,
               },
               {
                 src: ALL_PROJECT_IMAGES["NYH02"].src,
                 alt: ALL_PROJECT_IMAGES["NYH02"].alt,
+                link: ALL_PROJECT_IMAGES["NYH02"].link,
               },
               {
                 src: ALL_PROJECT_IMAGES["NYH_SKETCH01"].src,
                 alt: ALL_PROJECT_IMAGES["NYH_SKETCH01"].alt,
+                link: ALL_PROJECT_IMAGES["NYH_SKETCH01"].link,
               },
             ]}
           />
@@ -65,6 +73,7 @@ export default function Home() {
             image={{
               src: ALL_PROJECT_IMAGES["IMO_01"].src,
               alt: ALL_PROJECT_IMAGES["IMO_01"].alt,
+              link: ALL_PROJECT_IMAGES["IMO_01"].link,
             }}
           />
         </div>

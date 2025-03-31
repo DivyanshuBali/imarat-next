@@ -8,6 +8,7 @@ import { StaticImageData } from "next/image";
 export type ImageItem = {
   src: StaticImageData;
   alt: string;
+  link: string;
 };
 
 type ImagesLayoutAProps = {
@@ -20,7 +21,9 @@ function ImagesLayoutD2(props: ImagesLayoutAProps) {
   return (
     <ImageList variant="quilted" cols={5} gap={0}>
       <ImageListItem cols={5} style={{ aspectRatio: 5 / 3 }}>
-        {image && <LandingImage src={image.src} alt={image.alt} />}
+        {image && (
+          <LandingImage src={image.src} alt={image.alt} link={image.link} />
+        )}
       </ImageListItem>
     </ImageList>
   );

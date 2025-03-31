@@ -8,6 +8,7 @@ import LandingImage from "./LandingImage";
 export type ImageItem = {
   src: StaticImageData;
   alt: string;
+  link: string;
 };
 
 type ImagesLayoutAProps = {
@@ -20,7 +21,7 @@ function ImagesLayoutD1(props: ImagesLayoutAProps) {
   return (
     <ImageList variant="quilted" cols={5} gap={0}>
       <ImageListItem cols={5} style={{ aspectRatio: 5 / 2 }}>
-        <LandingImage src={image.src} alt={image.alt} />
+        <LandingImage src={image.src} alt={image.alt} link={image.link} />
       </ImageListItem>
     </ImageList>
   );
