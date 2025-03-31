@@ -39,7 +39,7 @@ import PPS_AXO_01 from "../../../public/assets/PPS_AXO_01.png";
 export enum PROJECT_KEYS {
   IMARAT_EARTH_CENTRE = "200901-imarat-earth-centre-icea",
   STUDIO_1252 = "201701-studio-1252",
-  BUDDHIST_MONASTRY = "202308-buddhist-monastry",
+  BUDDHIST_MONASTERY = "202308-buddhist-monastery",
   NYAYPURI_HOUSE = "201801-nyaypuri-house",
   VRINDAVAN = "202308-vrindavan",
   PPS_KINDERGARTEN = "202412-pps-kindergarten",
@@ -106,31 +106,31 @@ export const PROJECT_IMAGES = {
       link: PROJECT_KEYS.STUDIO_1252,
     },
   ],
-  [PROJECT_KEYS.BUDDHIST_MONASTRY]: [
+  [PROJECT_KEYS.BUDDHIST_MONASTERY]: [
     {
       src: BTM_SKETCH01,
       alt: "Buddhist Monastery - Concept Sketch",
-      link: PROJECT_KEYS.BUDDHIST_MONASTRY,
+      link: PROJECT_KEYS.BUDDHIST_MONASTERY,
     },
     {
       src: BTM_SKETCH02,
       alt: "Buddhist Monastery - Elevation Sketch",
-      link: PROJECT_KEYS.BUDDHIST_MONASTRY,
+      link: PROJECT_KEYS.BUDDHIST_MONASTERY,
     },
     {
       src: BTM_AXO01,
       alt: "Buddhist Monastery - Axonometric View",
-      link: PROJECT_KEYS.BUDDHIST_MONASTRY,
+      link: PROJECT_KEYS.BUDDHIST_MONASTERY,
     },
     {
       src: BTM_01,
       alt: "Buddhist Monastery - Draft Board",
-      link: PROJECT_KEYS.BUDDHIST_MONASTRY,
+      link: PROJECT_KEYS.BUDDHIST_MONASTERY,
     },
     {
       src: BTM_SKETCH03,
       alt: "Buddhist Monastery - Sketch 3",
-      link: PROJECT_KEYS.BUDDHIST_MONASTRY,
+      link: PROJECT_KEYS.BUDDHIST_MONASTERY,
     },
   ],
   [PROJECT_KEYS.NYAYPURI_HOUSE]: [
@@ -226,9 +226,9 @@ export const PROJECT_DATA = {
       "Studio 1252 transforms an abandoned industrial structure into a vibrant creative workspace, preserving the building's character while adapting it to contemporary needs. The project demonstrates how thoughtful intervention can breathe new life into neglected urban spaces.\n\nThe design approach maintains the original structural framework while introducing flexible interior arrangements that can accommodate various work modes. Large skylights and strategically positioned windows flood the spaces with natural light, while exposed services celebrate the building's industrial heritage.\n\nThe studio houses a mix of private workspaces, collaborative areas, and public-facing galleries. Outdoor courtyards carved from the original building footprint provide natural ventilation and create spaces for informal interaction and events.",
     images: PROJECT_IMAGES[PROJECT_KEYS.STUDIO_1252],
   },
-  [PROJECT_KEYS.BUDDHIST_MONASTRY]: {
-    title: "202308 - BUDDHIST MONASTRY",
-    link: PROJECT_KEYS.BUDDHIST_MONASTRY,
+  [PROJECT_KEYS.BUDDHIST_MONASTERY]: {
+    title: "202308 - BUDDHIST MONASTERY",
+    link: PROJECT_KEYS.BUDDHIST_MONASTERY,
     date: "ONGOING",
     type: "Religious & Contemplative Space",
     area: "8500 SQ M",
@@ -238,7 +238,7 @@ export const PROJECT_DATA = {
     materials: "Lime Mortar, Local Stone, Timber, Bamboo, Clay Tiles, Thatch",
     description:
       "The Buddhist Monastery project seeks to create a contemporary interpretation of traditional monastic architecture, balancing ritualistic requirements with functional needs. Set in a serene natural landscape, the complex is designed as a place for meditation, learning, and community gathering.\n\nThe spatial arrangement follows principles of sacred geometry, with meditation halls, living quarters, and communal spaces organized around a central stupa. Covered walkways connect different parts of the complex, providing shelter while framing views of the surrounding landscape.\n\nConstruction employs traditional techniques executed by local craftspeople, ensuring that the building process itself becomes a form of spiritual practice. Natural materials sourced from the region root the project in its context while minimizing environmental impact.",
-    images: PROJECT_IMAGES[PROJECT_KEYS.BUDDHIST_MONASTRY],
+    images: PROJECT_IMAGES[PROJECT_KEYS.BUDDHIST_MONASTERY],
   },
   [PROJECT_KEYS.NYAYPURI_HOUSE]: {
     title: "201801 - NYAYPURI HOUSE",
@@ -317,17 +317,17 @@ export const ALL_PROJECT_IMAGES = {
   BTM_SKETCH01: {
     src: BTM_SKETCH01,
     alt: "Buddhist Monastery - Concept Sketch",
-    link: PROJECT_KEYS.BUDDHIST_MONASTRY,
+    link: PROJECT_KEYS.BUDDHIST_MONASTERY,
   },
   BTM_SKETCH02: {
     src: BTM_SKETCH02,
     alt: "Buddhist Monastery - Elevation Sketch",
-    link: PROJECT_KEYS.BUDDHIST_MONASTRY,
+    link: PROJECT_KEYS.BUDDHIST_MONASTERY,
   },
   BTM_AXO01: {
     src: BTM_AXO01,
     alt: "Buddhist Monastery - Axonometric View",
-    link: PROJECT_KEYS.BUDDHIST_MONASTRY,
+    link: PROJECT_KEYS.BUDDHIST_MONASTERY,
   },
 
   // Studio 1252
