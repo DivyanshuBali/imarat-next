@@ -10,7 +10,7 @@ const BULLETINS_DATA = [
   {
     id: 0,
     date: "4 APRIL",
-    title: "EARTH BUILDERS ASSOCIATION OF AUSTRALIA",
+    title: "EARTH BUILDER'S ASSOCIATION OF AUSTRALIA",
     link: "https://www.ebaa.asn.au/annual-conference/2025-ebaa-earth-building-conference-agm/",
   },
 ];
