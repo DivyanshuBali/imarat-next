@@ -124,10 +124,9 @@ function RailNav() {
 
           <div>
             <div className={styles.bold}>ARTISANS</div>
-            <div>MANNAT SINGH</div>
-            <div>NEHA DAHIYA</div>
-            <div>KAPILDEV KHANDELWAL</div>
-            <div>GAMANPREET KAUR</div>
+            <div>RASHID KHAN</div>
+            <div>RASHID KHAN</div>
+            <div>VED</div>
           </div>
         </div>
       </motion.div>
