@@ -1,6 +1,8 @@
 // Imarat Earth Center
 import EC01 from "../../../public/assets/EC01.jpg";
 import EC02 from "../../../public/assets/EC02.jpg";
+import EC03 from "../../../public/assets/EC03.jpg";
+import EC04 from "../../../public/assets/EC04.jpg";
 
 // Buddhist Monastry
 import BTM_01 from "../../../public/assets/BTM_01.jpeg";
@@ -42,7 +44,7 @@ export enum PROJECT_KEYS {
   BUDDHIST_MONASTERY = "202308-buddhist-monastery",
   NYAYPURI_HOUSE = "201801-nyaypuri-house",
   VRINDAVAN = "202308-vrindavan",
-  PPS_KINDERGARTEN = "202412-pps-kindergarten",
+  PKS_KINDERGARTEN = "202412-pks-kindergarten",
   // DBH_HOUSE = "202501-dbh-house",
 }
 
@@ -56,6 +58,16 @@ export const PROJECT_IMAGES = {
     {
       src: EC02,
       alt: "Imarat Earth Centre - Interior View",
+      link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+    },
+    {
+      src: EC03,
+      alt: "Imarat Earth Centre",
+      link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+    },
+    {
+      src: EC04,
+      alt: "Imarat Earth Centre",
       link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
     },
   ],
@@ -182,11 +194,11 @@ export const PROJECT_IMAGES = {
       link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
     },
   ],
-  [PROJECT_KEYS.PPS_KINDERGARTEN]: [
+  [PROJECT_KEYS.PKS_KINDERGARTEN]: [
     {
       src: PPS_AXO_01,
       alt: "Kindergarten - Design Render",
-      link: `projects/${PROJECT_KEYS.PPS_KINDERGARTEN}`,
+      link: `projects/${PROJECT_KEYS.PKS_KINDERGARTEN}`,
     },
   ],
   // [PROJECT_KEYS.DBH_HOUSE]: [
@@ -202,30 +214,60 @@ export const PROJECT_DATA = {
   [PROJECT_KEYS.IMARAT_EARTH_CENTRE]: {
     title: "200901 - IMARAT EARTH CENTRE (ICEA)",
     link: PROJECT_KEYS.IMARAT_EARTH_CENTRE,
-    date: "September 2009 - July 2012",
-    type: "Cultural & Education Centre",
-    area: "15000 SQ M",
-    location: "Udaipur, Rajasthan",
-    methodology:
-      "Slow Construction, Artisan Training, Natural Materials, Passive Cooling",
-    materials: "Adobe Blocks, Lime Plaster, Filler Slab, Bamboo, Wood, Stone",
-    description:
-      "The Imarat Earth Centre represents a pioneering effort to revive traditional building techniques while addressing contemporary spatial needs. Located in a peri-urban setting, the centre serves as both a cultural hub and a living laboratory for sustainable construction practices.\n\nThe design incorporates passive cooling strategies, with thick adobe walls providing thermal mass and carefully positioned courtyards enhancing natural ventilation. Local artisans were extensively involved in the construction process, allowing for knowledge transfer and skill development within the community.\n\nThe Centre houses exhibition spaces, workshops, a library, and residential quarters for visiting researchers. Its architecture responds sensitively to the surroundings, minimizing environmental impact while creating spaces that foster learning and cultural exchange.",
+    date: "2009 - ONGOING",
+    type: null,
+    area: "4850 sq yards",
+    location: null,
+    methodology: "Artisan skill training, Earthen Materials, Solar Passive",
+    materials: "Mud Bricks, Bamboo, Sal, Sheesham, Thatch, Chachra",
+    description: `
+      The Earth Centre began in 2009 with a simple dwelling. The challenge was to use mud architecture in the challenging climate of the gangetic plains, to build economically and to demonstrate a vocabulary of natural materials. The result was a 2 bed room dwelling, where the lower mezzanine room is the excavated earth used to manufacture mud bricks. For the project, natural systems such as filler slabs, Wood and Bamboo roofs, stack ventilation, Earth berming, Thatch roofing and in the further stages, lime and oxide flooring, Chachra and bamboo roofing and ferrocement roofing as well. The dwelling was built economically at a total cost of just 26,00,000 INR in 2014. Since then, the site has expanded to include 6 more smaller dwellings to cater to the new institution of 'Imarat Centre for Earth Architecture'.
+    `,
     images: PROJECT_IMAGES[PROJECT_KEYS.IMARAT_EARTH_CENTRE],
   },
   [PROJECT_KEYS.STUDIO_1252]: {
     title: "201701 - STUDIO 1252",
     link: PROJECT_KEYS.STUDIO_1252,
-    date: "January 2017 - August 2018",
+    date: "2018",
     type: "Creative Workspace",
-    area: "4500 SQ M",
-    location: "Delhi, India",
-    methodology: "Adaptive Reuse, Urban Regeneration, Collaborative Design",
-    materials: "Reclaimed Brick, Steel, Glass, Wood, Concrete, Local Stone",
+    area: "150 Sq Yards",
+    location: "Chandigarh, India",
+    methodology: "Retrofit, Renovation, Multi-use Programs",
+    materials: "Bricks, Concrete, Deodar, Pine",
     description:
-      "Studio 1252 transforms an abandoned industrial structure into a vibrant creative workspace, preserving the building's character while adapting it to contemporary needs. The project demonstrates how thoughtful intervention can breathe new life into neglected urban spaces.\n\nThe design approach maintains the original structural framework while introducing flexible interior arrangements that can accommodate various work modes. Large skylights and strategically positioned windows flood the spaces with natural light, while exposed services celebrate the building's industrial heritage.\n\nThe studio houses a mix of private workspaces, collaborative areas, and public-facing galleries. Outdoor courtyards carved from the original building footprint provide natural ventilation and create spaces for informal interaction and events.",
+      "The greatest act of building sustainably means not building at all. In recent years, architects have forayed into the potential of an architecture of retrofit. Studio 1252 was Imarat’s response to this challenge, by attempting to convert an HIG government housing apartment into a mixed use studio cum residence. The studio is now the headquarters for Imarat Architects at Chandigarh. What was before a dark dingy space was converted into an open setting of various walls, some which allow views, others physical access. By inserting slabs at the 7 foot level circulation spaces were given greater definition, making hallway spaces seem higher. Lastly, the finishes of mud plasters with rice husk fibres, exposed bricks and wooden fitting demonstrate the timeless and resilient qualities of natural materials, creating a material vocabulary for clients of the firm.",
     images: PROJECT_IMAGES[PROJECT_KEYS.STUDIO_1252],
   },
+  [PROJECT_KEYS.NYAYPURI_HOUSE]: {
+    title: "201801 - NYAYPURI HOUSE",
+    link: PROJECT_KEYS.NYAYPURI_HOUSE,
+    date: "2018- ONGOING",
+    type: "Residential",
+    area: "1000 sq yards",
+    location: null,
+    methodology: "Contemporising Mud, Hybrid Construction, In-house Furniture",
+    materials: "Mud Bricks, Bricks, Concrete, Lime",
+    description: `The Nyayapuri House was started in 2014 with the vision of making the mud house typology a possibility in the urban regions of the city. Its viability in rural settings in terms of economy and sustainability as well as its resilience to the climate were well demonstrated at the Earth Centre in Kuva Heri. But the urban dweller has needs for lower maintenance, durability and well insulated spaces in a habitat. So this house combines a structure with mud walls and concrete columns as well as brick pillars to create a hybrid system. This minimises carbon footprint and more importantly brings in mud into the foray of standard building materials.
+    \n
+    In a leap of experimentation, the making of this house brought in a team of talented woodworkers, producing furniture and furnishings in house. The experimentations were carried on with several other artisans such as the stone mason for the use of terrazzo and the use of a ferrocement slab over timber joists for spanning. The most liberating visual aspect, though, is the 6 foot cantilevers in heavy sloped concrete slabs supported by mud walls, breaking  the assumptions about mud as a kucca construction.`,
+    images: PROJECT_IMAGES[PROJECT_KEYS.NYAYPURI_HOUSE],
+  },
+  [PROJECT_KEYS.VRINDAVAN]: {
+    title: "202308 - VRINDAVAN",
+    link: PROJECT_KEYS.VRINDAVAN,
+    date: "2023 - ONGOING",
+    type: null,
+    area: "17 Acres",
+    location: null,
+    methodology:
+      "Zero Cement Construction, Lime and Brick, Bamboo Spans, Landscape Infills",
+    materials: "Bricks, Lime, Jaggery, Red Sandstone, Kota Stone",
+    description:
+      "Vrindavan is invisioned as ‘an Indian village’. The visual logic of villages, clustered, huddle around open spaces that account for activities. The challenge of this brief is to accomplish the puritan vision of building naturally- to the level that no cement is brought to the site. The program as well as the construction aim to respond to this. The masterplan is organised to create an atmosphere of a rural setting with densely clustered masses, spaced around open areas. The idea of meandering through and that of the promenade are the two movement patterns which shape its structure as well. This vision has allowed the client to build slowly and due to this slow pace, lime has been favoured with local additives such as jaggery and jackfruit to be used as mortar, replacing cement while kota stone in combination with lime becomes the damp proof course.",
+    images: PROJECT_IMAGES[PROJECT_KEYS.VRINDAVAN],
+  },
+
+  // THESE PROJECTS CONTAIN AI GENERATED DATA
   [PROJECT_KEYS.BUDDHIST_MONASTERY]: {
     title: "202308 - BUDDHIST MONASTERY",
     link: PROJECT_KEYS.BUDDHIST_MONASTERY,
@@ -240,38 +282,9 @@ export const PROJECT_DATA = {
       "The Buddhist Monastery project seeks to create a contemporary interpretation of traditional monastic architecture, balancing ritualistic requirements with functional needs. Set in a serene natural landscape, the complex is designed as a place for meditation, learning, and community gathering.\n\nThe spatial arrangement follows principles of sacred geometry, with meditation halls, living quarters, and communal spaces organized around a central stupa. Covered walkways connect different parts of the complex, providing shelter while framing views of the surrounding landscape.\n\nConstruction employs traditional techniques executed by local craftspeople, ensuring that the building process itself becomes a form of spiritual practice. Natural materials sourced from the region root the project in its context while minimizing environmental impact.",
     images: PROJECT_IMAGES[PROJECT_KEYS.BUDDHIST_MONASTERY],
   },
-  [PROJECT_KEYS.NYAYPURI_HOUSE]: {
-    title: "201801 - NYAYPURI HOUSE",
-    link: PROJECT_KEYS.NYAYPURI_HOUSE,
-    date: "January 2018 - March 2020",
-    type: "Residential",
-    area: "450 SQ M",
-    location: "Jaipur, Rajasthan",
-    methodology:
-      "Climate-Responsive Design, Indoor-Outdoor Living, Craftsmanship",
-    materials:
-      "Rammed Earth, Terracotta, Wood, Local Stone, Brick, Lime Plaster",
-    description:
-      "The Nyaypuri House reimagines domestic living through a careful consideration of climate, context, and cultural patterns. Designed for a multigenerational family, the residence balances privacy with communal interaction through a thoughtful arrangement of spaces.\n\nThe house is organized around a central courtyard that serves as the heart of family life while facilitating natural ventilation. Deep verandas and carefully positioned openings mediate between interior and exterior, providing shade while framing views of the surrounding landscape.\n\nThe material palette draws from the regional vernacular, with rammed earth walls providing thermal mass and terracotta elements adding visual warmth. Crafted details throughout the house speak to a commitment to quality and an appreciation for the handmade.",
-    images: PROJECT_IMAGES[PROJECT_KEYS.NYAYPURI_HOUSE],
-  },
-  [PROJECT_KEYS.VRINDAVAN]: {
-    title: "202308 - VRINDAVAN",
-    link: PROJECT_KEYS.VRINDAVAN,
-    date: "ONGOING",
-    type: "Spiritual Complex",
-    area: "22000 SQ M",
-    location: "Vrindavan, Uttar Pradesh",
-    methodology:
-      "Sacred Architecture, Water Management, Heritage Craft Techniques",
-    materials: "Sandstone, Marble, Lime Mortar, Wood, Brass, Terracotta",
-    description:
-      "The Vrindavan project draws inspiration from traditional temple architecture while responding to contemporary spiritual and communal needs. Located in a historically significant pilgrimage town, the complex serves as a place for worship, cultural activities, and community service.\n\nThe design is structured around a series of courtyards that create a gradual transition from public to sacred spaces. Water features prominently throughout the complex, referencing the region's historical water management systems while creating a sense of tranquility and reflection.\n\nConstruction employs heritage craft techniques executed by master artisans, many of whom come from families that have practiced these skills for generations. Intricate stone carving, wooden joinery, and metalwork demonstrate a commitment to preserving traditional knowledge while creating spaces that resonate with contemporary users.",
-    images: PROJECT_IMAGES[PROJECT_KEYS.VRINDAVAN],
-  },
-  [PROJECT_KEYS.PPS_KINDERGARTEN]: {
-    title: "202412 - PPS KINDERGARTEN",
-    link: PROJECT_KEYS.PPS_KINDERGARTEN,
+  [PROJECT_KEYS.PKS_KINDERGARTEN]: {
+    title: "202412 - PKS KINDERGARTEN",
+    link: PROJECT_KEYS.PKS_KINDERGARTEN,
     date: "ONGOING",
     type: "Educational",
     area: "3200 SQ M",
@@ -281,7 +294,7 @@ export const PROJECT_DATA = {
       "Compressed Earth Blocks, Bamboo, Recycled Wood, Natural Finishes, Local Stone, Clay Tiles",
     description:
       "The PKS Kindergarten project reimagines early childhood education spaces through a design that stimulates curiosity, supports development, and connects children with nature. Scale, safety, and sensory experience guide all design decisions, creating environments that encourage exploration and wonder.\n\nThe kindergarten is organized as a cluster of small learning pavilions arranged around outdoor play areas and gardens. Each pavilion houses different learning activities, while covered walkways and gathering spaces facilitate movement and social interaction. Low windows, tactile surfaces, and varying spatial qualities respond to children's perceptions and behaviors.\n\nConstruction utilizes non-toxic, natural materials that age gracefully and create healthy indoor environments. The building itself serves as a teaching tool, with visible systems demonstrating principles of sustainability and natural processes to young learners.",
-    images: PROJECT_IMAGES[PROJECT_KEYS.PPS_KINDERGARTEN],
+    images: PROJECT_IMAGES[PROJECT_KEYS.PKS_KINDERGARTEN],
   },
   // [PROJECT_KEYS.DBH_HOUSE]: {
   //   title: "202501 - DBH HOUSE",
@@ -310,6 +323,16 @@ export const ALL_PROJECT_IMAGES = {
   EC02: {
     src: EC02,
     alt: "Imarat Earth Centre - Interior View",
+    link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+  },
+  EC03: {
+    src: EC03,
+    alt: "Imarat Earth Centre",
+    link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+  },
+  EC04: {
+    src: EC04,
+    alt: "Imarat Earth Centre",
     link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
   },
 
@@ -430,7 +453,7 @@ export const ALL_PROJECT_IMAGES = {
   PPS_AXO_01: {
     src: PPS_AXO_01,
     alt: "Kindergarten - Design Render",
-    link: `projects/${PROJECT_KEYS.PPS_KINDERGARTEN}`,
+    link: `projects/${PROJECT_KEYS.PKS_KINDERGARTEN}`,
   },
 };
 
@@ -439,6 +462,8 @@ export {
   // Earth Centre
   EC01,
   EC02,
+  EC03,
+  EC04,
 
   // Buddhist Monastry
   BTM_SKETCH01,

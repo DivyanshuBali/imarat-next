@@ -5,6 +5,7 @@ import ImagesLayoutB from "./_components/LandingLayouts/ImagesLayoutB";
 import ImagesLayoutC from "./_components/LandingLayouts/ImagesLayoutC";
 import ImagesLayoutD1 from "./_components/LandingLayouts/ImagesLayoutD1";
 import ImagesLayoutD2 from "./_components/LandingLayouts/ImagesLayoutD2";
+import ImagesLayoutF from "./_components/LandingLayouts/ImagesLayoutF";
 
 import styles from "./page.module.css";
 
@@ -75,6 +76,35 @@ export default function Home() {
               alt: ALL_PROJECT_IMAGES["IMO_01"].alt,
               link: ALL_PROJECT_IMAGES["IMO_01"].link,
             }}
+          />
+          <ImagesLayoutF
+            images={[
+              {
+                src: ALL_PROJECT_IMAGES["VVC_SKETCH03"].src,
+                alt: ALL_PROJECT_IMAGES["VVC_SKETCH03"].alt,
+                link: ALL_PROJECT_IMAGES["VVC_SKETCH03"].link,
+              },
+              {
+                src: ALL_PROJECT_IMAGES["VVC01"].src,
+                alt: ALL_PROJECT_IMAGES["VVC01"].alt,
+                link: ALL_PROJECT_IMAGES["VVC01"].link,
+              },
+              {
+                src: ALL_PROJECT_IMAGES["EC04"].src,
+                alt: ALL_PROJECT_IMAGES["EC04"].alt,
+                link: ALL_PROJECT_IMAGES["EC04"].link,
+              },
+              {
+                src: ALL_PROJECT_IMAGES["PPS_AXO_01"].src,
+                alt: ALL_PROJECT_IMAGES["PPS_AXO_01"].alt,
+                link: ALL_PROJECT_IMAGES["PPS_AXO_01"].link,
+              },
+              {
+                src: ALL_PROJECT_IMAGES["BTM_AXO01"].src,
+                alt: ALL_PROJECT_IMAGES["BTM_AXO01"].alt,
+                link: ALL_PROJECT_IMAGES["BTM_AXO01"].link,
+              },
+            ]}
           />
         </div>
 

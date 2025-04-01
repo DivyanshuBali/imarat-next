@@ -28,11 +28,3 @@ function ImagesLayoutE(props: ImagesLayoutEProps) {
 }
 
 export default ImagesLayoutE;
-
-{
-  /* {images[2] && <LandingImage src={images[2].src} alt={images[2].alt} />} */
-}
-
-{
-  /* {images[1] && <LandingImage src={images[1].src} alt={images[1].alt} />} */
-}

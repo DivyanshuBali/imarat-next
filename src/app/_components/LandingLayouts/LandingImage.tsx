@@ -12,12 +12,13 @@ function LandingImage(props: Props) {
 
   return (
     <div className={styles.imageContainer}>
-      <Link href={link ?? ""}>
+      <Link href={link ?? ""} style={{ position: "relative" }}>
         <Image
           {...restProps}
           fill
           className={`${styles.image} ${className || ""}`}
           alt={alt ?? ""}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </Link>
     </div>
