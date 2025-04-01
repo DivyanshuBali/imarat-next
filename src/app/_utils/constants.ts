@@ -2,7 +2,7 @@
 import EC01 from "../../../public/assets/EC01.jpg";
 import EC02 from "../../../public/assets/EC02.jpg";
 import EC03 from "../../../public/assets/EC03.jpg";
-import EC04 from "../../../public/assets/EC04.jpg";
+import EC04 from "../../../public/assets/EC04.jpeg";
 
 // Buddhist Monastry
 import BTM_01 from "../../../public/assets/BTM_01.jpeg";
