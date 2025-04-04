@@ -266,20 +266,18 @@ export const PROJECT_DATA = {
       "Vrindavan is invisioned as ‘an Indian village’. The visual logic of villages, clustered, huddle around open spaces that account for activities. The challenge of this brief is to accomplish the puritan vision of building naturally- to the level that no cement is brought to the site. The program as well as the construction aim to respond to this. The masterplan is organised to create an atmosphere of a rural setting with densely clustered masses, spaced around open areas. The idea of meandering through and that of the promenade are the two movement patterns which shape its structure as well. This vision has allowed the client to build slowly and due to this slow pace, lime has been favoured with local additives such as jaggery and jackfruit to be used as mortar, replacing cement while kota stone in combination with lime becomes the damp proof course.",
     images: PROJECT_IMAGES[PROJECT_KEYS.VRINDAVAN],
   },
-
-  // THESE PROJECTS CONTAIN AI GENERATED DATA
   [PROJECT_KEYS.BUDDHIST_MONASTERY]: {
     title: "202308 - BUDDHIST MONASTERY",
     link: PROJECT_KEYS.BUDDHIST_MONASTERY,
-    date: "ONGOING",
-    type: "Religious & Contemplative Space",
-    area: "8500 SQ M",
-    location: "Bodh Gaya, Bihar",
+    date: "2023, unbuilt",
+    type: "",
+    area: "1500 Sq Yards",
+    location: "",
     methodology:
-      "Traditional Construction Techniques, Sacred Geometry, Community Involvement",
-    materials: "Lime Mortar, Local Stone, Timber, Bamboo, Clay Tiles, Thatch",
+      "Monolithic Domed Construction, Mud walls, Landscape rejuvenation",
+    materials: "Mud Bricks, Timber, RCC",
     description:
-      "The Buddhist Monastery project seeks to create a contemporary interpretation of traditional monastic architecture, balancing ritualistic requirements with functional needs. Set in a serene natural landscape, the complex is designed as a place for meditation, learning, and community gathering.\n\nThe spatial arrangement follows principles of sacred geometry, with meditation halls, living quarters, and communal spaces organized around a central stupa. Covered walkways connect different parts of the complex, providing shelter while framing views of the surrounding landscape.\n\nConstruction employs traditional techniques executed by local craftspeople, ensuring that the building process itself becomes a form of spiritual practice. Natural materials sourced from the region root the project in its context while minimizing environmental impact.",
+      "Imarat was chosen for designing the first centre for Thai Forest Buddhism, with the venerable Ajahn Jivako as the representative of the sect. The first vision is sketched to the ideals of monastic living, the path to asceticism, and the elements of the architecture that establish its identity. This vision is worked towards refinement into the section and the general plan and onwards until the detailed wall section itself is resolved. The elements of the monastic life, its rituals guide aspects of the design, each activity is granted circular walls while the service spaces are rectilinear. A simpler design by a different agency was ultimately procured for a temporary shelter for the monks.",
     images: PROJECT_IMAGES[PROJECT_KEYS.BUDDHIST_MONASTERY],
   },
   // [PROJECT_KEYS.PKS_KINDERGARTEN]: {
