@@ -118,14 +118,13 @@ function RailNav() {
             <div className={styles.bold}>ARCHITECTS</div>
             <div>MANNAT SINGH</div>
             <div>NEHA DAHIYA</div>
-            <div>KAPILDEV KHANDELWAL</div>
             <div>GAMANPREET KAUR</div>
           </div>
 
           <div>
             <div className={styles.bold}>ARTISANS</div>
             <div>RASHID KHAN</div>
-            <div>RASHID KHAN</div>
+            <div>RASHID KHAN Jr.</div>
             <div>VED</div>
           </div>
         </div>
@@ -197,6 +196,7 @@ function RailNav() {
     <div className={styles.railNavContainer}>
       <div className={styles.railNav}>
         <motion.section
+          ref={ref}
           animate={{ width: selectedRailItem ? "380px" : "0px" }}
           className={`${styles.selectedNavContent} ${styles.hiddenScrollbar}`}
         >
@@ -233,7 +233,7 @@ function RailNav() {
 
         <nav className={styles.navItemContainer}>
           {Object.values(RailItems).map((item) => (
-            <button
+            <motion.button
               key={item}
               className={styles.navItem}
               onClick={() => handleRailItemClick(item as RailItems)}
@@ -248,7 +248,7 @@ function RailNav() {
               tabIndex={0}
             >
               {item}
-            </button>
+            </motion.button>
           ))}
         </nav>
       </div>
