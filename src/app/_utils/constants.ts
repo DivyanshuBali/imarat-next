@@ -2,7 +2,6 @@
 import EC01 from "../../../public/assets/EC01.jpg";
 import EC02 from "../../../public/assets/EC02.jpg";
 import EC03 from "../../../public/assets/EC03.jpg";
-import EC04 from "../../../public/assets/EC04.jpeg";
 
 // Buddhist Monastry
 import BTM_01 from "../../../public/assets/BTM_01.jpeg";
@@ -27,6 +26,7 @@ import NYH01 from "../../../public/assets/NYH01.jpg";
 import NYH02 from "../../../public/assets/NYH02.jpg";
 import NYH03 from "../../../public/assets/NYH03.jpeg";
 import NYH04 from "../../../public/assets/NYH04.jpg";
+import NYH05 from "../../../public/assets/NYH05.jpeg";
 import NYH_SKETCH01 from "../../../public/assets/NYH_SKETCH01.jpeg";
 
 // Vrindavan
@@ -62,11 +62,6 @@ export const PROJECT_IMAGES = {
     },
     {
       src: EC03,
-      alt: "Imarat Earth Centre",
-      link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
-    },
-    {
-      src: EC04,
       alt: "Imarat Earth Centre",
       link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
     },
@@ -169,6 +164,11 @@ export const PROJECT_IMAGES = {
     {
       src: NYH04,
       alt: "Nyaypuri House - Landscape View",
+      link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
+    },
+    {
+      src: NYH05,
+      alt: "Nyaypuri House",
       link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
     },
   ],
@@ -330,11 +330,6 @@ export const ALL_PROJECT_IMAGES = {
     alt: "Imarat Earth Centre",
     link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
   },
-  EC04: {
-    src: EC04,
-    alt: "Imarat Earth Centre",
-    link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
-  },
 
   // Buddhist Monastery
   BTM_SKETCH01: {
@@ -426,6 +421,11 @@ export const ALL_PROJECT_IMAGES = {
     alt: "Nyaypuri House - Landscape View",
     link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
   },
+  NYH05: {
+    src: NYH05,
+    alt: "Nyaypuri House",
+    link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
+  },
 
   // Vrindavan
   VVC01: {
@@ -463,7 +463,6 @@ export {
   EC01,
   EC02,
   EC03,
-  EC04,
 
   // Buddhist Monastry
   BTM_SKETCH01,
@@ -486,6 +485,7 @@ export {
   NYH02,
   NYH03,
   NYH04,
+  NYH05,
   NYH_SKETCH01,
 
   // Vrindavan
