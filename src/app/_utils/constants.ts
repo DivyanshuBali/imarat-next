@@ -44,7 +44,7 @@ export enum PROJECT_KEYS {
   BUDDHIST_MONASTERY = "202308-buddhist-monastery",
   NYAYPURI_HOUSE = "201801-nyaypuri-house",
   VRINDAVAN = "202308-vrindavan",
-  PKS_KINDERGARTEN = "202412-pks-kindergarten",
+  // PKS_KINDERGARTEN = "202412-pks-kindergarten",
   // DBH_HOUSE = "202501-dbh-house",
 }
 
@@ -194,13 +194,13 @@ export const PROJECT_IMAGES = {
       link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
     },
   ],
-  [PROJECT_KEYS.PKS_KINDERGARTEN]: [
-    {
-      src: PPS_AXO_01,
-      alt: "Kindergarten - Design Render",
-      link: `projects/${PROJECT_KEYS.PKS_KINDERGARTEN}`,
-    },
-  ],
+  // [PROJECT_KEYS.PKS_KINDERGARTEN]: [
+  //   {
+  //     src: PPS_AXO_01,
+  //     alt: "Kindergarten - Design Render",
+  //     link: `projects/${PROJECT_KEYS.PKS_KINDERGARTEN}`,
+  //   },
+  // ],
   // [PROJECT_KEYS.DBH_HOUSE]: [
   //   {
   //     src: null, // Placeholder for future images
@@ -282,20 +282,20 @@ export const PROJECT_DATA = {
       "The Buddhist Monastery project seeks to create a contemporary interpretation of traditional monastic architecture, balancing ritualistic requirements with functional needs. Set in a serene natural landscape, the complex is designed as a place for meditation, learning, and community gathering.\n\nThe spatial arrangement follows principles of sacred geometry, with meditation halls, living quarters, and communal spaces organized around a central stupa. Covered walkways connect different parts of the complex, providing shelter while framing views of the surrounding landscape.\n\nConstruction employs traditional techniques executed by local craftspeople, ensuring that the building process itself becomes a form of spiritual practice. Natural materials sourced from the region root the project in its context while minimizing environmental impact.",
     images: PROJECT_IMAGES[PROJECT_KEYS.BUDDHIST_MONASTERY],
   },
-  [PROJECT_KEYS.PKS_KINDERGARTEN]: {
-    title: "202412 - PKS KINDERGARTEN",
-    link: PROJECT_KEYS.PKS_KINDERGARTEN,
-    date: "ONGOING",
-    type: "Educational",
-    area: "3200 SQ M",
-    location: "Bengaluru, Karnataka",
-    methodology: "Child-centered Design, Playful Learning, Safe Materials",
-    materials:
-      "Compressed Earth Blocks, Bamboo, Recycled Wood, Natural Finishes, Local Stone, Clay Tiles",
-    description:
-      "The PKS Kindergarten project reimagines early childhood education spaces through a design that stimulates curiosity, supports development, and connects children with nature. Scale, safety, and sensory experience guide all design decisions, creating environments that encourage exploration and wonder.\n\nThe kindergarten is organized as a cluster of small learning pavilions arranged around outdoor play areas and gardens. Each pavilion houses different learning activities, while covered walkways and gathering spaces facilitate movement and social interaction. Low windows, tactile surfaces, and varying spatial qualities respond to children's perceptions and behaviors.\n\nConstruction utilizes non-toxic, natural materials that age gracefully and create healthy indoor environments. The building itself serves as a teaching tool, with visible systems demonstrating principles of sustainability and natural processes to young learners.",
-    images: PROJECT_IMAGES[PROJECT_KEYS.PKS_KINDERGARTEN],
-  },
+  // [PROJECT_KEYS.PKS_KINDERGARTEN]: {
+  //   title: "202412 - PKS KINDERGARTEN",
+  //   link: PROJECT_KEYS.PKS_KINDERGARTEN,
+  //   date: "ONGOING",
+  //   type: "Educational",
+  //   area: "3200 SQ M",
+  //   location: "Bengaluru, Karnataka",
+  //   methodology: "Child-centered Design, Playful Learning, Safe Materials",
+  //   materials:
+  //     "Compressed Earth Blocks, Bamboo, Recycled Wood, Natural Finishes, Local Stone, Clay Tiles",
+  //   description:
+  //     "The PKS Kindergarten project reimagines early childhood education spaces through a design that stimulates curiosity, supports development, and connects children with nature. Scale, safety, and sensory experience guide all design decisions, creating environments that encourage exploration and wonder.\n\nThe kindergarten is organized as a cluster of small learning pavilions arranged around outdoor play areas and gardens. Each pavilion houses different learning activities, while covered walkways and gathering spaces facilitate movement and social interaction. Low windows, tactile surfaces, and varying spatial qualities respond to children's perceptions and behaviors.\n\nConstruction utilizes non-toxic, natural materials that age gracefully and create healthy indoor environments. The building itself serves as a teaching tool, with visible systems demonstrating principles of sustainability and natural processes to young learners.",
+  //   images: PROJECT_IMAGES[PROJECT_KEYS.PKS_KINDERGARTEN],
+  // },
   // [PROJECT_KEYS.DBH_HOUSE]: {
   //   title: "202501 - DBH HOUSE",
   //   link: PROJECT_KEYS.DBH_HOUSE,
@@ -453,7 +453,7 @@ export const ALL_PROJECT_IMAGES = {
   PPS_AXO_01: {
     src: PPS_AXO_01,
     alt: "Kindergarten - Design Render",
-    link: `projects/${PROJECT_KEYS.PKS_KINDERGARTEN}`,
+    link: "",
   },
 };
 
