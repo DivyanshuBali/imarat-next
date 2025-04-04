@@ -196,7 +196,6 @@ function RailNav() {
     <div className={styles.railNavContainer}>
       <div className={styles.railNav}>
         <motion.section
-          ref={ref}
           animate={{ width: selectedRailItem ? "380px" : "0px" }}
           className={`${styles.selectedNavContent} ${styles.hiddenScrollbar}`}
         >
