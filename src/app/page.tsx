@@ -90,9 +90,9 @@ export default function Home() {
                 link: ALL_PROJECT_IMAGES["VVC01"].link,
               },
               {
-                src: ALL_PROJECT_IMAGES["EC04"].src,
-                alt: ALL_PROJECT_IMAGES["EC04"].alt,
-                link: ALL_PROJECT_IMAGES["EC04"].link,
+                src: ALL_PROJECT_IMAGES["NYH05"].src,
+                alt: ALL_PROJECT_IMAGES["NYH05"].alt,
+                link: ALL_PROJECT_IMAGES["NYH05"].link,
               },
               {
                 src: ALL_PROJECT_IMAGES["PPS_AXO_01"].src,
