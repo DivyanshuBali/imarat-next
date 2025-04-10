@@ -62,7 +62,7 @@ export default function ImageCarousel(props: Props) {
         </AnimatePresence>
         <button
           className={styles.nextArrowContainer}
-          onClick={() => handleSetActiveImage("prev")}
+          onClick={() => handleSetActiveImage("next")}
         ></button>
       </div>
 

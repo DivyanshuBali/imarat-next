@@ -1,6 +1,13 @@
 // Imarat Earth Center
-import EC01 from "../../../public/assets/EC01.jpg";
-import EC02 from "../../../public/assets/EC02.jpg";
+import IEC_01 from "../../../public/assets/IEC_01.jpg";
+import IEC_02 from "../../../public/assets/IEC_02.jpg";
+import IEC_03 from "../../../public/assets/IEC_03.jpg";
+import IEC_04 from "../../../public/assets/IEC_04.jpg";
+import IEC_05 from "../../../public/assets/IEC_05.jpg";
+import IEC_06 from "../../../public/assets/IEC_06.jpg";
+import IEC_07 from "../../../public/assets/IEC_07.jpg";
+import IEC_08 from "../../../public/assets/IEC_08.jpg";
+import IEC_09 from "../../../public/assets/IEC_09.jpg";
 
 // Buddhist Monastry
 import BTM_01 from "../../../public/assets/BTM_01.jpeg";
@@ -46,13 +53,48 @@ export const PROJECT_IMAGES = {
   [PROJECT_KEYS.IMARAT_EARTH_CENTRE]: {
     pictures: [
       {
-        src: EC01,
-        alt: "Imarat Earth Centre - Main View",
+        src: IEC_01,
+        alt: "Imarat Earth Centre",
         link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
       },
       {
-        src: EC02,
-        alt: "Imarat Earth Centre - Interior View",
+        src: IEC_02,
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        src: IEC_03,
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        src: IEC_04,
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        src: IEC_05,
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        src: IEC_06,
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        src: IEC_07,
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        src: IEC_08,
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        src: IEC_09,
+        alt: "Imarat Earth Centre",
         link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
       },
     ],
@@ -286,14 +328,49 @@ export const PROJECT_DATA = {
 // Export all images with metadata for consumption by other components
 export const ALL_PROJECT_IMAGES = {
   // Imarat Earth Centre
-  EC01: {
-    src: EC01,
-    alt: "Imarat Earth Centre - Main View",
+  IEC_01: {
+    src: IEC_01,
+    alt: "Imarat Earth Centre",
     link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
   },
-  EC02: {
-    src: EC02,
-    alt: "Imarat Earth Centre - Interior View",
+  IEC_02: {
+    src: IEC_02,
+    alt: "Imarat Earth Centre",
+    link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+  },
+  IEC_03: {
+    src: IEC_03,
+    alt: "Imarat Earth Centre",
+    link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+  },
+  IEC_04: {
+    src: IEC_04,
+    alt: "Imarat Earth Centre",
+    link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+  },
+  IEC_05: {
+    src: IEC_05,
+    alt: "Imarat Earth Centre",
+    link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+  },
+  IEC_06: {
+    src: IEC_06,
+    alt: "Imarat Earth Centre",
+    link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+  },
+  IEC_07: {
+    src: IEC_07,
+    alt: "Imarat Earth Centre",
+    link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+  },
+  IEC_08: {
+    src: IEC_08,
+    alt: "Imarat Earth Centre",
+    link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+  },
+  IEC_09: {
+    src: IEC_09,
+    alt: "Imarat Earth Centre",
     link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
   },
 
@@ -419,8 +496,15 @@ export const ALL_PROJECT_IMAGES = {
 // Also export individual image references for direct access
 export {
   // Earth Centre
-  EC01,
-  EC02,
+  IEC_01,
+  IEC_02,
+  IEC_03,
+  IEC_04,
+  IEC_05,
+  IEC_06,
+  IEC_07,
+  IEC_08,
+  IEC_09,
 
   // Buddhist Monastry
   BTM_SKETCH01,
