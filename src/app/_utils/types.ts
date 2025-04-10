@@ -5,7 +5,7 @@ import { PROJECT_KEYS } from "./constants";
 export type ProjectImage = {
   src: StaticImageData | null;
   alt: string;
-  link: PROJECT_KEYS;
+  link: string;
 };
 
 export type ProjectData = {

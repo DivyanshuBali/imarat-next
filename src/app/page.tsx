@@ -19,14 +19,14 @@ export default function Home() {
           <ImagesLayoutA
             images={[
               {
-                src: ALL_PROJECT_IMAGES["EC01"].src,
-                alt: ALL_PROJECT_IMAGES["EC01"].alt,
-                link: ALL_PROJECT_IMAGES["EC01"].link,
+                src: ALL_PROJECT_IMAGES["IEC_01"].src,
+                alt: ALL_PROJECT_IMAGES["IEC_01"].alt,
+                link: ALL_PROJECT_IMAGES["IEC_01"].link,
               },
               {
-                src: ALL_PROJECT_IMAGES["EC02"].src,
-                alt: ALL_PROJECT_IMAGES["EC02"].alt,
-                link: ALL_PROJECT_IMAGES["EC01"].link,
+                src: ALL_PROJECT_IMAGES["IEC_02"].src,
+                alt: ALL_PROJECT_IMAGES["IEC_02"].alt,
+                link: ALL_PROJECT_IMAGES["IEC_01"].link,
               },
             ]}
           />
@@ -54,9 +54,9 @@ export default function Home() {
           <ImagesLayoutC
             images={[
               {
-                src: ALL_PROJECT_IMAGES["NYH01"].src,
-                alt: ALL_PROJECT_IMAGES["NYH01"].alt,
-                link: ALL_PROJECT_IMAGES["NYH01"].link,
+                src: ALL_PROJECT_IMAGES["NYH03"].src,
+                alt: ALL_PROJECT_IMAGES["NYH03"].alt,
+                link: ALL_PROJECT_IMAGES["NYH03"].link,
               },
               {
                 src: ALL_PROJECT_IMAGES["NYH02"].src,
