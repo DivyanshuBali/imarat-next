@@ -4,7 +4,7 @@ import stylesLocal from "./page.module.css";
 import * as motion from "motion/react-client";
 import { PROJECT_DATA, PROJECT_KEYS } from "@/app/_utils/constants";
 import { notFound } from "next/navigation";
-import Image from "next/image";
+import ImageCarousel from "../_components/ImageCarousel/ImageCarousel";
 
 // This becomes a Server Component by default
 export default async function ProjectPage({
@@ -25,23 +25,11 @@ export default async function ProjectPage({
       <div className={styles.column1}>
         <div className={stylesLocal.projectContainer}>
           {/* IMAGES COLUMN */}
+
           <div className={stylesLocal.mainColumn}>
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, ease: "easeOut" }}
-            >
-              {projectData.images &&
-                projectData.images.map((image, index) => (
-                  <div key={index} className={stylesLocal.imageContainer}>
-                    <Image
-                      src={image.src || ""}
-                      alt={image.alt}
-                      className={stylesLocal.projectImage}
-                    />
-                  </div>
-                ))}
-            </motion.div>
+            <ImageCarousel images={projectData.images.pictures} />
+            <ImageCarousel images={projectData.images.sketches} />
+            <ImageCarousel images={projectData.images.drawings} />
           </div>
 
           {/* CONTENT COLUMN */}

@@ -1,7 +1,6 @@
 // Imarat Earth Center
 import EC01 from "../../../public/assets/EC01.jpg";
 import EC02 from "../../../public/assets/EC02.jpg";
-import EC03 from "../../../public/assets/EC03.jpg";
 
 // Buddhist Monastry
 import BTM_01 from "../../../public/assets/BTM_01.jpeg";
@@ -22,9 +21,9 @@ import IMO_AXO02 from "../../../public/assets/IMO_AXO02.png";
 import IMO_DRAWING01 from "../../../public/assets/IMO_DRAWING01.png";
 
 // Nyaypuri House
-import NYH01 from "../../../public/assets/NYH01.jpg";
+import NYH01 from "../../../public/assets/NYH01.jpeg";
 import NYH02 from "../../../public/assets/NYH02.jpg";
-import NYH03 from "../../../public/assets/NYH03.jpeg";
+import NYH03 from "../../../public/assets/NYH03.jpg";
 import NYH04 from "../../../public/assets/NYH04.jpg";
 import NYH05 from "../../../public/assets/NYH05.jpeg";
 import NYH_SKETCH01 from "../../../public/assets/NYH_SKETCH01.jpeg";
@@ -33,10 +32,7 @@ import NYH_SKETCH01 from "../../../public/assets/NYH_SKETCH01.jpeg";
 import VVC01 from "../../../public/assets/VVC01.jpeg";
 import VVC_SKETCH01 from "../../../public/assets/VVC_SKETCH01.png";
 import VVC_SKETCH02 from "../../../public/assets/VVC_SKETCH02.jpg";
-import VVC_SKETCH03 from "../../../public/assets/VVC_SKETCH03.jpg";
-
-// Kindergarten
-import PPS_AXO_01 from "../../../public/assets/PPS_AXO_01.png";
+import VVC_DRAWING01 from "../../../public/assets/VVC_DRAWING01.jpg";
 
 export enum PROJECT_KEYS {
   IMARAT_EARTH_CENTRE = "200901-imarat-earth-centre-icea",
@@ -44,170 +40,175 @@ export enum PROJECT_KEYS {
   BUDDHIST_MONASTERY = "202308-buddhist-monastery",
   NYAYPURI_HOUSE = "201801-nyaypuri-house",
   VRINDAVAN = "202308-vrindavan",
-  // PKS_KINDERGARTEN = "202412-pks-kindergarten",
-  // DBH_HOUSE = "202501-dbh-house",
 }
 
 export const PROJECT_IMAGES = {
-  [PROJECT_KEYS.IMARAT_EARTH_CENTRE]: [
-    {
-      src: EC01,
-      alt: "Imarat Earth Centre - Main View",
-      link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
-    },
-    {
-      src: EC02,
-      alt: "Imarat Earth Centre - Interior View",
-      link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
-    },
-    {
-      src: EC03,
-      alt: "Imarat Earth Centre",
-      link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
-    },
-  ],
-  [PROJECT_KEYS.STUDIO_1252]: [
-    {
-      src: IMO_01,
-      alt: "Studio 1252 - Exterior View",
-      link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
-    },
-    {
-      src: IMO_AXO01,
-      alt: "Studio 1252 - Axonometric View 1",
-      link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
-    },
-    {
-      src: IMO_02,
-      alt: "Studio 1252 - Workspace Interior",
-      link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
-    },
-    {
-      src: IMO_03,
-      alt: "Studio 1252 - View 3",
-      link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
-    },
-    {
-      src: IMO_04,
-      alt: "Studio 1252 - View 4",
-      link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
-    },
-    {
-      src: IMO_05,
-      alt: "Studio 1252 - View 5",
-      link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
-    },
-    {
-      src: IMO_06,
-      alt: "Studio 1252 - View 6",
-      link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
-    },
-    {
-      src: IMO_AXO02,
-      alt: "Studio 1252 - Axonometric View 2",
-      link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
-    },
-    {
-      src: IMO_DRAWING01,
-      alt: "Studio 1252 - Technical Drawing",
-      link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
-    },
-  ],
-  [PROJECT_KEYS.BUDDHIST_MONASTERY]: [
-    {
-      src: BTM_SKETCH01,
-      alt: "Buddhist Monastery - Concept Sketch",
-      link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
-    },
-    {
-      src: BTM_SKETCH02,
-      alt: "Buddhist Monastery - Elevation Sketch",
-      link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
-    },
-    {
-      src: BTM_AXO01,
-      alt: "Buddhist Monastery - Axonometric View",
-      link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
-    },
-    {
-      src: BTM_01,
-      alt: "Buddhist Monastery - Draft Board",
-      link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
-    },
-    {
-      src: BTM_SKETCH03,
-      alt: "Buddhist Monastery - Sketch 3",
-      link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
-    },
-  ],
-  [PROJECT_KEYS.NYAYPURI_HOUSE]: [
-    {
-      src: NYH03,
-      alt: "Nyaypuri House - Interior View",
-      link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
-    },
-    {
-      src: NYH_SKETCH01,
-      alt: "Nyaypuri House - Design Sketch",
-      link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
-    },
-    {
-      src: NYH01,
-      alt: "Nyaypuri House - Exterior View",
-      link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
-    },
-    {
-      src: NYH02,
-      alt: "Nyaypuri House - Courtyard View",
-      link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
-    },
-    {
-      src: NYH04,
-      alt: "Nyaypuri House - Landscape View",
-      link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
-    },
-    {
-      src: NYH05,
-      alt: "Nyaypuri House",
-      link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
-    },
-  ],
-  [PROJECT_KEYS.VRINDAVAN]: [
-    {
-      src: VVC_SKETCH03,
-      alt: "Vrindavan Project - Design Sketch 3",
-      link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
-    },
-    {
-      src: VVC01,
-      alt: "Vrindavan Project - Concept View",
-      link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
-    },
-    {
-      src: VVC_SKETCH01,
-      alt: "Vrindavan Project - Design Sketch 1",
-      link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
-    },
-    {
-      src: VVC_SKETCH02,
-      alt: "Vrindavan Project - Design Sketch 2",
-      link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
-    },
-  ],
-  // [PROJECT_KEYS.PKS_KINDERGARTEN]: [
-  //   {
-  //     src: PPS_AXO_01,
-  //     alt: "Kindergarten - Design Render",
-  //     link: `projects/${PROJECT_KEYS.PKS_KINDERGARTEN}`,
-  //   },
-  // ],
-  // [PROJECT_KEYS.DBH_HOUSE]: [
-  //   {
-  //     src: null, // Placeholder for future images
-  //     alt: "DBH House - Concept Sketch",
-  //     link: `projects/${PROJECT_KEYS.DBH_HOUSE}`,
-  //   },
-  // ],
+  [PROJECT_KEYS.IMARAT_EARTH_CENTRE]: {
+    pictures: [
+      {
+        src: EC01,
+        alt: "Imarat Earth Centre - Main View",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        src: EC02,
+        alt: "Imarat Earth Centre - Interior View",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+    ],
+    sketches: [],
+    drawings: [],
+  },
+  [PROJECT_KEYS.STUDIO_1252]: {
+    pictures: [
+      {
+        src: IMO_01,
+        alt: "Studio 1252 - Exterior View",
+        link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
+      },
+      {
+        src: IMO_02,
+        alt: "Studio 1252 - Workspace Interior",
+        link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
+      },
+      {
+        src: IMO_03,
+        alt: "Studio 1252 - View 3",
+        link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
+      },
+      {
+        src: IMO_04,
+        alt: "Studio 1252 - View 4",
+        link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
+      },
+      {
+        src: IMO_05,
+        alt: "Studio 1252 - View 5",
+        link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
+      },
+      {
+        src: IMO_06,
+        alt: "Studio 1252 - View 6",
+        link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
+      },
+    ],
+    sketches: [],
+    drawings: [
+      {
+        src: IMO_AXO02,
+        alt: "Studio 1252 - Axonometric View 2",
+        link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
+      },
+      {
+        src: IMO_DRAWING01,
+        alt: "Studio 1252 - Technical Drawing",
+        link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
+      },
+      {
+        src: IMO_AXO01,
+        alt: "Studio 1252 - Axonometric View 1",
+        link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
+      },
+    ],
+  },
+  [PROJECT_KEYS.BUDDHIST_MONASTERY]: {
+    pictures: [
+      {
+        src: BTM_01,
+        alt: "Buddhist Monastery - Draft Board",
+        link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
+      },
+    ],
+    sketches: [
+      {
+        src: BTM_SKETCH01,
+        alt: "Buddhist Monastery - Concept Sketch",
+        link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
+      },
+      {
+        src: BTM_SKETCH02,
+        alt: "Buddhist Monastery - Elevation Sketch",
+        link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
+      },
+      {
+        src: BTM_SKETCH03,
+        alt: "Buddhist Monastery - Sketch 3",
+        link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
+      },
+    ],
+    drawings: [
+      {
+        src: BTM_AXO01,
+        alt: "Buddhist Monastery - Axonometric View",
+        link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
+      },
+    ],
+  },
+  [PROJECT_KEYS.NYAYPURI_HOUSE]: {
+    pictures: [
+      {
+        src: NYH01,
+        alt: "Nyaypuri House - Exterior View",
+        link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
+      },
+      {
+        src: NYH02,
+        alt: "Nyaypuri House - Courtyard View",
+        link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
+      },
+      {
+        src: NYH03,
+        alt: "Nyaypuri House - Interior View",
+        link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
+      },
+      {
+        src: NYH04,
+        alt: "Nyaypuri House - Landscape View",
+        link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
+      },
+      {
+        src: NYH05,
+        alt: "Nyaypuri House",
+        link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
+      },
+    ],
+    sketches: [
+      {
+        src: NYH_SKETCH01,
+        alt: "Nyaypuri House - Design Sketch",
+        link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
+      },
+    ],
+    drawings: [],
+  },
+  [PROJECT_KEYS.VRINDAVAN]: {
+    pictures: [
+      {
+        src: VVC01,
+        alt: "Vrindavan Project - Concept View",
+        link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
+      },
+    ],
+    sketches: [
+      {
+        src: VVC_SKETCH01,
+        alt: "Vrindavan Project - Design Sketch 1",
+        link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
+      },
+      {
+        src: VVC_SKETCH02,
+        alt: "Vrindavan Project - Design Sketch 2",
+        link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
+      },
+    ],
+    drawings: [
+      {
+        src: VVC_DRAWING01,
+        alt: "Vrindavan Project - Design Sketch 3",
+        link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
+      },
+    ],
+  },
 };
 
 export const PROJECT_DATA = {
@@ -280,34 +281,6 @@ export const PROJECT_DATA = {
       "Imarat was chosen for designing the first centre for Thai Forest Buddhism, with the venerable Ajahn Jivako as the representative of the sect. The first vision is sketched to the ideals of monastic living, the path to asceticism, and the elements of the architecture that establish its identity. This vision is worked towards refinement into the section and the general plan and onwards until the detailed wall section itself is resolved. The elements of the monastic life, its rituals guide aspects of the design, each activity is granted circular walls while the service spaces are rectilinear. A simpler design by a different agency was ultimately procured for a temporary shelter for the monks.",
     images: PROJECT_IMAGES[PROJECT_KEYS.BUDDHIST_MONASTERY],
   },
-  // [PROJECT_KEYS.PKS_KINDERGARTEN]: {
-  //   title: "202412 - PKS KINDERGARTEN",
-  //   link: PROJECT_KEYS.PKS_KINDERGARTEN,
-  //   date: "ONGOING",
-  //   type: "Educational",
-  //   area: "3200 SQ M",
-  //   location: "Bengaluru, Karnataka",
-  //   methodology: "Child-centered Design, Playful Learning, Safe Materials",
-  //   materials:
-  //     "Compressed Earth Blocks, Bamboo, Recycled Wood, Natural Finishes, Local Stone, Clay Tiles",
-  //   description:
-  //     "The PKS Kindergarten project reimagines early childhood education spaces through a design that stimulates curiosity, supports development, and connects children with nature. Scale, safety, and sensory experience guide all design decisions, creating environments that encourage exploration and wonder.\n\nThe kindergarten is organized as a cluster of small learning pavilions arranged around outdoor play areas and gardens. Each pavilion houses different learning activities, while covered walkways and gathering spaces facilitate movement and social interaction. Low windows, tactile surfaces, and varying spatial qualities respond to children's perceptions and behaviors.\n\nConstruction utilizes non-toxic, natural materials that age gracefully and create healthy indoor environments. The building itself serves as a teaching tool, with visible systems demonstrating principles of sustainability and natural processes to young learners.",
-  //   images: PROJECT_IMAGES[PROJECT_KEYS.PKS_KINDERGARTEN],
-  // },
-  // [PROJECT_KEYS.DBH_HOUSE]: {
-  //   title: "202501 - DBH HOUSE",
-  //   link: PROJECT_KEYS.DBH_HOUSE,
-  //   date: "ONGOING",
-  //   type: "Residential",
-  //   area: "650 SQ M",
-  //   location: "Goa, India",
-  //   methodology: "Biophilic Design, Energy Efficiency, Custom Craftsmanship",
-  //   materials:
-  //     "Rammed Earth, Reclaimed Wood, Stone, Glass, Copper, Living Roof",
-  //   description:
-  //     "The DBH House explores the relationship between built form and natural landscape, creating a residence that feels both sheltered and connected to its surroundings. Designed for clients with a deep appreciation for nature, the house balances privacy, comfort, and environmental responsibility.\n\nThe spatial organization follows the natural contours of the site, with living areas arranged to capture views and optimize passive heating and cooling. Large openings dissolve boundaries between inside and outside, while carefully detailed transitions create a rich experiential journey through the house.\n\nThe material palette emphasizes tactile qualities and natural aging processes, with rammed earth walls providing thermal mass and reclaimed wood elements adding warmth and character. Advanced systems for water harvesting, solar generation, and waste management are integrated discreetly, supporting a lifestyle that minimizes resource consumption.",
-  //   images: PROJECT_IMAGES[PROJECT_KEYS.DBH_HOUSE],
-  // },
 };
 
 // Export all images with metadata for consumption by other components
@@ -321,11 +294,6 @@ export const ALL_PROJECT_IMAGES = {
   EC02: {
     src: EC02,
     alt: "Imarat Earth Centre - Interior View",
-    link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
-  },
-  EC03: {
-    src: EC03,
-    alt: "Imarat Earth Centre",
     link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
   },
 
@@ -442,16 +410,9 @@ export const ALL_PROJECT_IMAGES = {
     link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
   },
   VVC_SKETCH03: {
-    src: VVC_SKETCH03,
-    alt: "Vrindavan Project - Design Sketch 3",
+    src: VVC_DRAWING01,
+    alt: "Vrindavan Project - Design Drawing 3",
     link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
-  },
-
-  // Kindergarten
-  PPS_AXO_01: {
-    src: PPS_AXO_01,
-    alt: "Kindergarten - Design Render",
-    link: "",
   },
 };
 
@@ -460,7 +421,6 @@ export {
   // Earth Centre
   EC01,
   EC02,
-  EC03,
 
   // Buddhist Monastry
   BTM_SKETCH01,
@@ -490,8 +450,5 @@ export {
   VVC01,
   VVC_SKETCH01,
   VVC_SKETCH02,
-  VVC_SKETCH03,
-
-  // Kindergarten
-  PPS_AXO_01,
+  VVC_DRAWING01,
 };

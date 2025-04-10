@@ -54,9 +54,9 @@ export default function Home() {
           <ImagesLayoutC
             images={[
               {
-                src: ALL_PROJECT_IMAGES["NYH01"].src,
-                alt: ALL_PROJECT_IMAGES["NYH01"].alt,
-                link: ALL_PROJECT_IMAGES["NYH01"].link,
+                src: ALL_PROJECT_IMAGES["NYH03"].src,
+                alt: ALL_PROJECT_IMAGES["NYH03"].alt,
+                link: ALL_PROJECT_IMAGES["NYH03"].link,
               },
               {
                 src: ALL_PROJECT_IMAGES["NYH02"].src,
