@@ -10,7 +10,6 @@ import IEC_08 from "../../../public/assets/IEC_08.jpg";
 import IEC_09 from "../../../public/assets/IEC_09.jpg";
 
 // Buddhist Monastry
-import BTM_01 from "../../../public/assets/BTM_01.jpeg";
 import BTM_SKETCH01 from "../../../public/assets/BTM_SKETCH01.jpg";
 import BTM_SKETCH02 from "../../../public/assets/BTM_SKETCH02.jpeg";
 import BTM_SKETCH03 from "../../../public/assets/BTM_SKETCH03.jpg";
@@ -37,6 +36,7 @@ import NYH_SKETCH01 from "../../../public/assets/NYH_SKETCH01.jpeg";
 
 // Vrindavan
 import VVC01 from "../../../public/assets/VVC01.jpeg";
+import VVC02 from "../../../public/assets/VVC02.jpeg";
 import VVC_SKETCH01 from "../../../public/assets/VVC_SKETCH01.png";
 import VVC_SKETCH02 from "../../../public/assets/VVC_SKETCH02.jpg";
 import VVC_DRAWING01 from "../../../public/assets/VVC_DRAWING01.jpg";
@@ -154,13 +154,7 @@ export const PROJECT_IMAGES = {
     ],
   },
   [PROJECT_KEYS.BUDDHIST_MONASTERY]: {
-    pictures: [
-      {
-        src: BTM_01,
-        alt: "Buddhist Monastery - Draft Board",
-        link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
-      },
-    ],
+    pictures: [],
     sketches: [
       {
         src: BTM_SKETCH01,
@@ -228,6 +222,11 @@ export const PROJECT_IMAGES = {
       {
         src: VVC01,
         alt: "Vrindavan Project - Concept View",
+        link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
+      },
+      {
+        src: VVC02,
+        alt: "Vrindavan Project - Draft Board",
         link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
       },
     ],
@@ -476,6 +475,11 @@ export const ALL_PROJECT_IMAGES = {
     alt: "Vrindavan Project - Concept View",
     link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
   },
+  VVC02: {
+    src: VVC01,
+    alt: "Vrindavan Project - Draft Board",
+    link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
+  },
   VVC_SKETCH01: {
     src: VVC_SKETCH01,
     alt: "Vrindavan Project - Design Sketch 1",
@@ -532,6 +536,7 @@ export {
 
   // Vrindavan
   VVC01,
+  VVC02,
   VVC_SKETCH01,
   VVC_SKETCH02,
   VVC_DRAWING01,
