@@ -1,4 +1,3 @@
-import styles from "@/app/page.module.css";
 import stylesLocal from "./page.module.css";
 
 import * as motion from "motion/react-client";
@@ -21,8 +20,8 @@ export default async function ProjectPage({
   }
 
   return (
-    <section className={styles.section1}>
-      <div className={styles.column1}>
+    <section>
+      <div>
         <div className={stylesLocal.projectContainer}>
           {/* IMAGES COLUMN */}
 
@@ -105,7 +104,7 @@ export default async function ProjectPage({
           </motion.div>
         </div>
       </div>
-      <div className={styles.column2}></div>
+      <div></div>
     </section>
   );
 }
