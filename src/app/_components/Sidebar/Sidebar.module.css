@@ -6,15 +6,7 @@
   top: 0;
   right: 0;
   overflow-y: auto;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s linear;
-
-  &.interactionEnabled {
-    visibility: visible;
-    opacity: 1;
-    overflow-x: hidden;
-  }
+  overflow-x: hidden;
 
   .sidebarInner {
     width: 100%;
