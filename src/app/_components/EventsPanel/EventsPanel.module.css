@@ -1,0 +1,25 @@
+.eventsPanelContainer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: var(--events-panel-width);
+  background-color: #B09172;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem 0;
+  cursor: pointer;
+
+  .title {
+    writing-mode: vertical-rl;
+    font-size: 22px;
+    color: white;
+    transform: rotate(180deg);
+    letter-spacing: 1.2px;
+    cursor: pointer;
+  }
+
+  .content {
+    height: 100%;
+  }
+}

@@ -4,6 +4,7 @@ import BackgroundGrid from "./_components/BackgroundGrid/BackgroundGrid";
 
 import "./globals.css";
 import Header from "./_components/Header/Header";
+import EventsPanel from "./_components/EventsPanel/EventsPanel";
 
 export const metadata: Metadata = {
   title: "Imarat Architects",
@@ -24,6 +25,7 @@ export default function RootLayout(
           <BackgroundGrid />
           <Header />
           <div className="max-content-width">{props.children}</div>
+          <EventsPanel />
         </body>
       </html>
     </AppProvider>

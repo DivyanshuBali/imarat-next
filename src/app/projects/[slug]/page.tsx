@@ -3,7 +3,7 @@ import stylesLocal from "./page.module.css";
 import * as motion from "motion/react-client";
 import { PROJECT_DATA, PROJECT_KEYS } from "@/app/_utils/constants";
 import { notFound } from "next/navigation";
-import ImageCarousel from "../_components/ImageCarousel/ImageCarousel";
+import ImageCarousel from "../../_components/ImageCarousel/ImageCarousel";
 
 // This becomes a Server Component by default
 export default async function ProjectPage({

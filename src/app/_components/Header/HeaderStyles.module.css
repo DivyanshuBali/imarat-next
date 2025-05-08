@@ -4,15 +4,31 @@
   padding: 0.5rem;
   justify-content: space-between;
 
+  @media only screen and (max-width: 1920px) {
+    margin-right: var(--events-panel-width);
+  }  
+
   & ul {
     list-style-type: none;
     display: flex;
     gap: 1.5rem;
-    font-size: 0.8rem;
+    font-size: 15px;
 
     & li {
       cursor: pointer;
+      letter-spacing: 1.1px;
       color: rgba(0,0,0,60%);
     }
+
+    .active {
+      text-decoration: underline;
+      font-weight: bold;
+      color: var(--black);
+    }
+  }
+
+  & div:last-child {
+    height: 40px;
+    width: 150px;
   }
 }

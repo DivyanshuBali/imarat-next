@@ -1,25 +1,30 @@
+"use client";
+
 import styles from "./HeaderStyles.module.css";
 
-import Image from "next/image";
-import React from "react";
-
 import imaratLogo from "../../../../public/imarat_logo.svg";
+
+import React from "react";
+import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 function Header() {
+  const pathname = usePathname();
+
   return (
     <header className={styles.headerContent}>
-      <Link href="/">
+      <Link href="/" style={{ height: "40px" }}>
         <Image src={imaratLogo} height={40} alt="imarat logo" />
       </Link>
       <ul>
-        <li>
-          <Link href="/projects">PROJECTS</Link>
+        <li className={pathname === "/projects" ? styles.active : ""}>
+          PROJECTS
         </li>
-        <li>
+        <li className={pathname === "/about" ? styles.active : ""}>
           <Link href="/about">ABOUT</Link>
         </li>
-        <li>
+        <li className={pathname === "/contact" ? styles.active : ""}>
           <Link href="/contact">CONTACT</Link>
         </li>
       </ul>

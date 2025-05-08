@@ -541,3 +541,42 @@ export {
   VVC_SKETCH02,
   VVC_DRAWING01,
 };
+
+// Export all images with metadata for landing page
+export const LANDING_CAROUSEL_IMAGES = [
+  {
+    src: IEC_01,
+    alt: "Imarat Earth Centre",
+    title: "Imarat Centre For Earth Architecture (ICEA)",
+  },
+  {
+    src: IMO_01,
+    alt: "Studio 1252",
+    title: "Studio 1252",
+  },
+  {
+    src: IMO_02,
+    alt: "Studio 1252",
+    title: "Studio 1252",
+  },
+  {
+    src: IMO_03,
+    alt: "Studio 1252",
+    title: "Studio 1252",
+  },
+  {
+    src: IMO_04,
+    alt: "Studio 1252",
+    title: "Studio 1252",
+  },
+  {
+    src: IMO_05,
+    alt: "Studio 1252",
+    title: "Studio 1252",
+  },
+  {
+    src: IMO_06,
+    alt: "Studio 1252",
+    title: "Studio 1252",
+  },
+];

@@ -1,17 +1,26 @@
-/* RESET STYLES: Normalize + Custom Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* ====== VARIABLE ====== */
 :root {
   --primary: #f6d934;
   --secondary: #e3e3e3;
   --black: #424242;
   --black-faded: #606060;
-  --white: #ffffff
+  --white: #ffffff;
+
+  --events-panel-width: 40px;
+}
+
+/* RESET STYLES: Normalize + Custom Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  ::selection {
+    background: var(--primary) /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: var(--primary) /* Gecko Browsers */
+  }
 }
 
 @font-face {
@@ -26,6 +35,18 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: 'Georgia';
+  src: url('./_fonts/Georgia.ttf'); 
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Georgia Bold';
+  src: url('./_fonts/Georgia-Bold.ttf'); 
+  font-weight: normal;
+}
+
 .menlo-regular {
   font-family: 'Regular';
 }
@@ -34,12 +55,24 @@
   font-family: 'Bold';
 }
 
+.georgia {
+  font-family: 'Georgia';
+}
+
+.georgia-bold {
+  font-family: 'Georgia Bold';
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Regular', sans-serif;
+
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  height: 100dvh;
 }
 
 .max-content-width {
@@ -58,3 +91,8 @@ a {
 @media only screen and (max-width: 768px) {}
 @media only screen and (max-width: 992px) {}
 @media only screen and (max-width: 1200px) {} 
+@media only screen and (max-width: 1920px) {
+  .max-content-width {
+    width: calc(100% - var(--events-panel-width));
+  }
+} 
