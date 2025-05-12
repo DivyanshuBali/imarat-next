@@ -15,7 +15,11 @@
   transition: top 1s cubic-bezier(0.72, 0, 0, 1);
 
   &.animateIn {
-    top: var(--pull-out-header-height);
+    top: 0;
+  }
+
+  @media only screen and (max-width: 768px) {
+    width: 100vw;
   }
 
   .eventsPanelHeader {

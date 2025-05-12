@@ -4,15 +4,21 @@
   padding: 0.5rem;
   justify-content: space-between;
 
-  @media only screen and (max-width: 1920px) {
-    margin-right: var(--events-panel-width);
-  }  
+  /* This targets imarat logo */
+  & img {
+    height: 40px;
+  }
 
+  /* hide this below 768px */
   & ul {
     list-style-type: none;
     display: flex;
     gap: 1.5rem;
     font-size: 15px;
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
 
     & li {
       cursor: pointer;
@@ -27,8 +33,30 @@
     }
   }
 
-  & div:last-child {
+  /* hide this above 768px */
+  .firstLayoutDiv {
+    height: 40px;
+    width: 40px;
+
+    @media only screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  /* hide this below 768px */
+  .lastLayoutDiv {
     height: 40px;
     width: 150px;
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  /* Hide this above 768px */
+  & svg {
+    @media only screen and (min-width: 768px) {
+      display: none;
+    }
   }
 }

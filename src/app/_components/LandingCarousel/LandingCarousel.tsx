@@ -37,7 +37,7 @@ export default function LandingCarousel(props: Props) {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.4, ease: "easeOut" }}
+      transition={{ duration: 0.4, ease: "easeIn" }}
       className={styles.imageCarouselContainer}
     >
       <div className={styles.imageContainer}>
@@ -54,11 +54,12 @@ export default function LandingCarousel(props: Props) {
             transition={{ duration: 0.5 }}
           >
             <Image
-              fill
               src={images[activeImageIndex].src || ""}
               alt={images[activeImageIndex].alt}
               className={styles.img}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              sizes="(max-width: 768px) 50vw, (max-width: 1200px) 80vw, 100vw"
+              fill
+              style={{ objectFit: "contain" }}
             />
           </motion.div>
         </AnimatePresence>

@@ -7,8 +7,11 @@
   align-items: center;
 
   .aboutContent {
-    padding: 1rem;
     max-width: 600px;
+
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 50px;
+    }
 
     .imageContainer {
       display: flex;
@@ -23,7 +26,12 @@
         filter: grayscale(100%);
         border: 1px solid black;
         padding: 2px;
+
+        @media only screen and (max-width: 600px) {
+          max-width: 120px;
+        }
       }
+
     }
 
     .content {
@@ -35,7 +43,11 @@
         font-size: 15px;
         margin-bottom: 0.5rem;
         text-align: justify;
-        color: rgba(0,0,0,60%)
+        color: rgba(0, 0, 0, 60%);
+
+        @media only screen and (max-width: 768px) {
+          font-size: 13px
+        }
       }
     }
 
@@ -45,6 +57,10 @@
       display: flex;
       gap: 2rem;
       letter-spacing: 1.2px;
+
+      @media only screen and (max-width: 768px) {
+        font-size: 12px
+      }
 
       div.bold {
         font-weight: 800;
