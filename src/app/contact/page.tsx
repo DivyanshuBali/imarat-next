@@ -25,72 +25,74 @@ function Contact() {
         </div>
 
         {/* CONTACT INFO */}
-        <div className={styles.contactInfo}>
-          <div className={styles.contactItem}>
-            <div className={styles.contactType}>A</div>
-            <div>
-              <p>1252/1</p>
-              <p>Sector 43B</p>
-              <p>Chandigarh</p>
+        <div className={styles.gridContainer}>
+          <div className={styles.contactInfo}>
+            <div className={styles.contactItem}>
+              <div className={styles.contactType}>A</div>
+              <div>
+                <p>1252/1</p>
+                <p>Sector 43B</p>
+                <p>Chandigarh</p>
+              </div>
             </div>
-          </div>
 
-          <div className={styles.contactItem}>
-            <div className={styles.contactType}>M</div>
-            <div>
-              <p>
-                <Link href="mailto:info@imaratarchitects.com">
-                  info@imaratarchitects.com
-                </Link>
-              </p>
+            <div className={styles.contactItem}>
+              <div className={styles.contactType}>M</div>
+              <div>
+                <p>
+                  <Link href="mailto:info@imaratarchitects.com">
+                    info@imaratarchitects.com
+                  </Link>
+                </p>
 
-              <p>
-                <Link href="mailto:mannat@imaratarchitects.com">
-                  mannat@imaratarchitects.com
-                </Link>
-              </p>
+                <p>
+                  <Link href="mailto:mannat@imaratarchitects.com">
+                    mannat@imaratarchitects.com
+                  </Link>
+                </p>
 
-              <p>
-                <Link href="mailto:savneet@imaratarchitects.com">
-                  savneet@imaratarchitects.com
-                </Link>
-              </p>
+                <p>
+                  <Link href="mailto:savneet@imaratarchitects.com">
+                    savneet@imaratarchitects.com
+                  </Link>
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className={styles.contactItem}>
-            <div className={styles.contactType}>T</div>
-            <Link href="tel:+919988111252">
-              <p>+91 99881 11252</p>
-            </Link>
-          </div>
+            <div className={styles.contactItem}>
+              <div className={styles.contactType}>T</div>
+              <Link href="tel:+919988111252">
+                <p>+91 99881 11252</p>
+              </Link>
+            </div>
 
-          <div className={styles.socialLinks}>
-            <div className={styles.contactType}>S</div>
-            <div>
-              <Link
-                href="https://www.facebook.com/earth.misaal/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                FACEBOOK
-              </Link>
-              <br />
-              <Link
-                href="https://www.instagram.com/imarat_earth"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                INSTAGRAM
-              </Link>
-              <br />
-              <Link
-                href="https://www.linkedin.com/in/ar-savneet-kaur-72419a19"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LINKEDIN
-              </Link>
+            <div className={styles.contactItem}>
+              <div className={styles.contactType}>S</div>
+              <div>
+                <Link
+                  href="https://www.facebook.com/earth.misaal/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  FACEBOOK
+                </Link>
+                <br />
+                <Link
+                  href="https://www.instagram.com/imarat_earth"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  INSTAGRAM
+                </Link>
+                <br />
+                <Link
+                  href="https://www.linkedin.com/in/ar-savneet-kaur-72419a19"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LINKEDIN
+                </Link>
+              </div>
             </div>
           </div>
         </div>

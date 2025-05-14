@@ -7,6 +7,7 @@
   /* This targets imarat logo */
   & img {
     height: 40px;
+    width: auto;
   }
 
   /* hide this below 768px */
