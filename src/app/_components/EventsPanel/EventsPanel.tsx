@@ -51,7 +51,7 @@ function EventsPanel() {
         </motion.svg>
       </div>
       <div className={styles.eventsPanelContent}>
-        {EVENTS.map((ev) => {
+        {EVENTS.map((ev, index) => {
           return (
             <Link href={ev.href} key={ev.date}>
               <div className={styles.eventWrapper}>
@@ -64,6 +64,10 @@ function EventsPanel() {
                   <ArrowRightIcon />
                 </div>
               </div>
+
+              {index === EVENTS.length - 1 && (
+                <div className={styles.divider}></div>
+              )}
             </Link>
           );
         })}

@@ -10,8 +10,8 @@ function AboutPage() {
   return (
     <section className={styles.aboutContainer}>
       <motion.div
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -46 }}
+        animate={{ opacity: 1, y: -56 }}
         transition={{ duration: 0.3 }}
         className={`${styles.aboutContent} ${styles.hiddenScrollbar}`}
       >
