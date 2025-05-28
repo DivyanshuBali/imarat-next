@@ -23,7 +23,7 @@ function Header() {
       </Link>
       <ul>
         <li className={pathname === "/projects" ? styles.active : ""}>
-          PROJECTS
+          <Link href="/projects">PROJECTS</Link>
         </li>
         <li className={pathname === "/about" ? styles.active : ""}>
           <Link href="/about">ABOUT</Link>

@@ -100,6 +100,7 @@ export const PROJECT_IMAGES = {
     ],
     sketches: [],
     drawings: [],
+    thumbnail: IEC_04,
   },
   [PROJECT_KEYS.STUDIO_1252]: {
     pictures: [
@@ -152,6 +153,7 @@ export const PROJECT_IMAGES = {
         link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
       },
     ],
+    thumbnail: IMO_04,
   },
   [PROJECT_KEYS.BUDDHIST_MONASTERY]: {
     pictures: [],
@@ -179,6 +181,7 @@ export const PROJECT_IMAGES = {
         link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
       },
     ],
+    thumbnail: BTM_SKETCH01,
   },
   [PROJECT_KEYS.NYAYPURI_HOUSE]: {
     pictures: [
@@ -216,6 +219,7 @@ export const PROJECT_IMAGES = {
       },
     ],
     drawings: [],
+    thumbnail: NYH01,
   },
   [PROJECT_KEYS.VRINDAVAN]: {
     pictures: [
@@ -249,6 +253,7 @@ export const PROJECT_IMAGES = {
         link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
       },
     ],
+    thumbnail: VVC01,
   },
 };
 
@@ -259,7 +264,7 @@ export const PROJECT_DATA = {
     date: "2009 - ONGOING",
     type: null,
     area: "4850 sq yards",
-    location: null,
+    location: "Karnal, Haryana",
     methodology: "Artisan skill training, Earthen Materials, Solar Passive",
     materials: "Mud Bricks, Bamboo, Sal, Sheesham, Thatch, Chachra",
     description: `
@@ -283,10 +288,10 @@ export const PROJECT_DATA = {
   [PROJECT_KEYS.NYAYPURI_HOUSE]: {
     title: "201801 - NYAYPURI HOUSE",
     link: PROJECT_KEYS.NYAYPURI_HOUSE,
-    date: "2018- ONGOING",
+    date: "2018 - ONGOING",
     type: "Residential",
     area: "1000 sq yards",
-    location: null,
+    location: "Nyaypuri, Karnal",
     methodology: "Contemporising Mud, Hybrid Construction, In-house Furniture",
     materials: "Mud Bricks, Bricks, Concrete, Lime",
     description: `The Nyayapuri House was started in 2014 with the vision of making the mud house typology a possibility in the urban regions of the city. Its viability in rural settings in terms of economy and sustainability as well as its resilience to the climate were well demonstrated at the Earth Centre in Kuva Heri. But the urban dweller has needs for lower maintenance, durability and well insulated spaces in a habitat. So this house combines a structure with mud walls and concrete columns as well as brick pillars to create a hybrid system. This minimises carbon footprint and more importantly brings in mud into the foray of standard building materials.
