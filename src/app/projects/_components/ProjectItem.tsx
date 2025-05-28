@@ -18,13 +18,22 @@ function ProjectItem(props: { project: PROJECT_KEYS }) {
         whileHover="hover"
         initial="initial"
       >
-        <div className={styles.projectImage}>
+        <motion.div
+          className={styles.projectImage}
+          variants={{
+            initial: { filter: "grayscale(100%)" },
+            hover: {
+              filter: "grayscale(0%)",
+              transition: { duration: 0.4 },
+            },
+          }}
+        >
           <Image
             src={PROJECT_DATA[project].images.thumbnail}
             alt={PROJECT_DATA[project].title}
             fill
           />
-        </div>
+        </motion.div>
 
         <div style={{ textAlign: "center" }}>
           <motion.h5

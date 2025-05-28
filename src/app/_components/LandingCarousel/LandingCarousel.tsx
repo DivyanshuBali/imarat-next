@@ -46,13 +46,7 @@ export default function LandingCarousel(props: Props) {
           onClick={() => handleSetActiveImage("prev")}
         ></button>
         <AnimatePresence>
-          <motion.div
-            key={activeImageIndex}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
-          >
+          <div key={activeImageIndex}>
             <Image
               src={images[activeImageIndex].src || ""}
               alt={images[activeImageIndex].alt}
@@ -61,7 +55,7 @@ export default function LandingCarousel(props: Props) {
               fill
               style={{ objectFit: "contain" }}
             />
-          </motion.div>
+          </div>
         </AnimatePresence>
         <button
           className={styles.nextArrowContainer}
