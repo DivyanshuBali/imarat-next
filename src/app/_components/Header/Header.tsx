@@ -19,7 +19,7 @@ function Header() {
       <div className={styles.firstLayoutDiv} />
 
       <Link href="/" style={{ height: "40px" }}>
-        <Image src={imaratLogo} alt="imarat logo" priority />
+        <Image src={imaratLogo} alt="imarat logo" />
       </Link>
       <ul>
         <li className={pathname === "/projects" ? styles.active : ""}>

@@ -1,54 +1,18 @@
 .imageCarouselContainer {
   height: 100%;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  gap: 1rem;
-  padding: 0 1rem;
+  width: 100%;
+  display: flex;
 
   .imageContainer {
     position: relative;
     display: flex;
-    height: 90%;
+    height: 80%;
     width: 100%;
+    max-width: 1000px;
     margin: auto;
     
     @media only screen and (max-width: 600px) {
       height: 100%;
-    }
-
-    .prevArrowContainer {
-      all: unset;
-      height: 100%;
-      width: 50%;
-      z-index: 1;
-      cursor: url('../ImageCarousel/left-arrow.png'), auto;
-      box-sizing: border-box;
-    }
-
-    .nextArrowContainer {
-      all: unset;
-      height: 100%;
-      z-index: 1;
-      width: 50%;
-      cursor: url('../ImageCarousel/right-arrow.png'), auto;
-      box-sizing: border-box;
-    }
-  }
-
-  .navButtons {
-    display: flex;
-    gap: 0.8rem;
-    padding: 1rem 1.5rem;
-
-    @media only screen and (max-width: 768px) {
-      padding: 0;
-    }
-
-    .navTitle {
-      font-size: 12px;
-      text-transform: uppercase;
-      font-weight: 800;
-      letter-spacing: 1.2px;
     }
   }
 }

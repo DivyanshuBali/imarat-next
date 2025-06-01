@@ -3,6 +3,7 @@
   align-items: center;
   padding: 0.5rem;
   justify-content: space-between;
+  z-index: 999;
 
   /* This targets imarat logo */
   & img {

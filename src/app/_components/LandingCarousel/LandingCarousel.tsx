@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import * as motion from "motion/react-client";
 
 import styles from "./LandingCarousel.module.css";
@@ -11,7 +11,7 @@ type Props = {
   images: {
     src: StaticImageData | null;
     alt: string;
-    title: string;
+    link: string;
   }[];
 };
 
@@ -19,57 +19,40 @@ export default function LandingCarousel(props: Props) {
   const { images } = props;
 
   const [activeImageIndex, setActiveImageIndex] = useState(0);
-  const handleSetActiveImage = (type: "next" | "prev") => {
-    if (type === "next") {
-      if (activeImageIndex === images.length - 1) setActiveImageIndex(0);
-      else setActiveImageIndex(activeImageIndex + 1);
-    }
 
-    if (type === "prev") {
-      if (activeImageIndex === 0) setActiveImageIndex(images.length - 1);
-      else setActiveImageIndex(activeImageIndex - 1);
-    }
-  };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveImageIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 2000);
+
+    // Cleanup interval on component unmount
+    return () => clearInterval(interval);
+  }, [images.length]);
 
   if (!images.length) return null;
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.4, ease: "easeIn" }}
-      className={styles.imageCarouselContainer}
-    >
+    <motion.div className={styles.imageCarouselContainer}>
       <div className={styles.imageContainer}>
-        <button
-          className={styles.prevArrowContainer}
-          onClick={() => handleSetActiveImage("prev")}
-        ></button>
         <AnimatePresence>
-          <div key={activeImageIndex}>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            key={activeImageIndex}
+          >
             <Image
+              fill
               src={images[activeImageIndex].src || ""}
               alt={images[activeImageIndex].alt}
               className={styles.img}
               sizes="(max-width: 768px) 50vw, (max-width: 1200px) 80vw, 100vw"
-              fill
               style={{ objectFit: "contain" }}
             />
-          </div>
+          </motion.div>
         </AnimatePresence>
-        <button
-          className={styles.nextArrowContainer}
-          onClick={() => handleSetActiveImage("next")}
-        ></button>
-      </div>
-
-      <div className={styles.navButtons}>
-        <div style={{ display: "flex", gap: "0.2rem" }}>
-          <div className={styles.navTitle}>
-            {activeImageIndex + 1}/{images.length}{" "}
-            {images[activeImageIndex].title}
-          </div>
-        </div>
       </div>
     </motion.div>
   );

@@ -8,6 +8,7 @@ import IEC_06 from "../../../public/assets/IEC_06.jpg";
 import IEC_07 from "../../../public/assets/IEC_07.jpg";
 import IEC_08 from "../../../public/assets/IEC_08.jpg";
 import IEC_09 from "../../../public/assets/IEC_09.jpg";
+import IEC_10 from "../../../public/assets/IEC_10.jpg";
 
 // Buddhist Monastry
 import BTM_SKETCH01 from "../../../public/assets/BTM_SKETCH01.jpg";
@@ -94,6 +95,11 @@ export const PROJECT_IMAGES = {
       },
       {
         src: IEC_09,
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        src: IEC_10,
         alt: "Imarat Earth Centre",
         link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
       },
@@ -377,6 +383,11 @@ export const ALL_PROJECT_IMAGES = {
     alt: "Imarat Earth Centre",
     link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
   },
+  IEC_10: {
+    src: IEC_10,
+    alt: "Imarat Earth Centre",
+    link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+  },
 
   // Buddhist Monastery
   BTM_SKETCH01: {
@@ -514,6 +525,7 @@ export {
   IEC_07,
   IEC_08,
   IEC_09,
+  IEC_10,
 
   // Buddhist Monastry
   BTM_SKETCH01,
@@ -546,42 +558,3 @@ export {
   VVC_SKETCH02,
   VVC_DRAWING01,
 };
-
-// Export all images with metadata for landing page
-export const LANDING_CAROUSEL_IMAGES = [
-  {
-    src: IEC_01,
-    alt: "Imarat Earth Centre",
-    title: "Imarat Centre For Earth Architecture (ICEA)",
-  },
-  {
-    src: IMO_01,
-    alt: "Studio 1252",
-    title: "Studio 1252",
-  },
-  {
-    src: IMO_02,
-    alt: "Studio 1252",
-    title: "Studio 1252",
-  },
-  {
-    src: IMO_03,
-    alt: "Studio 1252",
-    title: "Studio 1252",
-  },
-  {
-    src: IMO_04,
-    alt: "Studio 1252",
-    title: "Studio 1252",
-  },
-  {
-    src: IMO_05,
-    alt: "Studio 1252",
-    title: "Studio 1252",
-  },
-  {
-    src: IMO_06,
-    alt: "Studio 1252",
-    title: "Studio 1252",
-  },
-];
