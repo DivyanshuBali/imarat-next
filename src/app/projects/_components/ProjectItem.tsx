@@ -23,7 +23,7 @@ function ProjectItem(props: { project: PROJECT_KEYS }) {
           variants={{
             initial: { filter: "grayscale(100%)" },
             hover: {
-              filter: "grayscale(0%)",
+              filter: "none",
               transition: { duration: 0.4 },
             },
           }}
@@ -52,7 +52,7 @@ function ProjectItem(props: { project: PROJECT_KEYS }) {
 
           <motion.p
             variants={{
-              initial: { opacity: 0, y: 8 },
+              initial: { opacity: 0, y: 10 },
               hover: {
                 opacity: 1,
                 y: 0,
@@ -60,7 +60,8 @@ function ProjectItem(props: { project: PROJECT_KEYS }) {
               },
             }}
           >
-            {PROJECT_DATA[project].date} / {PROJECT_DATA[project].area}
+            {PROJECT_DATA[project].date} / {PROJECT_DATA[project].area} /{" "}
+            {PROJECT_DATA[project].type}
           </motion.p>
         </div>
       </motion.div>

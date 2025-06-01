@@ -36,13 +36,6 @@ export default async function ProjectPage({
         <ScrollButton />
       </div>
       <div className={styles.projectContent} id="projectContent">
-        {/* IMAGES COLUMN */}
-        <div className={styles.mainColumn}>
-          <ImageCarousel images={projectData.images.pictures} />
-          <ImageCarousel images={projectData.images.sketches} />
-          <ImageCarousel images={projectData.images.drawings} />
-        </div>
-
         {/* CONTENT COLUMN */}
         <div className={styles.sideColumn}>
           <h1 className={styles.projectTitle}>{projectData.title}</h1>
@@ -102,6 +95,13 @@ export default async function ProjectPage({
               <p>{projectData.description}</p>
             </div>
           )}
+        </div>
+
+        {/* IMAGES COLUMN */}
+        <div className={styles.mainColumn}>
+          <ImageCarousel images={projectData.images.pictures} />
+          <ImageCarousel images={projectData.images.sketches} />
+          <ImageCarousel images={projectData.images.drawings} />
         </div>
       </div>
     </section>

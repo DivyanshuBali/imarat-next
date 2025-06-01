@@ -15,13 +15,13 @@
 
     .imageContainer {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       margin-bottom: 2rem;
 
       .image {
         height: 100%;
         width: 100%;
-        max-width: 150px;
+        max-width: 180px;
         object-fit: contain;
         filter: grayscale(100%);
         border: 1px solid black;

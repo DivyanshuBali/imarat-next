@@ -32,6 +32,10 @@
       }
     }
 
+    .projectTitle {
+      margin-bottom: 0.2rem;
+    }
+
     & p {
       font-size: 12px;
       color: var(--black);
