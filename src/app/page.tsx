@@ -49,7 +49,14 @@ export default function Home() {
 
         <div className={styles.navButtons}>
           <div style={{ display: "flex", gap: "0.2rem" }}>
-            <div className={styles.navTitle}>
+            <div
+              className={styles.navTitle}
+              style={{
+                color: LANDING_CAROUSEL_DATA[imageIndex].textWhite
+                  ? "white"
+                  : "black",
+              }}
+            >
               {imageIndex + 1}/{LANDING_CAROUSEL_DATA.length}{" "}
               <Link href={LANDING_CAROUSEL_DATA[imageIndex].link}>
                 {LANDING_CAROUSEL_DATA[imageIndex].title}

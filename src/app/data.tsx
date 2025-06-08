@@ -1,8 +1,9 @@
 import Image from "next/image";
 import {
   BTM_SKETCH01,
-  IEC_03,
+  BTM_SKETCH02,
   IEC_05,
+  IEC_07,
   IEC_10,
   PROJECT_IMAGES,
   PROJECT_KEYS,
@@ -13,14 +14,11 @@ export const LANDING_CAROUSEL_DATA = [
   {
     content: (
       <LandingCarousel
-        images={[
-          ...PROJECT_IMAGES[PROJECT_KEYS.STUDIO_1252].pictures,
-          ...PROJECT_IMAGES[PROJECT_KEYS.STUDIO_1252].drawings,
-        ]}
+        images={PROJECT_IMAGES[PROJECT_KEYS.STUDIO_1252].pictures}
       />
     ),
-    title: "Imarat Earth Centre",
-    link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+    title: "Studio 1252",
+    link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
   },
   {
     content: (
@@ -36,27 +34,25 @@ export const LANDING_CAROUSEL_DATA = [
   },
   {
     content: (
-      <LandingCarousel
-        images={[
-          ...PROJECT_IMAGES[PROJECT_KEYS.NYAYPURI_HOUSE].pictures,
-          ...PROJECT_IMAGES[PROJECT_KEYS.NYAYPURI_HOUSE].drawings,
-        ]}
-      />
-    ),
-    title: "Nyaypuri House",
-    link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
-  },
-  {
-    content: (
       <Image
-        src={IEC_03}
-        alt={"A building at Imarat Earth Centre at night"}
+        src={IEC_07}
+        alt={"A building at Imarat Earth Centre"}
         fill
         priority
       />
     ),
     title: "Imarat Earth Centre",
     link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+    textWhite: true,
+  },
+  {
+    content: (
+      <LandingCarousel
+        images={PROJECT_IMAGES[PROJECT_KEYS.NYAYPURI_HOUSE].pictures}
+      />
+    ),
+    title: "Nyaypuri House",
+    link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
   },
   {
     content: (
@@ -69,6 +65,7 @@ export const LANDING_CAROUSEL_DATA = [
     ),
     title: "Imarat Earth Centre",
     link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+    textWhite: true,
   },
   {
     content: (
@@ -81,5 +78,19 @@ export const LANDING_CAROUSEL_DATA = [
     ),
     title: "Imarat Earth Centre",
     link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+    textWhite: true,
+  },
+  {
+    content: (
+      <Image
+        src={BTM_SKETCH02}
+        alt={"A sketch of Buddhist Monastry Concept"}
+        fill
+        style={{ objectFit: "contain" }}
+        priority
+      />
+    ),
+    title: "Buddhist Monastry",
+    link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
   },
 ];

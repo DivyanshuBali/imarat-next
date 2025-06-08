@@ -15,6 +15,7 @@ import BTM_SKETCH01 from "../../../public/assets/BTM_SKETCH01.jpg";
 import BTM_SKETCH02 from "../../../public/assets/BTM_SKETCH02.jpeg";
 import BTM_SKETCH03 from "../../../public/assets/BTM_SKETCH03.jpg";
 import BTM_AXO01 from "../../../public/assets/BTM_AXO01.png";
+import BTM_SECTION01 from "../../../public/assets/BTM_SECTION01.png";
 
 // Imarat Office Studio 1252
 import IMO_01 from "../../../public/assets/IMO_01.jpeg";
@@ -184,6 +185,11 @@ export const PROJECT_IMAGES = {
       {
         src: BTM_AXO01,
         alt: "Buddhist Monastery - Axonometric View",
+        link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
+      },
+      {
+        src: BTM_SECTION01,
+        alt: "Buddhist Monastery - Section Drawing",
         link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
       },
     ],
