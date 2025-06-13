@@ -9,6 +9,8 @@ import IEC_07 from "../../../public/assets/IEC_07.jpg";
 import IEC_08 from "../../../public/assets/IEC_08.jpg";
 import IEC_09 from "../../../public/assets/IEC_09.jpg";
 import IEC_10 from "../../../public/assets/IEC_10.jpg";
+import IEC_THUMB01 from "../../../public/assets/IEC_THUMB01.png";
+import IEC_THUMB02 from "../../../public/assets/IEC_THUMB02.png";
 
 // Buddhist Monastry
 import BTM_SKETCH01 from "../../../public/assets/BTM_SKETCH01.jpg";
@@ -16,6 +18,8 @@ import BTM_SKETCH02 from "../../../public/assets/BTM_SKETCH02.jpeg";
 import BTM_SKETCH03 from "../../../public/assets/BTM_SKETCH03.jpg";
 import BTM_AXO01 from "../../../public/assets/BTM_AXO01.png";
 import BTM_SECTION01 from "../../../public/assets/BTM_SECTION01.png";
+import BTM_THUMB01 from "../../../public/assets/BTM_THUMB01.png";
+import BTM_THUMB02 from "../../../public/assets/BTM_THUMB02.png";
 
 // Imarat Office Studio 1252
 import IMO_01 from "../../../public/assets/IMO_01.jpeg";
@@ -27,6 +31,8 @@ import IMO_06 from "../../../public/assets/IMO_06.jpeg";
 import IMO_AXO01 from "../../../public/assets/IMO_AXO01.png";
 import IMO_AXO02 from "../../../public/assets/IMO_AXO02.png";
 import IMO_DRAWING01 from "../../../public/assets/IMO_DRAWING01.png";
+import IMO_THUMB01 from "../../../public/assets/IMO_THUMB01.png";
+import IMO_THUMB02 from "../../../public/assets/IMO_THUMB02.png";
 
 // Nyaypuri House
 import NYH01 from "../../../public/assets/NYH01.jpeg";
@@ -35,6 +41,8 @@ import NYH03 from "../../../public/assets/NYH03.jpg";
 import NYH04 from "../../../public/assets/NYH04.jpg";
 import NYH05 from "../../../public/assets/NYH05.jpeg";
 import NYH_SKETCH01 from "../../../public/assets/NYH_SKETCH01.jpeg";
+import NYH_THUMB01 from "../../../public/assets/NYH_THUMB01.png";
+import NYH_THUMB02 from "../../../public/assets/NYH_THUMB02.png";
 
 // Vrindavan
 import VVC01 from "../../../public/assets/VVC01.jpeg";
@@ -42,6 +50,8 @@ import VVC02 from "../../../public/assets/VVC02.jpeg";
 import VVC_SKETCH01 from "../../../public/assets/VVC_SKETCH01.png";
 import VVC_SKETCH02 from "../../../public/assets/VVC_SKETCH02.jpg";
 import VVC_DRAWING01 from "../../../public/assets/VVC_DRAWING01.jpg";
+import VVC_THUMB01 from "../../../public/assets/VVC_THUMB01.png";
+import VVC_THUMB02 from "../../../public/assets/VVC_THUMB02.png";
 
 export enum PROJECT_KEYS {
   IMARAT_EARTH_CENTRE = "200901-imarat-earth-centre-icea",
@@ -107,7 +117,7 @@ export const PROJECT_IMAGES = {
     ],
     sketches: [],
     drawings: [],
-    thumbnail: IEC_04,
+    thumbnails: [IEC_THUMB01, IEC_THUMB02],
   },
   [PROJECT_KEYS.STUDIO_1252]: {
     pictures: [
@@ -160,7 +170,7 @@ export const PROJECT_IMAGES = {
         link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
       },
     ],
-    thumbnail: IMO_04,
+    thumbnails: [IMO_THUMB01, IMO_THUMB02],
   },
   [PROJECT_KEYS.BUDDHIST_MONASTERY]: {
     pictures: [],
@@ -193,7 +203,7 @@ export const PROJECT_IMAGES = {
         link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
       },
     ],
-    thumbnail: BTM_SKETCH01,
+    thumbnails: [BTM_THUMB01, BTM_THUMB02],
   },
   [PROJECT_KEYS.NYAYPURI_HOUSE]: {
     pictures: [
@@ -231,7 +241,7 @@ export const PROJECT_IMAGES = {
       },
     ],
     drawings: [],
-    thumbnail: NYH01,
+    thumbnails: [NYH_THUMB01, NYH_THUMB02],
   },
   [PROJECT_KEYS.VRINDAVAN]: {
     pictures: [
@@ -265,7 +275,7 @@ export const PROJECT_IMAGES = {
         link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
       },
     ],
-    thumbnail: VVC01,
+    thumbnails: [VVC_THUMB01, VVC_THUMB02],
   },
 };
 
