@@ -8,12 +8,18 @@ import IEC_06 from "../../../public/assets/IEC_06.jpg";
 import IEC_07 from "../../../public/assets/IEC_07.jpg";
 import IEC_08 from "../../../public/assets/IEC_08.jpg";
 import IEC_09 from "../../../public/assets/IEC_09.jpg";
+import IEC_10 from "../../../public/assets/IEC_10.jpg";
+import IEC_THUMB01 from "../../../public/assets/IEC_THUMB01.png";
+import IEC_THUMB02 from "../../../public/assets/IEC_THUMB02.png";
 
 // Buddhist Monastry
 import BTM_SKETCH01 from "../../../public/assets/BTM_SKETCH01.jpg";
 import BTM_SKETCH02 from "../../../public/assets/BTM_SKETCH02.jpeg";
 import BTM_SKETCH03 from "../../../public/assets/BTM_SKETCH03.jpg";
 import BTM_AXO01 from "../../../public/assets/BTM_AXO01.png";
+import BTM_SECTION01 from "../../../public/assets/BTM_SECTION01.png";
+import BTM_THUMB01 from "../../../public/assets/BTM_THUMB01.png";
+import BTM_THUMB02 from "../../../public/assets/BTM_THUMB02.png";
 
 // Imarat Office Studio 1252
 import IMO_01 from "../../../public/assets/IMO_01.jpeg";
@@ -25,6 +31,8 @@ import IMO_06 from "../../../public/assets/IMO_06.jpeg";
 import IMO_AXO01 from "../../../public/assets/IMO_AXO01.png";
 import IMO_AXO02 from "../../../public/assets/IMO_AXO02.png";
 import IMO_DRAWING01 from "../../../public/assets/IMO_DRAWING01.png";
+import IMO_THUMB01 from "../../../public/assets/IMO_THUMB01.png";
+import IMO_THUMB02 from "../../../public/assets/IMO_THUMB02.png";
 
 // Nyaypuri House
 import NYH01 from "../../../public/assets/NYH01.jpeg";
@@ -33,6 +41,8 @@ import NYH03 from "../../../public/assets/NYH03.jpg";
 import NYH04 from "../../../public/assets/NYH04.jpg";
 import NYH05 from "../../../public/assets/NYH05.jpeg";
 import NYH_SKETCH01 from "../../../public/assets/NYH_SKETCH01.jpeg";
+import NYH_THUMB01 from "../../../public/assets/NYH_THUMB01.png";
+import NYH_THUMB02 from "../../../public/assets/NYH_THUMB02.png";
 
 // Vrindavan
 import VVC01 from "../../../public/assets/VVC01.jpeg";
@@ -40,6 +50,8 @@ import VVC02 from "../../../public/assets/VVC02.jpeg";
 import VVC_SKETCH01 from "../../../public/assets/VVC_SKETCH01.png";
 import VVC_SKETCH02 from "../../../public/assets/VVC_SKETCH02.jpg";
 import VVC_DRAWING01 from "../../../public/assets/VVC_DRAWING01.jpg";
+import VVC_THUMB01 from "../../../public/assets/VVC_THUMB01.png";
+import VVC_THUMB02 from "../../../public/assets/VVC_THUMB02.png";
 
 export enum PROJECT_KEYS {
   IMARAT_EARTH_CENTRE = "200901-imarat-earth-centre-icea",
@@ -97,9 +109,15 @@ export const PROJECT_IMAGES = {
         alt: "Imarat Earth Centre",
         link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
       },
+      {
+        src: IEC_10,
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
     ],
     sketches: [],
     drawings: [],
+    thumbnails: [IEC_THUMB01, IEC_THUMB02],
   },
   [PROJECT_KEYS.STUDIO_1252]: {
     pictures: [
@@ -152,6 +170,7 @@ export const PROJECT_IMAGES = {
         link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
       },
     ],
+    thumbnails: [IMO_THUMB01, IMO_THUMB02],
   },
   [PROJECT_KEYS.BUDDHIST_MONASTERY]: {
     pictures: [],
@@ -178,7 +197,13 @@ export const PROJECT_IMAGES = {
         alt: "Buddhist Monastery - Axonometric View",
         link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
       },
+      {
+        src: BTM_SECTION01,
+        alt: "Buddhist Monastery - Section Drawing",
+        link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
+      },
     ],
+    thumbnails: [BTM_THUMB01, BTM_THUMB02],
   },
   [PROJECT_KEYS.NYAYPURI_HOUSE]: {
     pictures: [
@@ -216,6 +241,7 @@ export const PROJECT_IMAGES = {
       },
     ],
     drawings: [],
+    thumbnails: [NYH_THUMB01, NYH_THUMB02],
   },
   [PROJECT_KEYS.VRINDAVAN]: {
     pictures: [
@@ -249,6 +275,7 @@ export const PROJECT_IMAGES = {
         link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
       },
     ],
+    thumbnails: [VVC_THUMB01, VVC_THUMB02],
   },
 };
 
@@ -257,9 +284,9 @@ export const PROJECT_DATA = {
     title: "200901 - IMARAT EARTH CENTRE (ICEA)",
     link: PROJECT_KEYS.IMARAT_EARTH_CENTRE,
     date: "2009 - ONGOING",
-    type: null,
-    area: "4850 sq yards",
-    location: null,
+    type: "Institution",
+    area: "4850 sq yd",
+    location: "Kulvaheri, Haryana",
     methodology: "Artisan skill training, Earthen Materials, Solar Passive",
     materials: "Mud Bricks, Bamboo, Sal, Sheesham, Thatch, Chachra",
     description: `
@@ -271,8 +298,8 @@ export const PROJECT_DATA = {
     title: "201701 - STUDIO 1252",
     link: PROJECT_KEYS.STUDIO_1252,
     date: "2018",
-    type: "Creative Workspace",
-    area: "150 Sq Yards",
+    type: "Studio/Multi-use",
+    area: "150 sq yd",
     location: "Chandigarh, India",
     methodology: "Retrofit, Renovation, Multi-use Programs",
     materials: "Bricks, Concrete, Deodar, Pine",
@@ -283,10 +310,10 @@ export const PROJECT_DATA = {
   [PROJECT_KEYS.NYAYPURI_HOUSE]: {
     title: "201801 - NYAYPURI HOUSE",
     link: PROJECT_KEYS.NYAYPURI_HOUSE,
-    date: "2018- ONGOING",
-    type: "Residential",
-    area: "1000 sq yards",
-    location: null,
+    date: "2018 - ONGOING",
+    type: "Residence",
+    area: "1000 sq yd",
+    location: "Nyaypuri, Karnal",
     methodology: "Contemporising Mud, Hybrid Construction, In-house Furniture",
     materials: "Mud Bricks, Bricks, Concrete, Lime",
     description: `The Nyayapuri House was started in 2014 with the vision of making the mud house typology a possibility in the urban regions of the city. Its viability in rural settings in terms of economy and sustainability as well as its resilience to the climate were well demonstrated at the Earth Centre in Kuva Heri. But the urban dweller has needs for lower maintenance, durability and well insulated spaces in a habitat. So this house combines a structure with mud walls and concrete columns as well as brick pillars to create a hybrid system. This minimises carbon footprint and more importantly brings in mud into the foray of standard building materials.
@@ -298,9 +325,9 @@ export const PROJECT_DATA = {
     title: "202308 - VRINDAVAN",
     link: PROJECT_KEYS.VRINDAVAN,
     date: "2023 - ONGOING",
-    type: null,
+    type: "Institution",
     area: "17 Acres",
-    location: null,
+    location: "Karnal, Haryana",
     methodology:
       "Zero Cement Construction, Lime and Brick, Bamboo Spans, Landscape Infills",
     materials: "Bricks, Lime, Jaggery, Red Sandstone, Kota Stone",
@@ -312,9 +339,9 @@ export const PROJECT_DATA = {
     title: "202308 - BUDDHIST MONASTERY",
     link: PROJECT_KEYS.BUDDHIST_MONASTERY,
     date: "2023, unbuilt",
-    type: "",
-    area: "1500 Sq Yards",
-    location: "",
+    type: "Insitution",
+    area: "1500 sq yd",
+    location: "Yamunanagar, Haryana",
     methodology:
       "Monolithic Domed Construction, Mud walls, Landscape rejuvenation",
     materials: "Mud Bricks, Timber, RCC",
@@ -369,6 +396,11 @@ export const ALL_PROJECT_IMAGES = {
   },
   IEC_09: {
     src: IEC_09,
+    alt: "Imarat Earth Centre",
+    link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+  },
+  IEC_10: {
+    src: IEC_10,
     alt: "Imarat Earth Centre",
     link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
   },
@@ -509,6 +541,7 @@ export {
   IEC_07,
   IEC_08,
   IEC_09,
+  IEC_10,
 
   // Buddhist Monastry
   BTM_SKETCH01,

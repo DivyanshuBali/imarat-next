@@ -1,10 +1,11 @@
-import styles from "@/app/page.module.css";
-import stylesLocal from "./page.module.css";
+import styles from "./page.module.css";
 
-import * as motion from "motion/react-client";
 import { PROJECT_DATA, PROJECT_KEYS } from "@/app/_utils/constants";
+import Image from "next/image";
 import { notFound } from "next/navigation";
-import ImageCarousel from "../_components/ImageCarousel/ImageCarousel";
+import ScrollButton from "./_components/ScrollToContentButton";
+import ImageCarousel from "../../_components/ImageCarousel/ImageCarousel";
+import * as motion from "motion/react-client";
 
 // This becomes a Server Component by default
 export default async function ProjectPage({
@@ -21,91 +22,129 @@ export default async function ProjectPage({
   }
 
   return (
-    <section className={styles.section1}>
-      <div className={styles.column1}>
-        <div className={stylesLocal.projectContainer}>
-          {/* IMAGES COLUMN */}
-
-          <div className={stylesLocal.mainColumn}>
-            <ImageCarousel images={projectData.images.pictures} />
-            <ImageCarousel images={projectData.images.sketches} />
-            <ImageCarousel images={projectData.images.drawings} />
-          </div>
-
-          {/* CONTENT COLUMN */}
+    <section>
+      <div className={styles.projectPageHeader}>
+        <div className={styles.projectPageHeaderImageAndTitle}>
           <motion.div
-            className={stylesLocal.sideColumn}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, ease: "easeOut", delay: 0.2 }}
+            className={styles.projectItem}
+            whileHover="hover"
+            initial="initial"
           >
-            <h1 className={stylesLocal.projectTitle}>{projectData.title}</h1>
+            <motion.div
+              className={styles.projectImage}
+              variants={{
+                initial: { opacity: 1 },
+                hover: { opacity: 1 },
+              }}
+            >
+              <motion.div
+                style={{ position: "relative", width: "100%", height: "100%" }}
+                variants={{
+                  initial: { opacity: 1 },
+                  hover: { opacity: 0 },
+                }}
+              >
+                <Image
+                  src={projectData.images.thumbnails[0]}
+                  alt={projectData.title}
+                  fill
+                />
+              </motion.div>
+              <motion.div
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                }}
+                variants={{
+                  initial: { opacity: 0 },
+                  hover: { opacity: 1 },
+                }}
+              >
+                <Image
+                  src={projectData.images.thumbnails[1]}
+                  alt={projectData.title}
+                  fill
+                />
+              </motion.div>
+            </motion.div>
+          </motion.div>
+          <h3>{projectData.title}</h3>
+        </div>
 
-            <div className={stylesLocal.projectDetails}>
-              {projectData.date && (
-                <div className={stylesLocal.detailRow}>
-                  <span className={stylesLocal.detailValue}>
-                    {projectData.date}
-                  </span>
-                </div>
-              )}
+        <ScrollButton />
+      </div>
+      <div className={styles.projectContent} id="projectContent">
+        {/* CONTENT COLUMN */}
+        <div className={styles.sideColumn}>
+          <h1 className={styles.projectTitle}>{projectData.title}</h1>
 
-              {projectData.type && (
-                <div className={stylesLocal.detailRow}>
-                  <span className={stylesLocal.detailLabel}>TYPE </span>
-                  <span className={stylesLocal.detailValue}>
-                    {projectData.type}
-                  </span>
-                </div>
-              )}
-
-              {projectData.location && (
-                <div className={stylesLocal.detailRow}>
-                  <span className={stylesLocal.detailLabel}>Location </span>
-                  <span className={stylesLocal.detailValue}>
-                    {projectData.location}
-                  </span>
-                </div>
-              )}
-
-              {projectData.area && (
-                <div className={stylesLocal.detailRow}>
-                  <span className={stylesLocal.detailLabel}>Area </span>
-                  <span className={stylesLocal.detailValue}>
-                    {projectData.area}
-                  </span>
-                </div>
-              )}
-
-              {projectData.methodology && (
-                <div className={stylesLocal.detailRow}>
-                  <span className={stylesLocal.detailLabel}>Methodology </span>
-                  <span className={stylesLocal.detailValue}>
-                    {projectData.methodology}
-                  </span>
-                </div>
-              )}
-
-              {projectData.materials && (
-                <div className={stylesLocal.detailRow}>
-                  <span className={stylesLocal.detailLabel}>Materials </span>
-                  <span className={stylesLocal.detailValue}>
-                    {projectData.materials}
-                  </span>
-                </div>
-              )}
-            </div>
-
-            {projectData.description && (
-              <div className={stylesLocal.projectDescription}>
-                <h4 className={stylesLocal.descriptionTitle}>NOTES</h4>
-                <p>{projectData.description}</p>
+          <div className={styles.projectDetails}>
+            {projectData.date && (
+              <div className={styles.detailRow}>
+                <span className={styles.detailValue}>{projectData.date}</span>
               </div>
             )}
-          </motion.div>
+
+            {projectData.type && (
+              <div className={styles.detailRow}>
+                <span className={styles.detailLabel}>TYPE </span>
+                <span className={styles.detailValue}>{projectData.type}</span>
+              </div>
+            )}
+
+            {projectData.location && (
+              <div className={styles.detailRow}>
+                <span className={styles.detailLabel}>Location </span>
+                <span className={styles.detailValue}>
+                  {projectData.location}
+                </span>
+              </div>
+            )}
+
+            {projectData.area && (
+              <div className={styles.detailRow}>
+                <span className={styles.detailLabel}>Area </span>
+                <span className={styles.detailValue}>{projectData.area}</span>
+              </div>
+            )}
+
+            {projectData.methodology && (
+              <div className={styles.detailRow}>
+                <span className={styles.detailLabel}>Methodology </span>
+                <span className={styles.detailValue}>
+                  {projectData.methodology}
+                </span>
+              </div>
+            )}
+
+            {projectData.materials && (
+              <div className={styles.detailRow}>
+                <span className={styles.detailLabel}>Materials </span>
+                <span className={styles.detailValue}>
+                  {projectData.materials}
+                </span>
+              </div>
+            )}
+          </div>
+
+          {projectData.description && (
+            <div className={styles.projectDescription}>
+              <h4 className={styles.descriptionTitle}>NOTES</h4>
+              <p>{projectData.description}</p>
+            </div>
+          )}
+        </div>
+
+        {/* IMAGES COLUMN */}
+        <div className={styles.mainColumn}>
+          <ImageCarousel images={projectData.images.pictures} />
+          <ImageCarousel images={projectData.images.sketches} />
+          <ImageCarousel images={projectData.images.drawings} />
         </div>
       </div>
-      <div className={styles.column2}></div>
     </section>
   );
 }

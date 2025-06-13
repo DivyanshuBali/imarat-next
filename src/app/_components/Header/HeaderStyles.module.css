@@ -1,0 +1,109 @@
+.headerContent {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  justify-content: space-between;
+  z-index: 999;
+
+  /* This targets imarat logo */
+  & img {
+    height: 40px;
+    width: auto;
+  }
+
+  /* Nav Options */
+  & ul {
+    list-style-type: none;
+    font-size: 15px;
+    display: flex;
+
+    .active {
+      text-decoration: underline;
+      font-weight: bold;
+      color: var(--black);
+    }
+  }
+
+  & ul.fullScreen {
+    gap: 1.5rem;
+
+    & li {
+      cursor: pointer;
+      letter-spacing: 1.1px;
+      color: rgba(0,0,0,60%);
+    }
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  & ul.hamburgerMenu__NavOptions {
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    & li {
+      cursor: pointer;
+      letter-spacing: 1.1px;
+      color: white
+    }
+
+    @media only screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  
+  /* hide this above 768px */
+  .firstLayoutDiv {
+    height: 30px;
+    width: 30px;
+
+    @media only screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  /* hide this below 768px */
+  .lastLayoutDiv {
+    height: 40px;
+    width: 150px;
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  /* Hide this above 768px */
+  & svg {
+    @media only screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  /* Small screen slide in nav menu */
+  .hamburgerMenu {
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    /* 100vh - header - events panel */
+    height: calc(100vh - 50px - 40px); 
+    background-color: #B09172;
+    z-index: 999;
+
+    @media only screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .hamburgerMenuOpen {
+    display: block;
+    transform: translateX(0);
+  }
+}

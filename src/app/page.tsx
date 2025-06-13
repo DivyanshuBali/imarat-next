@@ -1,116 +1,87 @@
 "use client";
 
-import ImagesLayoutA from "./_components/LandingLayouts/ImagesLayoutA";
-import ImagesLayoutB from "./_components/LandingLayouts/ImagesLayoutB";
-import ImagesLayoutC from "./_components/LandingLayouts/ImagesLayoutC";
-import ImagesLayoutD1 from "./_components/LandingLayouts/ImagesLayoutD1";
-import ImagesLayoutD2 from "./_components/LandingLayouts/ImagesLayoutD2";
-import ImagesLayoutF from "./_components/LandingLayouts/ImagesLayoutF";
-
 import styles from "./page.module.css";
 
-import { ALL_PROJECT_IMAGES } from "@/app/_utils/constants";
+import { useState } from "react";
+import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons";
+import { LANDING_CAROUSEL_DATA } from "./data";
+import Link from "next/link";
 
 export default function Home() {
+  const [imageIndex, setImageIndex] = useState(0);
+
+  const handleNext = () => {
+    if (imageIndex === LANDING_CAROUSEL_DATA.length - 1) {
+      return setImageIndex(0);
+    }
+
+    setImageIndex(imageIndex + 1);
+  };
+
+  const handlePrev = () => {
+    if (imageIndex === 0) {
+      return setImageIndex(LANDING_CAROUSEL_DATA.length - 1);
+    }
+
+    setImageIndex(imageIndex - 1);
+  };
+
+  const textColor = LANDING_CAROUSEL_DATA[imageIndex].textWhite
+    ? "white"
+    : "black";
+
   return (
-    <>
-      <section className={styles.section1}>
-        <div className={styles.column1}>
-          <ImagesLayoutA
-            images={[
-              {
-                src: ALL_PROJECT_IMAGES["IEC_01"].src,
-                alt: ALL_PROJECT_IMAGES["IEC_01"].alt,
-                link: ALL_PROJECT_IMAGES["IEC_01"].link,
-              },
-              {
-                src: ALL_PROJECT_IMAGES["IEC_02"].src,
-                alt: ALL_PROJECT_IMAGES["IEC_02"].alt,
-                link: ALL_PROJECT_IMAGES["IEC_01"].link,
-              },
-            ]}
-          />
-          <ImagesLayoutD2
-            image={{
-              src: ALL_PROJECT_IMAGES["BTM_SKETCH02"].src,
-              alt: ALL_PROJECT_IMAGES["BTM_SKETCH02"].alt,
-              link: ALL_PROJECT_IMAGES["BTM_SKETCH02"].link,
-            }}
-          />
-          <ImagesLayoutB
-            images={[
-              {
-                src: ALL_PROJECT_IMAGES["BTM_SKETCH01"].src,
-                alt: ALL_PROJECT_IMAGES["BTM_SKETCH01"].alt,
-                link: ALL_PROJECT_IMAGES["BTM_SKETCH01"].link,
-              },
-              {
-                src: ALL_PROJECT_IMAGES["IMO_01"].src,
-                alt: ALL_PROJECT_IMAGES["IMO_01"].alt,
-                link: ALL_PROJECT_IMAGES["IMO_01"].link,
-              },
-            ]}
-          />
-          <ImagesLayoutC
-            images={[
-              {
-                src: ALL_PROJECT_IMAGES["NYH03"].src,
-                alt: ALL_PROJECT_IMAGES["NYH03"].alt,
-                link: ALL_PROJECT_IMAGES["NYH03"].link,
-              },
-              {
-                src: ALL_PROJECT_IMAGES["NYH02"].src,
-                alt: ALL_PROJECT_IMAGES["NYH02"].alt,
-                link: ALL_PROJECT_IMAGES["NYH02"].link,
-              },
-              {
-                src: ALL_PROJECT_IMAGES["NYH_SKETCH01"].src,
-                alt: ALL_PROJECT_IMAGES["NYH_SKETCH01"].alt,
-                link: ALL_PROJECT_IMAGES["NYH_SKETCH01"].link,
-              },
-            ]}
-          />
-          <ImagesLayoutD1
-            image={{
-              src: ALL_PROJECT_IMAGES["IMO_01"].src,
-              alt: ALL_PROJECT_IMAGES["IMO_01"].alt,
-              link: ALL_PROJECT_IMAGES["IMO_01"].link,
-            }}
-          />
-          <ImagesLayoutF
-            images={[
-              {
-                src: ALL_PROJECT_IMAGES["VVC_SKETCH03"].src,
-                alt: ALL_PROJECT_IMAGES["VVC_SKETCH03"].alt,
-                link: ALL_PROJECT_IMAGES["VVC_SKETCH03"].link,
-              },
-              {
-                src: ALL_PROJECT_IMAGES["VVC01"].src,
-                alt: ALL_PROJECT_IMAGES["VVC01"].alt,
-                link: ALL_PROJECT_IMAGES["VVC01"].link,
-              },
-              {
-                src: ALL_PROJECT_IMAGES["NYH05"].src,
-                alt: ALL_PROJECT_IMAGES["NYH05"].alt,
-                link: ALL_PROJECT_IMAGES["NYH05"].link,
-              },
-              {
-                src: ALL_PROJECT_IMAGES["VVC_SKETCH01"].src,
-                alt: ALL_PROJECT_IMAGES["VVC_SKETCH01"].alt,
-                link: ALL_PROJECT_IMAGES["VVC_SKETCH01"].link,
-              },
-              {
-                src: ALL_PROJECT_IMAGES["BTM_AXO01"].src,
-                alt: ALL_PROJECT_IMAGES["BTM_AXO01"].alt,
-                link: ALL_PROJECT_IMAGES["BTM_AXO01"].link,
-              },
-            ]}
-          />
+    <section className={styles.landingContainer}>
+      <div className={styles.landingContent}>
+        <button
+          className={styles.prevArrowContainer}
+          onClick={handlePrev}
+        ></button>
+
+        <div className={styles.slider}>
+          {LANDING_CAROUSEL_DATA.map((data, index) => {
+            return (
+              <div
+                className={styles.slide}
+                key={`${data.title}-${index}`}
+                style={{ translate: `${-100 * imageIndex}%` }}
+              >
+                {data.content}
+              </div>
+            );
+          })}
         </div>
 
-        {/* Just a margin Container */}
-        <div className={styles.column2} />
-      </section>
-    </>
+        <div className={styles.navButtons}>
+          <div style={{ display: "flex", gap: "0.2rem", alignItems: "center" }}>
+            <button
+              className={`${styles.touchNavButton} ${styles.prev}`}
+              onClick={handlePrev}
+              aria-label="Previous slide"
+            >
+              <ArrowLeftIcon color={textColor} height={20} width={20} />
+            </button>
+            <div className={styles.navTitle} style={{ color: textColor }}>
+              {imageIndex + 1}/{LANDING_CAROUSEL_DATA.length}{" "}
+              <Link href={LANDING_CAROUSEL_DATA[imageIndex].link}>
+                {LANDING_CAROUSEL_DATA[imageIndex].title}
+              </Link>
+            </div>
+            <button
+              className={`${styles.touchNavButton} ${styles.next}`}
+              onClick={handleNext}
+              aria-label="Next slide"
+            >
+              <ArrowRightIcon color={textColor} height={20} width={20} />
+            </button>
+          </div>
+        </div>
+
+        <button
+          className={styles.nextArrowContainer}
+          onClick={handleNext}
+        ></button>
+      </div>
+    </section>
   );
 }

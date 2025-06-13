@@ -1,8 +1,10 @@
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 import { AppProvider } from "./_contexts/AppContext";
-import ClientRootLayout from "./ClientRootLayout";
+import BackgroundGrid from "./_components/BackgroundGrid/BackgroundGrid";
 
 import "./globals.css";
+import Header from "./_components/Header/Header";
+import EventsPanel from "./_components/EventsPanel/EventsPanel";
 
 export const metadata: Metadata = {
   title: "Imarat Architects",
@@ -13,18 +15,19 @@ export const metadata: Metadata = {
   },
 };
 
-export const viewport: Viewport = {
-  width: "1024",
-  initialScale: 1,
-  maximumScale: 1,
-};
-
 export default function RootLayout(
   props: Readonly<{ children: React.ReactNode }>
 ) {
   return (
     <AppProvider>
-      <ClientRootLayout {...props} />
+      <html lang="en">
+        <body>
+          <BackgroundGrid />
+          <Header />
+          <div className="max-content-width">{props.children}</div>
+          <EventsPanel />
+        </body>
+      </html>
     </AppProvider>
   );
 }

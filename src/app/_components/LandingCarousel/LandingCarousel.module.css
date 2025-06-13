@@ -1,0 +1,20 @@
+.imageCarouselContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+
+
+  .imageContainer {
+    position: relative;
+    display: flex;
+    height: 80%;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    
+    @media only screen and (max-width: 600px) {
+      height: 70%;
+      padding: 0 1rem;
+    }
+  }
+}
