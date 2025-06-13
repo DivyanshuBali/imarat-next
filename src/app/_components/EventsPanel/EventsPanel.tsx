@@ -11,12 +11,7 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 const EVENTS = [
   {
     title: "WORKSHOP ON WOOD",
-    date: "2080-14-32",
-    href: "",
-  },
-  {
-    title: "LOREM IPSUM",
-    date: "2080-14-33",
+    date: "2025-03-19",
     href: "",
   },
 ];
