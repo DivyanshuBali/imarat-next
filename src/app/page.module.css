@@ -18,6 +18,10 @@
       z-index: 1;
       cursor: url('./left-arrow.png'), auto;
       box-sizing: border-box;
+
+      @media (hover: none) {
+        display: none;
+      }
     }
 
     .slider {
@@ -59,6 +63,8 @@
 
       @media only screen and (max-width: 768px) {
         bottom: 40px;
+        width: 100%;
+        justify-content: center;
       }
 
       .navTitle {
@@ -66,9 +72,38 @@
         text-transform: uppercase;
         font-weight: 800;
         letter-spacing: 1.2px;
+        width: 200px;
+        text-align: center;
 
-        &:hover {
+        & a {
+          @media (hover: none) {
+            text-decoration: underline;
+          }
+        }
+
+        & a:hover {
           text-decoration: underline;
+        }
+      }
+
+      .touchNavButton {
+        display: none;
+        
+        all: unset;
+        background: transparent;
+        border-radius: 50%;
+        cursor: pointer;
+  
+        @media (hover: none) {
+          display: flex;
+        }
+
+        &.next {
+          margin-left: 1rem;
+        }
+
+        &.prev {
+          margin-right: 1rem;
         }
       }
     }
@@ -83,6 +118,10 @@
       z-index: 1;
       cursor: url('./right-arrow.png'), auto;
       box-sizing: border-box;
+
+      @media (hover: none) {
+        display: none;
+      }
     }
   }
 }

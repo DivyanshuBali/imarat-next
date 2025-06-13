@@ -3,6 +3,7 @@
 import styles from "./page.module.css";
 
 import { useState } from "react";
+import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons";
 import { LANDING_CAROUSEL_DATA } from "./data";
 import Link from "next/link";
 
@@ -24,6 +25,10 @@ export default function Home() {
 
     setImageIndex(imageIndex - 1);
   };
+
+  const textColor = LANDING_CAROUSEL_DATA[imageIndex].textWhite
+    ? "white"
+    : "black";
 
   return (
     <section className={styles.landingContainer}>
@@ -48,20 +53,27 @@ export default function Home() {
         </div>
 
         <div className={styles.navButtons}>
-          <div style={{ display: "flex", gap: "0.2rem" }}>
-            <div
-              className={styles.navTitle}
-              style={{
-                color: LANDING_CAROUSEL_DATA[imageIndex].textWhite
-                  ? "white"
-                  : "black",
-              }}
+          <div style={{ display: "flex", gap: "0.2rem", alignItems: "center" }}>
+            <button
+              className={`${styles.touchNavButton} ${styles.prev}`}
+              onClick={handlePrev}
+              aria-label="Previous slide"
             >
+              <ArrowLeftIcon color={textColor} height={20} width={20} />
+            </button>
+            <div className={styles.navTitle} style={{ color: textColor }}>
               {imageIndex + 1}/{LANDING_CAROUSEL_DATA.length}{" "}
               <Link href={LANDING_CAROUSEL_DATA[imageIndex].link}>
                 {LANDING_CAROUSEL_DATA[imageIndex].title}
               </Link>
             </div>
+            <button
+              className={`${styles.touchNavButton} ${styles.next}`}
+              onClick={handleNext}
+              aria-label="Next slide"
+            >
+              <ArrowRightIcon color={textColor} height={20} width={20} />
+            </button>
           </div>
         </div>
 
