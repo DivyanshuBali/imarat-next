@@ -1,8 +1,8 @@
 import styles from "../page.module.css";
 import React from "react";
 import { PROJECT_DATA, PROJECT_KEYS } from "@/app/_utils/constants";
-import Image from "next/image";
 import Link from "next/link";
+import NextImageWrapper from "@/app/_components/NextImageWrapper/NextImageWrapper";
 
 function ProjectItem(props: { project: PROJECT_KEYS }) {
   const { project } = props;
@@ -12,17 +12,19 @@ function ProjectItem(props: { project: PROJECT_KEYS }) {
       <div className={styles.projectItem}>
         <div className={styles.projectImage}>
           <div className={styles.imageContainer}>
-            <Image
+            <NextImageWrapper
               src={PROJECT_DATA[project].images.thumbnails[0]}
               alt={PROJECT_DATA[project].title}
-              fill
+              height={450}
+              width={300}
             />
           </div>
           <div className={styles.imageOverlay}>
-            <Image
+            <NextImageWrapper
               src={PROJECT_DATA[project].images.thumbnails[1]}
               alt={PROJECT_DATA[project].title}
-              fill
+              height={450}
+              width={300}
             />
           </div>
         </div>

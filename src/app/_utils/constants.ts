@@ -55,69 +55,75 @@ import VVC_THUMB02 from "../../../public/assets/VVC_THUMB02.png";
 
 export enum PROJECT_KEYS {
   IMARAT_EARTH_CENTRE = "200901-imarat-earth-centre-icea",
-  STUDIO_1252 = "201701-studio-1252",
   BUDDHIST_MONASTERY = "202308-buddhist-monastery",
   NYAYPURI_HOUSE = "201801-nyaypuri-house",
   VRINDAVAN = "202308-vrindavan",
+  CTRL_Z = "202506-ctrl-z",
+  BILLY_GOAT_RESORT = "202506-billy-goat-resort",
+  DIVYANSHU_BALI_HOUSE = "202502-dbh",
+  STUDIO_1252 = "201701-studio-1252",
 }
 
 export const PROJECT_IMAGES = {
   [PROJECT_KEYS.IMARAT_EARTH_CENTRE]: {
     pictures: [
       {
-        src: IEC_01,
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078160/IEC_01_e7hzsa.jpg",
         alt: "Imarat Earth Centre",
         link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
       },
       {
-        src: IEC_02,
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078067/IEC_02_wmeu6i.jpg",
         alt: "Imarat Earth Centre",
         link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
       },
       {
-        src: IEC_03,
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078128/IEC_03_qwhbv7.jpg",
         alt: "Imarat Earth Centre",
         link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
       },
       {
-        src: IEC_04,
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078092/IEC_04_sjx3cx.jpg",
         alt: "Imarat Earth Centre",
         link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
       },
       {
-        src: IEC_05,
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078153/IEC_05_vmnyfm.jpg",
         alt: "Imarat Earth Centre",
         link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
       },
       {
-        src: IEC_06,
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078101/IEC_06_z0lgas.jpg",
         alt: "Imarat Earth Centre",
         link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
       },
       {
-        src: IEC_07,
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078148/IEC_07_puemxn.jpg",
         alt: "Imarat Earth Centre",
         link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
       },
       {
-        src: IEC_08,
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078134/IEC_08_zlecuv.jpg",
         alt: "Imarat Earth Centre",
         link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
       },
       {
-        src: IEC_09,
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078132/IEC_09_rleiib.jpg",
         alt: "Imarat Earth Centre",
         link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
       },
       {
-        src: IEC_10,
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078153/IEC_10_xafeqv.jpg",
         alt: "Imarat Earth Centre",
         link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
       },
     ],
     sketches: [],
     drawings: [],
-    thumbnails: [IEC_THUMB01, IEC_THUMB02],
+    thumbnails: [
+      "https://res.cloudinary.com/drcns5wjs/image/upload/v1750080269/IEC_THUMB01_v8tgfw.png",
+      "https://res.cloudinary.com/drcns5wjs/image/upload/v1750080272/IEC_THUMB02_uocxfm.png",
+    ],
   },
   [PROJECT_KEYS.STUDIO_1252]: {
     pictures: [
@@ -277,6 +283,33 @@ export const PROJECT_IMAGES = {
     ],
     thumbnails: [VVC_THUMB01, VVC_THUMB02],
   },
+  [PROJECT_KEYS.CTRL_Z]: {
+    pictures: [],
+    sketches: [],
+    drawings: [],
+    thumbnails: [
+      "https://res.cloudinary.com/drcns5wjs/image/upload/v1750255270/CTRL_Z_THUMB01_ruyvnw.png",
+      "https://res.cloudinary.com/drcns5wjs/image/upload/v1750255271/CTRL_Z_THUMB02_pacoum.png",
+    ],
+  },
+  [PROJECT_KEYS.BILLY_GOAT_RESORT]: {
+    pictures: [],
+    sketches: [],
+    drawings: [],
+    thumbnails: [
+      "https://res.cloudinary.com/drcns5wjs/image/upload/v1750255362/BGR_THUMB01_b2r2i6.png",
+      "https://res.cloudinary.com/drcns5wjs/image/upload/v1750255363/BGR_THUMB02_if3t8w.png",
+    ],
+  },
+  [PROJECT_KEYS.DIVYANSHU_BALI_HOUSE]: {
+    pictures: [],
+    sketches: [],
+    drawings: [],
+    thumbnails: [
+      "https://res.cloudinary.com/drcns5wjs/image/upload/v1750255104/DBH_THUMB01_moqr4j.png",
+      "https://res.cloudinary.com/drcns5wjs/image/upload/v1750255104/DBH_THUMB02_nrhuqd.png",
+    ],
+  },
 };
 
 export const PROJECT_DATA = {
@@ -349,58 +382,94 @@ export const PROJECT_DATA = {
       "Imarat was chosen for designing the first centre for Thai Forest Buddhism, with the venerable Ajahn Jivako as the representative of the sect. The first vision is sketched to the ideals of monastic living, the path to asceticism, and the elements of the architecture that establish its identity. This vision is worked towards refinement into the section and the general plan and onwards until the detailed wall section itself is resolved. The elements of the monastic life, its rituals guide aspects of the design, each activity is granted circular walls while the service spaces are rectilinear. A simpler design by a different agency was ultimately procured for a temporary shelter for the monks.",
     images: PROJECT_IMAGES[PROJECT_KEYS.BUDDHIST_MONASTERY],
   },
+  [PROJECT_KEYS.CTRL_Z]: {
+    title: "202506 - CTRL Z",
+    link: "",
+    date: "2025, Ongoing",
+    type: "Commercial",
+    area: "",
+    location: "Gurugram, Haryana",
+    methodology: "",
+    materials: "",
+    description: "",
+    images: PROJECT_IMAGES[PROJECT_KEYS.CTRL_Z],
+  },
+  [PROJECT_KEYS.BILLY_GOAT_RESORT]: {
+    title: "202506 - BILLY GOAT RESORT",
+    link: "",
+    date: "",
+    type: "",
+    area: "",
+    location: "",
+    methodology: "",
+    materials: "",
+    description: "",
+    images: PROJECT_IMAGES[PROJECT_KEYS.BILLY_GOAT_RESORT],
+  },
+  [PROJECT_KEYS.DIVYANSHU_BALI_HOUSE]: {
+    title: "202502 - DBH",
+    link: "",
+    date: "",
+    type: "",
+    area: "",
+    location: "",
+    methodology: "",
+    materials: "",
+    description: "",
+    images: PROJECT_IMAGES[PROJECT_KEYS.DIVYANSHU_BALI_HOUSE],
+  },
 };
 
 // Export all images with metadata for consumption by other components
 export const ALL_PROJECT_IMAGES = {
   // Imarat Earth Centre
   IEC_01: {
-    src: IEC_01,
+    src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078160/IEC_01_e7hzsa.jpg",
     alt: "Imarat Earth Centre",
     link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
   },
   IEC_02: {
-    src: IEC_02,
+    src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078067/IEC_02_wmeu6i.jpg",
     alt: "Imarat Earth Centre",
     link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
   },
   IEC_03: {
-    src: IEC_03,
+    src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078128/IEC_03_qwhbv7.jpg",
     alt: "Imarat Earth Centre",
     link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
   },
   IEC_04: {
-    src: IEC_04,
+    src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078092/IEC_04_sjx3cx.jpg",
     alt: "Imarat Earth Centre",
     link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
   },
   IEC_05: {
-    src: IEC_05,
+    src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078153/IEC_05_vmnyfm.jpg",
     alt: "Imarat Earth Centre",
     link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
   },
   IEC_06: {
-    src: IEC_06,
+    src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078101/IEC_06_z0lgas.jpg",
     alt: "Imarat Earth Centre",
     link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
   },
   IEC_07: {
-    src: IEC_07,
+    src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078148/IEC_07_puemxn.jpg",
     alt: "Imarat Earth Centre",
     link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
   },
   IEC_08: {
-    src: IEC_08,
+    src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078134/IEC_08_zlecuv.jpg",
     alt: "Imarat Earth Centre",
     link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
   },
   IEC_09: {
-    src: IEC_09,
+    src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078132/IEC_09_rleiib.jpg",
     alt: "Imarat Earth Centre",
     link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
   },
   IEC_10: {
-    src: IEC_10,
+    src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078153/IEC_10_xafeqv.jpg",
     alt: "Imarat Earth Centre",
     link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
   },
@@ -542,11 +611,15 @@ export {
   IEC_08,
   IEC_09,
   IEC_10,
+  IEC_THUMB01,
+  IEC_THUMB02,
 
   // Buddhist Monastry
   BTM_SKETCH01,
   BTM_SKETCH02,
   BTM_AXO01,
+  BTM_THUMB01,
+  BTM_THUMB02,
 
   // Studio - 1252
   IMO_01,
@@ -558,6 +631,8 @@ export {
   IMO_AXO01,
   IMO_AXO02,
   IMO_DRAWING01,
+  IMO_THUMB01,
+  IMO_THUMB02,
 
   // Nyaypuri
   NYH01,
@@ -566,6 +641,8 @@ export {
   NYH04,
   NYH05,
   NYH_SKETCH01,
+  NYH_THUMB01,
+  NYH_THUMB02,
 
   // Vrindavan
   VVC01,
@@ -573,4 +650,6 @@ export {
   VVC_SKETCH01,
   VVC_SKETCH02,
   VVC_DRAWING01,
+  VVC_THUMB01,
+  VVC_THUMB02,
 };
