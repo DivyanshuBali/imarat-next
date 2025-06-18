@@ -3,7 +3,7 @@ import { PROJECT_KEYS } from "./constants";
 
 // Interface for a project image
 export type ProjectImage = {
-  src: StaticImageData | null;
+  src: string | StaticImageData | null;
   alt: string;
   link: string;
 };
