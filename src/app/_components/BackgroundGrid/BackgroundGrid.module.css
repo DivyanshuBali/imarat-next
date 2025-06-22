@@ -2,8 +2,8 @@
   position: fixed;
   inset: 0;
   background-image: 
-    linear-gradient(to right, #fbeded 1px, transparent 1px),
-    linear-gradient(to bottom, #fbeded 1px, transparent 1px);
+    linear-gradient(to right, rgb(248, 246, 246) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(248, 246, 246) 1px, transparent 1px);
   background-size: 15px 15px;
   z-index: -1
 }
