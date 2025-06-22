@@ -56,7 +56,7 @@ export default function ImageCarousel(props: Props) {
               src={images[activeImageIndex].src || ""}
               alt={images[activeImageIndex].alt}
               className={styles.img}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
             />
           </motion.div>
         </AnimatePresence>

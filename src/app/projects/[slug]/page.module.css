@@ -21,25 +21,45 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-  
+      text-decoration: none;
+      color: inherit;
+
       .projectImage {
         position: relative;
-        min-width: 100%;
+        min-width: 85%;
         max-width: 300px;
         aspect-ratio: 2 / 3;
-  
+
+        .imageContainer {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          transition: opacity 0.4s ease-out;
+        }
+
+        .imageOverlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          transition: opacity 0.4s ease-out;
+        }
+
         & img {
           object-fit: contain;
         }
       }
-      
-      .projectTitle {
-        margin-bottom: 0.2rem;
-      }
-  
-      & p {
-        font-size: 12px;
-        color: var(--black-faded);
+
+      &:hover {
+        .imageContainer {
+          opacity: 0;
+        }
+
+        .imageOverlay {
+          opacity: 1;
+        }
       }
     }
 
@@ -153,9 +173,10 @@
 
       &>p {
         line-height: 1.6;
-        font-size: 12px;
+        font-size: 13px;
         letter-spacing: 1.2px;
         text-align: justify;
+        margin: 0.5rem 0;
       }
     }
   }

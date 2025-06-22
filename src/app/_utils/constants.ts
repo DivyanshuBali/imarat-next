@@ -55,13 +55,13 @@ import VVC_THUMB02 from "../../../public/assets/VVC_THUMB02.png";
 
 export enum PROJECT_KEYS {
   IMARAT_EARTH_CENTRE = "200901-imarat-earth-centre-icea",
-  BUDDHIST_MONASTERY = "202308-buddhist-monastery",
+  DIVYANSHU_BALI_HOUSE = "202502-dbh",
   NYAYPURI_HOUSE = "201801-nyaypuri-house",
-  VRINDAVAN = "202308-vrindavan",
   CTRL_Z = "202506-ctrl-z",
   BILLY_GOAT_RESORT = "202506-billy-goat-resort",
-  DIVYANSHU_BALI_HOUSE = "202502-dbh",
   STUDIO_1252 = "201701-studio-1252",
+  BUDDHIST_MONASTERY = "202308-buddhist-monastery",
+  VRINDAVAN = "202308-vrindavan",
 }
 
 export const PROJECT_IMAGES = {
@@ -284,26 +284,148 @@ export const PROJECT_IMAGES = {
     thumbnails: [VVC_THUMB01, VVC_THUMB02],
   },
   [PROJECT_KEYS.CTRL_Z]: {
-    pictures: [],
+    pictures: [
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580649/CTRL_Z_01_esj0nt.jpg",
+        alt: "CTRL Z - Store Front 3D Render",
+        link: `projects/${PROJECT_KEYS.CTRL_Z}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580649/CTRL_Z_02_pu0ag3.jpg",
+        alt: "CTRL Z - Store Ground Floor 3D Render",
+        link: `projects/${PROJECT_KEYS.CTRL_Z}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580650/CTRL_Z_03_mtf9j0.jpg",
+        alt: "CTRL Z - Store Upper Floor 3D Render",
+        link: `projects/${PROJECT_KEYS.CTRL_Z}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580650/CTRL_Z_04_uynzvf.jpg",
+        alt: "CTRL Z - Store Entrance 3D Render",
+        link: `projects/${PROJECT_KEYS.CTRL_Z}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580650/CTRL_Z_05_rsuojp.jpg",
+        alt: "CTRL Z - Store Front Facade 3D Render",
+        link: `projects/${PROJECT_KEYS.CTRL_Z}`,
+      },
+    ],
     sketches: [],
-    drawings: [],
+    drawings: [
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580798/CTRL_Z_DRG_01_ks8avq.jpg",
+        alt: "",
+        link: `projects/${PROJECT_KEYS.CTRL_Z}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580799/CTRL_Z_DRG_02_muiqap.jpg",
+        alt: "",
+        link: `projects/${PROJECT_KEYS.CTRL_Z}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580800/CTRL_Z_DRG_03_mcm6ul.jpg",
+        alt: "",
+        link: `projects/${PROJECT_KEYS.CTRL_Z}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580801/CTRL_Z_DRG_04_vlyfxq.jpg",
+        alt: "",
+        link: `projects/${PROJECT_KEYS.CTRL_Z}`,
+      },
+    ],
     thumbnails: [
       "https://res.cloudinary.com/drcns5wjs/image/upload/v1750255270/CTRL_Z_THUMB01_ruyvnw.png",
       "https://res.cloudinary.com/drcns5wjs/image/upload/v1750255271/CTRL_Z_THUMB02_pacoum.png",
     ],
   },
   [PROJECT_KEYS.BILLY_GOAT_RESORT]: {
-    pictures: [],
-    sketches: [],
-    drawings: [],
+    pictures: [
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750490489/BGR_01_nthjok.jpg",
+        alt: "Billy Goat Resort - Elevation Model",
+        link: `projects/${PROJECT_KEYS.BILLY_GOAT_RESORT}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750490489/BGR_02_agkchc.jpg",
+        alt: "Billy Goat Resort - Sketch",
+        link: `projects/${PROJECT_KEYS.BILLY_GOAT_RESORT}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750490490/BGR_03_qlwwgm.jpg",
+        alt: "The road leading up to the site",
+        link: `projects/${PROJECT_KEYS.BILLY_GOAT_RESORT}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750490490/BGR_04_ejgcvf.jpg",
+        alt: "Billy Goat Resort - Site View",
+        link: `projects/${PROJECT_KEYS.BILLY_GOAT_RESORT}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750490490/BGR_05_ykm7om.jpg",
+        alt: "Billy Goat Resort - Incline View",
+        link: `projects/${PROJECT_KEYS.BILLY_GOAT_RESORT}`,
+      },
+    ],
+    sketches: [
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750501072/BGR_SKETCH01_v9omez.jpg",
+        alt: "Billy Goat Resort - Bakehouse Sketch",
+        link: `projects/${PROJECT_KEYS.BILLY_GOAT_RESORT}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750501073/BGR_SKETCH02_euy0tw.jpg",
+        alt: "Billy Goat Resort - Layout Sketch",
+        link: `projects/${PROJECT_KEYS.BILLY_GOAT_RESORT}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750501073/BGR_SKETCH03_hxkbo7.jpg",
+        alt: "Billy Goat Resort - Concept Sketch",
+        link: `projects/${PROJECT_KEYS.BILLY_GOAT_RESORT}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750501073/BGR_SKETCH03_hxkbo7.jpg",
+        alt: "Billy Goat Resort - Public House Sketch",
+        link: `projects/${PROJECT_KEYS.BILLY_GOAT_RESORT}`,
+      },
+    ],
+    drawings: [
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750500796/BGR_DRG01_epd7ed.jpg",
+        alt: "Billy Goat Resort - Site Plan",
+        link: `projects/${PROJECT_KEYS.BILLY_GOAT_RESORT}`,
+      },
+    ],
     thumbnails: [
       "https://res.cloudinary.com/drcns5wjs/image/upload/v1750255362/BGR_THUMB01_b2r2i6.png",
       "https://res.cloudinary.com/drcns5wjs/image/upload/v1750255363/BGR_THUMB02_if3t8w.png",
     ],
   },
   [PROJECT_KEYS.DIVYANSHU_BALI_HOUSE]: {
-    pictures: [],
-    sketches: [],
+    pictures: [
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750577985/DBH_02_g2qmry.jpg",
+        alt: "DBH - Model Photo 01",
+        link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750577985/DBH_01_k2sq2x.jpg",
+        alt: "DBH - Model Photo 02",
+        link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
+      },
+    ],
+    sketches: [
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750577752/DBH_SKETCH01_ru0oxr.jpg",
+        alt: "DBH - Ground Floor Sketch",
+        link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750577752/DBH_SKETCH02_lco5qo.jpg",
+        alt: "DBH - First Floor Sketch",
+        link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
+      },
+    ],
     drawings: [],
     thumbnails: [
       "https://res.cloudinary.com/drcns5wjs/image/upload/v1750255104/DBH_THUMB01_moqr4j.png",
@@ -384,217 +506,52 @@ export const PROJECT_DATA = {
   },
   [PROJECT_KEYS.CTRL_Z]: {
     title: "202506 - CTRL Z",
-    link: "",
+    link: PROJECT_KEYS.CTRL_Z,
     date: "2025, Ongoing",
-    type: "Commercial",
-    area: "",
+    type: "Retail Store",
+    area: "720 sq ft.",
     location: "Gurugram, Haryana",
     methodology: "",
-    materials: "",
-    description: "",
+    materials: "Mild Steel, Pine, Kota Stone, Lime, Polycarbonate",
+    description: `
+      Control Z had a vision for changing the consumption of the artefact of the 21st century; the phone. Phones go in and out of fashion each year, and this results in a devastating impact on the mineral resources of earth. Their company tries to tackle this by refurbishing new, older phones. Doing so also reselling luxury phones at affordable prices. The task was to represent this vision in the architecture of their first retail store.
+      \n \n
+      The idea was to bring the energy of their workshops to the people. Inducing transparency in their process, would build trust to the consumer. To bring out the ideas of sustainability that power their vision, local materials with low embodied energy were introduced; lime for the walls and Kota stone for the floor. To introduce their process and story, tools from their actual labs are pinned to the walls. In this way, the tradition of a clean, minimal store that hides behind the covers is broken; what one gets is edgy raw and in a process of assembly and refinement. The architecture becomes a metaphor of their assembly line. The technophilic enthusiasm which is in the hands is spread out on the walls. 
+    `,
     images: PROJECT_IMAGES[PROJECT_KEYS.CTRL_Z],
   },
   [PROJECT_KEYS.BILLY_GOAT_RESORT]: {
     title: "202506 - BILLY GOAT RESORT",
-    link: "",
-    date: "",
-    type: "",
-    area: "",
-    location: "",
-    methodology: "",
-    materials: "",
-    description: "",
+    link: PROJECT_KEYS.BILLY_GOAT_RESORT,
+    date: "2024",
+    type: "Resort",
+    area: "52,000 sq ft",
+    location: "Barog, HP",
+    methodology: "Local Supply Chains, Community upliftment,  Historiography",
+    materials: "Brick, Lime, Mud Plaster, Pine wood, Steel, Limestone",
+    description: `
+      The site is surrounded by a pine forest in the region of Barog. The local folklore of a British appointed charge for digging the railway tunnel, Colonel Barog is what gives the town its name. The tunnel and the railway station are intact as relics of that time and offer themselves as clues for how to build sensitively in such contexts. The new age ideas of treading lightly on the earth were considered as postulates for building here too, but with the average slope of 40 degrees, to perch lightly would have resulted in shadowed underbellies; signature of contemporary constructions. Cut and filling is used in the lightest means instead, using split levels and yet generating small spans. The 1.5 acre resort offers a bakehouse, tea house and bath house, in an upward trail, for the wanderer that stumbles upon it. 9 sets of rooms adjoin these facilities, scattered about the site’s landscape. The site is steep and the project celebrates the physical challenge of this condition. To hike up the mountain like a Billy Goat- is where the name draws from.
+      \n
+      The conditions of the site shape the imaginations of this project. Nostalgic to the typical movement patterns of cities in the Himalayan region, the project seeks to capture the spirit of a Himalayan settlement. The generosity of Chaugans that restore leisures of time, The clustered hawkers lavishing food and craft and, the snug village houses with niches and small wooden windows; all cultivate the atmospheres of Himalayan Habitats.They work with the vegetation. Facts of simple pleasure which are left behind in modern luxury resorts. A green metal bench next to a cliff, well placed, with an absence of whirring sounds of generators can work wonders. The idea is simple; to preserve what is good and to make what is missing.
+    `,
     images: PROJECT_IMAGES[PROJECT_KEYS.BILLY_GOAT_RESORT],
   },
   [PROJECT_KEYS.DIVYANSHU_BALI_HOUSE]: {
     title: "202502 - DBH",
-    link: "",
-    date: "",
-    type: "",
-    area: "",
+    link: PROJECT_KEYS.DIVYANSHU_BALI_HOUSE,
+    date: "2025",
+    type: "Residence",
+    area: "1200 sq ft.",
     location: "",
-    methodology: "",
-    materials: "",
-    description: "",
+    methodology:
+      "Subverting Interiority, Surrealism, Double Heights, Adaptability and Multiple Functionality.",
+    materials: "Brick, Mild Steel, Glass Blocks",
+    description: `
+      The House of Glass is an impractical dream in North Indian setting. But this project tries to make it true. To bring in its living room, a tree; something living. To make small spaces big and with a unity of small gestures, beckon a sense of surrealism. DBH was brought on when 6 columns and their foundations had already been put up, so the idea was simply to inquire about what can supplement, compliment and contrast; the end result is an inner dialogue of light filigree steel spans and typical brick and concrete masonry; the classical binary of the stereotomic and tectonic. The small plot is sliced into two symmetrical halves, and through the slice goes the promenade. Walking on it, encounters on the left and right fluctuate; the outer court with a patch of green, the inner double volume, a wall of glass on the left and the comfort couch on the right, a lamp on the left a kitchen counter reaching out on the right, a staircase to the left and further ahead a wardrobe on the right, then a bed and then a washroom and exiting it all, a backyard on top of which hangs attached to a gardened terrace, planted flowers drooping down.
+      \n\n
+      The client, an eccentric engineer, is also a skateboarder. The house is such a boyhood club. The house grows into a home and with time the spaces are meant to adapt. The floor above which contains a small room connected to the terrace garden also bears a study hanging out of it, ‘the cockpit’. Overlooking the larger double volume, it brings a sense of exteriority to the living space. And with the lamp post and the tree and the glass wall, it cultivates a magical surrealism. The practical intentions are to imagine  beautiful conditions of living in a small plot of 45’ by 20’. But the impractical dream is what makes this project one of the favourites on our drafting boards.
+    `,
     images: PROJECT_IMAGES[PROJECT_KEYS.DIVYANSHU_BALI_HOUSE],
-  },
-};
-
-// Export all images with metadata for consumption by other components
-export const ALL_PROJECT_IMAGES = {
-  // Imarat Earth Centre
-  IEC_01: {
-    src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078160/IEC_01_e7hzsa.jpg",
-    alt: "Imarat Earth Centre",
-    link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
-  },
-  IEC_02: {
-    src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078067/IEC_02_wmeu6i.jpg",
-    alt: "Imarat Earth Centre",
-    link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
-  },
-  IEC_03: {
-    src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078128/IEC_03_qwhbv7.jpg",
-    alt: "Imarat Earth Centre",
-    link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
-  },
-  IEC_04: {
-    src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078092/IEC_04_sjx3cx.jpg",
-    alt: "Imarat Earth Centre",
-    link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
-  },
-  IEC_05: {
-    src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078153/IEC_05_vmnyfm.jpg",
-    alt: "Imarat Earth Centre",
-    link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
-  },
-  IEC_06: {
-    src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078101/IEC_06_z0lgas.jpg",
-    alt: "Imarat Earth Centre",
-    link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
-  },
-  IEC_07: {
-    src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078148/IEC_07_puemxn.jpg",
-    alt: "Imarat Earth Centre",
-    link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
-  },
-  IEC_08: {
-    src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078134/IEC_08_zlecuv.jpg",
-    alt: "Imarat Earth Centre",
-    link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
-  },
-  IEC_09: {
-    src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078132/IEC_09_rleiib.jpg",
-    alt: "Imarat Earth Centre",
-    link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
-  },
-  IEC_10: {
-    src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078153/IEC_10_xafeqv.jpg",
-    alt: "Imarat Earth Centre",
-    link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
-  },
-
-  // Buddhist Monastery
-  BTM_SKETCH01: {
-    src: BTM_SKETCH01,
-    alt: "Buddhist Monastery - Concept Sketch",
-    link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
-  },
-  BTM_SKETCH02: {
-    src: BTM_SKETCH02,
-    alt: "Buddhist Monastery - Elevation Sketch",
-    link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
-  },
-  BTM_AXO01: {
-    src: BTM_AXO01,
-    alt: "Buddhist Monastery - Axonometric View",
-    link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
-  },
-
-  // Studio 1252
-  IMO_01: {
-    src: IMO_01,
-    alt: "Studio 1252 - Exterior View",
-    link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
-  },
-  IMO_02: {
-    src: IMO_02,
-    alt: "Studio 1252 - Workspace Interior",
-    link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
-  },
-  IMO_03: {
-    src: IMO_03,
-    alt: "Studio 1252 - View 3",
-    link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
-  },
-  IMO_04: {
-    src: IMO_04,
-    alt: "Studio 1252 - View 4",
-    link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
-  },
-  IMO_05: {
-    src: IMO_05,
-    alt: "Studio 1252 - View 5",
-    link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
-  },
-  IMO_06: {
-    src: IMO_06,
-    alt: "Studio 1252 - View 6",
-    link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
-  },
-  IMO_AXO01: {
-    src: IMO_AXO01,
-    alt: "Studio 1252 - Axonometric View 1",
-    link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
-  },
-  IMO_AXO02: {
-    src: IMO_AXO02,
-    alt: "Studio 1252 - Axonometric View 2",
-    link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
-  },
-  IMO_DRAWING01: {
-    src: IMO_DRAWING01,
-    alt: "Studio 1252 - Technical Drawing",
-    link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
-  },
-
-  // Nyaypuri House
-  NYH01: {
-    src: NYH01,
-    alt: "Nyaypuri House - Exterior View",
-    link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
-  },
-  NYH02: {
-    src: NYH02,
-    alt: "Nyaypuri House - Courtyard View",
-    link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
-  },
-  NYH_SKETCH01: {
-    src: NYH_SKETCH01,
-    alt: "Nyaypuri House - Design Sketch",
-    link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
-  },
-  NYH03: {
-    src: NYH03,
-    alt: "Nyaypuri House - Interior View",
-    link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
-  },
-  NYH04: {
-    src: NYH04,
-    alt: "Nyaypuri House - Landscape View",
-    link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
-  },
-  NYH05: {
-    src: NYH05,
-    alt: "Nyaypuri House",
-    link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
-  },
-
-  // Vrindavan
-  VVC01: {
-    src: VVC01,
-    alt: "Vrindavan Project - Concept View",
-    link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
-  },
-  VVC02: {
-    src: VVC01,
-    alt: "Vrindavan Project - Draft Board",
-    link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
-  },
-  VVC_SKETCH01: {
-    src: VVC_SKETCH01,
-    alt: "Vrindavan Project - Design Sketch 1",
-    link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
-  },
-  VVC_SKETCH02: {
-    src: VVC_SKETCH02,
-    alt: "Vrindavan Project - Design Sketch 2",
-    link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
-  },
-  VVC_SKETCH03: {
-    src: VVC_DRAWING01,
-    alt: "Vrindavan Project - Design Drawing 3",
-    link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
   },
 };
 

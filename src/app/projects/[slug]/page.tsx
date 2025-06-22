@@ -1,11 +1,10 @@
 import styles from "./page.module.css";
 
 import { PROJECT_DATA, PROJECT_KEYS } from "@/app/_utils/constants";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import ScrollButton from "./_components/ScrollToContentButton";
 import ImageCarousel from "../../_components/ImageCarousel/ImageCarousel";
-import * as motion from "motion/react-client";
+import NextImageWrapper from "@/app/_components/NextImageWrapper/NextImageWrapper";
 
 // This becomes a Server Component by default
 export default async function ProjectPage({
@@ -25,52 +24,26 @@ export default async function ProjectPage({
     <section>
       <div className={styles.projectPageHeader}>
         <div className={styles.projectPageHeaderImageAndTitle}>
-          <motion.div
-            className={styles.projectItem}
-            whileHover="hover"
-            initial="initial"
-          >
-            <motion.div
-              className={styles.projectImage}
-              variants={{
-                initial: { opacity: 1 },
-                hover: { opacity: 1 },
-              }}
-            >
-              <motion.div
-                style={{ position: "relative", width: "100%", height: "100%" }}
-                variants={{
-                  initial: { opacity: 1 },
-                  hover: { opacity: 0 },
-                }}
-              >
-                <Image
+          <div className={styles.projectItem}>
+            <div className={styles.projectImage}>
+              <div className={styles.imageContainer}>
+                <NextImageWrapper
                   src={projectData.images.thumbnails[0]}
                   alt={projectData.title}
-                  fill
+                  height={450}
+                  width={300}
                 />
-              </motion.div>
-              <motion.div
-                style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "100%",
-                }}
-                variants={{
-                  initial: { opacity: 0 },
-                  hover: { opacity: 1 },
-                }}
-              >
-                <Image
+              </div>
+              <div className={styles.imageOverlay}>
+                <NextImageWrapper
                   src={projectData.images.thumbnails[1]}
                   alt={projectData.title}
-                  fill
+                  height={450}
+                  width={300}
                 />
-              </motion.div>
-            </motion.div>
-          </motion.div>
+              </div>
+            </div>
+          </div>
           <h3>{projectData.title}</h3>
         </div>
 
@@ -133,7 +106,9 @@ export default async function ProjectPage({
           {projectData.description && (
             <div className={styles.projectDescription}>
               <h4 className={styles.descriptionTitle}>NOTES</h4>
-              <p>{projectData.description}</p>
+              {projectData.description.split("\n").map((line, index) => (
+                <p key={index}>{line}</p>
+              ))}
             </div>
           )}
         </div>
