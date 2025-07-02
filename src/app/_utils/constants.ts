@@ -12,15 +12,6 @@ import IEC_10 from "../../../public/assets/IEC_10.jpg";
 import IEC_THUMB01 from "../../../public/assets/IEC_THUMB01.png";
 import IEC_THUMB02 from "../../../public/assets/IEC_THUMB02.png";
 
-// Buddhist Monastry
-import BTM_SKETCH01 from "../../../public/assets/BTM_SKETCH01.jpg";
-import BTM_SKETCH02 from "../../../public/assets/BTM_SKETCH02.jpeg";
-import BTM_SKETCH03 from "../../../public/assets/BTM_SKETCH03.jpg";
-import BTM_AXO01 from "../../../public/assets/BTM_AXO01.png";
-import BTM_SECTION01 from "../../../public/assets/BTM_SECTION01.png";
-import BTM_THUMB01 from "../../../public/assets/BTM_THUMB01.png";
-import BTM_THUMB02 from "../../../public/assets/BTM_THUMB02.png";
-
 // Imarat Office Studio 1252
 import IMO_01 from "../../../public/assets/IMO_01.jpeg";
 import IMO_02 from "../../../public/assets/IMO_02.jpeg";
@@ -182,34 +173,47 @@ export const PROJECT_IMAGES = {
     pictures: [],
     sketches: [
       {
-        src: BTM_SKETCH01,
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751470402/BTM_SKETCH01_yrzjqc.jpg",
         alt: "Buddhist Monastery - Concept Sketch",
         link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
       },
       {
-        src: BTM_SKETCH02,
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751470401/BTM_SKETCH02_io6cnk.jpg",
         alt: "Buddhist Monastery - Elevation Sketch",
         link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
       },
       {
-        src: BTM_SKETCH03,
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751470402/BTM_SKETCH03_wabrs6.jpg",
         alt: "Buddhist Monastery - Sketch 3",
         link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
       },
     ],
     drawings: [
       {
-        src: BTM_AXO01,
-        alt: "Buddhist Monastery - Axonometric View",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751461754/BTM_DRAWING01_txncho.jpg",
+        alt: "Buddhist Monastery - Drawing 01",
         link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
       },
       {
-        src: BTM_SECTION01,
-        alt: "Buddhist Monastery - Section Drawing",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751461752/BTM_DRAWING02_pyqrvf.jpg",
+        alt: "Buddhist Monastery - Drawing 02",
+        link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751461753/BTM_DRAWING03_o0ymmm.jpg",
+        alt: "Buddhist Monastery - Drawing 03",
+        link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751461755/BTM_DRAWING04_swk3dx.jpg",
+        alt: "Buddhist Monastery - Drawing 04",
         link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
       },
     ],
-    thumbnails: [BTM_THUMB01, BTM_THUMB02],
+    thumbnails: [
+      "https://res.cloudinary.com/drcns5wjs/image/upload/v1751470402/BTM_THUMB01_fztjxz.png",
+      "https://res.cloudinary.com/drcns5wjs/image/upload/v1751470402/BTM_THUMB02_q7bdas.png",
+    ],
   },
   [PROJECT_KEYS.NYAYPURI_HOUSE]: {
     pictures: [
@@ -570,13 +574,6 @@ export {
   IEC_10,
   IEC_THUMB01,
   IEC_THUMB02,
-
-  // Buddhist Monastry
-  BTM_SKETCH01,
-  BTM_SKETCH02,
-  BTM_AXO01,
-  BTM_THUMB01,
-  BTM_THUMB02,
 
   // Studio - 1252
   IMO_01,

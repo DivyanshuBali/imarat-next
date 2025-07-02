@@ -9,7 +9,7 @@ import { AnimatePresence } from "motion/react";
 
 type Props = {
   images: {
-    src: StaticImageData | null;
+    src: StaticImageData | string | null;
     alt: string;
     link: string;
   }[];

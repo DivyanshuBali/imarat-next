@@ -1,7 +1,5 @@
 import Image from "next/image";
 import {
-  BTM_SKETCH01,
-  BTM_SKETCH02,
   IEC_05,
   IEC_07,
   IEC_10,
@@ -23,7 +21,7 @@ export const LANDING_CAROUSEL_DATA = [
   {
     content: (
       <Image
-        src={BTM_SKETCH01}
+        src={PROJECT_IMAGES[PROJECT_KEYS.BUDDHIST_MONASTERY].sketches[0].src}
         alt={"A sketch of Buddhist Monastry Concept"}
         fill
         priority
@@ -83,7 +81,7 @@ export const LANDING_CAROUSEL_DATA = [
   {
     content: (
       <Image
-        src={BTM_SKETCH02}
+        src={PROJECT_IMAGES[PROJECT_KEYS.BUDDHIST_MONASTERY].sketches[1].src}
         alt={"A sketch of Buddhist Monastry Concept"}
         fill
         style={{ objectFit: "contain" }}
