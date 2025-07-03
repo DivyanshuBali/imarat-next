@@ -53,6 +53,7 @@ export enum PROJECT_KEYS {
   STUDIO_1252 = "201701-studio-1252",
   BUDDHIST_MONASTERY = "202308-buddhist-monastery",
   VRINDAVAN = "202308-vrindavan",
+  HOUSE_OF_THE_SPEAKER = "202507-house-of-the-speaker",
 }
 
 export const PROJECT_IMAGES = {
@@ -370,6 +371,31 @@ export const PROJECT_IMAGES = {
         alt: "Billy Goat Resort - Incline View",
         link: `projects/${PROJECT_KEYS.BILLY_GOAT_RESORT}`,
       },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751530330/BGR_06_rfos7s.jpg",
+        alt: "Billy Goat Resort - Model 01",
+        link: `projects/${PROJECT_KEYS.BILLY_GOAT_RESORT}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751530330/BGR_07_gu7md9.jpg",
+        alt: "Billy Goat Resort - Model 02",
+        link: `projects/${PROJECT_KEYS.BILLY_GOAT_RESORT}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751530330/BGR_08_mdnrim.jpg",
+        alt: "Billy Goat Resort - Model 03",
+        link: `projects/${PROJECT_KEYS.BILLY_GOAT_RESORT}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751530331/BGR_09_akq14j.jpg",
+        alt: "Billy Goat Resort - Model 04",
+        link: `projects/${PROJECT_KEYS.BILLY_GOAT_RESORT}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751530331/BGR_10_bwkyjn.jpg",
+        alt: "Billy Goat Resort - Model 05",
+        link: `projects/${PROJECT_KEYS.BILLY_GOAT_RESORT}`,
+      },
     ],
     sketches: [
       {
@@ -434,6 +460,26 @@ export const PROJECT_IMAGES = {
     thumbnails: [
       "https://res.cloudinary.com/drcns5wjs/image/upload/v1750255104/DBH_THUMB01_moqr4j.png",
       "https://res.cloudinary.com/drcns5wjs/image/upload/v1750255104/DBH_THUMB02_nrhuqd.png",
+    ],
+  },
+  [PROJECT_KEYS.HOUSE_OF_THE_SPEAKER]: {
+    pictures: [],
+    sketches: [],
+    drawings: [
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751481485/BJO_DRAWING01_rvzdrz.jpg",
+        alt: "",
+        link: `projects/${PROJECT_KEYS.HOUSE_OF_THE_SPEAKER}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751481485/BJO_DRAWING02_tkbrh0.jpg",
+        alt: "",
+        link: `projects/${PROJECT_KEYS.HOUSE_OF_THE_SPEAKER}`,
+      },
+    ],
+    thumbnails: [
+      "https://res.cloudinary.com/drcns5wjs/image/upload/v1751545125/BJO_THUMBNAIL01_ndp0jc.png",
+      "https://res.cloudinary.com/drcns5wjs/image/upload/v1751545126/BJO_THUMBNAIL02_vfukgt.png",
     ],
   },
 };
@@ -556,6 +602,23 @@ export const PROJECT_DATA = {
       The client, an eccentric engineer, is also a skateboarder. The house is such a boyhood club. The house grows into a home and with time the spaces are meant to adapt. The floor above which contains a small room connected to the terrace garden also bears a study hanging out of it, ‘the cockpit’. Overlooking the larger double volume, it brings a sense of exteriority to the living space. And with the lamp post and the tree and the glass wall, it cultivates a magical surrealism. The practical intentions are to imagine  beautiful conditions of living in a small plot of 45’ by 20’. But the impractical dream is what makes this project one of the favourites on our drafting boards.
     `,
     images: PROJECT_IMAGES[PROJECT_KEYS.DIVYANSHU_BALI_HOUSE],
+  },
+  [PROJECT_KEYS.HOUSE_OF_THE_SPEAKER]: {
+    title: "202507 - HOUSE OF THE SPEAKER",
+    link: PROJECT_KEYS.HOUSE_OF_THE_SPEAKER,
+    date: "2025",
+    type: "Office",
+    area: "4000 sq ft.",
+    location: "",
+    methodology:
+      "Column free construction, Debris reuse, Public office prototype, Microclimate rejuvenation, Local supply chains",
+    materials: "Brick, Mud, Steel, Red Sandstone, White Marble.",
+    description: `
+      The idea was to create a novel prototype of what a public office could be. The freshly appointed speaker for Haryana, Mr. Harvinder Kalyan had a vision to change the way we envisioned government offices in India. The examples that generally span this architectural typology contain run down plasticised materials, dingy under-lighted spaces, and unregulated public traffic. This had to change, giving way to representation of local identity. Frugal sensibilities, natural materials and open, green environs. To set a bar, the functions were planned around a courtyard. The main circulation is through a three tier corridor, regulating pedestrian traffic. How people perceive their leaders changes their own attitudes towards materials and building traditions. Natural materials and vernacular techniques are currently being abandoned in villages for faster constructions. But this can change and therein lies the project’s biggest hope. 
+      \n\n
+      The blocks are planned without a single concrete column and with pitched roofs. The volumes face open courts to allow for flexibility in accommodating wider populations. The existing trees on site were not displaced in the process of this construction. Lying on the north south axis are wall articulations which offer greater support than singular straight walls and further chop down the harsh Indian sun. This reduces glare inside while filling the spaces with ample light. Despite the functional and climatic concerns, the project inquires about local living patterns with manjis in verandahs and veras in the shade of lofty trees, where village gatherings typically happened to resolve matters. Beyond the local mud plaster techniques which derive from Indian building traditions it is these mannerisms which cultivate the architecture of this project.
+    `,
+    images: PROJECT_IMAGES[PROJECT_KEYS.HOUSE_OF_THE_SPEAKER],
   },
 };
 
