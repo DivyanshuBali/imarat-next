@@ -10,9 +10,9 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 const EVENTS = [
   {
-    title: "WORKSHOP ON WOOD",
-    date: "2025-03-19",
-    href: "",
+    title: "HANDMADE EARTH",
+    date: "2025-06-24",
+    href: "https://www.instagram.com/p/DLSXgBxy6bu/",
   },
 ];
 
@@ -39,7 +39,7 @@ function EventsPanel() {
         >
           <path
             d="M7.14645 2.14645C7.34171 1.95118 7.65829 1.95118 7.85355 2.14645L11.8536 6.14645C12.0488 6.34171 12.0488 6.65829 11.8536 6.85355C11.6583 7.04882 11.3417 7.04882 11.1464 6.85355L8 3.70711L8 12.5C8 12.7761 7.77614 13 7.5 13C7.22386 13 7 12.7761 7 12.5L7 3.70711L3.85355 6.85355C3.65829 7.04882 3.34171 7.04882 3.14645 6.85355C2.95118 6.65829 2.95118 6.34171 3.14645 6.14645L7.14645 2.14645Z"
-            fill="white"
+            fill="black"
             fillRule="evenodd"
             clipRule="evenodd"
           ></path>
@@ -48,7 +48,12 @@ function EventsPanel() {
       <div className={styles.eventsPanelContent}>
         {EVENTS.map((ev, index) => {
           return (
-            <Link href={ev.href} key={ev.date}>
+            <Link
+              href={ev.href}
+              key={ev.date}
+              target="_blank"
+              referrerPolicy="no-referrer"
+            >
               <div className={styles.eventWrapper}>
                 <div className={styles.eventTitle}>{ev.title}</div>
                 <div

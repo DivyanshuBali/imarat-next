@@ -34,19 +34,21 @@
     align-items: center;
     height: 100%;
     height: var(--pull-out-header-height);
-    background-color: #B09172;
+    background-color: #cecece83;
+    backdrop-filter: blur(4px);
     padding: 0 0.5rem;
     cursor: pointer;
 
     .title {
       font-size: 0.8rem;
-      color: white;
+      color: black;
       letter-spacing: 1.2px;
     }
   }
 
   .eventsPanelContent {
-    background-color: #C7A98AE6;
+    background-color: #ffffffac;
+    backdrop-filter: blur(4px);
     padding: 0.5rem;
     height: 100%;
 
