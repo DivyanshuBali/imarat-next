@@ -7,6 +7,8 @@
   --white: #ffffff;
 
   --events-panel-width: 40px;
+
+  --yarl__color_backdrop: white;
 }
 
 /* RESET STYLES: Normalize + Custom Reset */

@@ -104,7 +104,9 @@ export default function ImageCarousel(props: Props) {
       <Lightbox
         open={lightboxOpen}
         close={toggleLightbox}
-        slides={images.map((img) => ({ src: img.src as string }))}
+        slides={images.map((img) => ({
+          src: typeof img.src === "string" ? img.src : img.src?.src ?? "",
+        }))}
         index={activeImageIndex}
         plugins={[Zoom]}
       />
