@@ -8,6 +8,10 @@ import styles from "./ImageCarousel.module.css";
 import Image from "next/image";
 import { CaretLeftIcon, CaretRightIcon } from "@radix-ui/react-icons";
 import { AnimatePresence } from "motion/react";
+import { useToggle } from "@/app/_hooks/useToggle";
+import Lightbox from "yet-another-react-lightbox";
+import { Zoom } from "yet-another-react-lightbox/plugins";
+import "yet-another-react-lightbox/styles.css";
 
 type Props = {
   images: ProjectImage[];
@@ -17,6 +21,8 @@ export default function ImageCarousel(props: Props) {
   const { images } = props;
 
   const [activeImageIndex, setActiveImageIndex] = useState(0);
+  const [lightboxOpen, toggleLightbox] = useToggle(false);
+
   const handleSetActiveImage = (type: "next" | "prev") => {
     if (type === "next") {
       if (activeImageIndex === images.length - 1) setActiveImageIndex(0);
@@ -39,10 +45,7 @@ export default function ImageCarousel(props: Props) {
       className={styles.imageCarouselContainer}
     >
       <div className={styles.imageContainer}>
-        <button
-          className={styles.prevArrowContainer}
-          onClick={() => handleSetActiveImage("prev")}
-        ></button>
+        {/* IMAGE */}
         <AnimatePresence>
           <motion.div
             key={activeImageIndex}
@@ -60,8 +63,22 @@ export default function ImageCarousel(props: Props) {
             />
           </motion.div>
         </AnimatePresence>
+
+        {/* PREV BUTTON */}
         <button
-          className={styles.nextArrowContainer}
+          className={`${styles.imageControls} ${styles.prevArrowContainer}`}
+          onClick={() => handleSetActiveImage("prev")}
+        ></button>
+
+        {/* ZOOM BUTTON */}
+        <button
+          className={`${styles.imageControls} ${styles.zoomPhotoContainer}`}
+          onClick={toggleLightbox}
+        ></button>
+
+        {/* NEXT BUTTON */}
+        <button
+          className={`${styles.imageControls} ${styles.nextArrowContainer}`}
           onClick={() => handleSetActiveImage("next")}
         ></button>
       </div>
@@ -83,6 +100,14 @@ export default function ImageCarousel(props: Props) {
           </motion.div>
         </button>
       </div>
+
+      <Lightbox
+        open={lightboxOpen}
+        close={toggleLightbox}
+        slides={images.map((img) => ({ src: img.src as string }))}
+        index={activeImageIndex}
+        plugins={[Zoom]}
+      />
     </motion.div>
   );
 }

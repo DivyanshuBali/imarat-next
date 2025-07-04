@@ -5,24 +5,25 @@
 
   .imageContainer {
     width: 100%;
-    flex: 1;
     aspect-ratio: 3 / 2;
     position: relative;
     display: flex;
     overflow: hidden;
 
-    .prevArrowContainer {
+    .imageControls {
       all: unset;
+      flex: 1;
       height: 100%;
-      width: 50%;
       z-index: 1;
+    }
+
+    .prevArrowContainer {
       cursor: url('./left-arrow.png'), auto;
     }
+    .zoomPhotoContainer {
+      cursor: url('./fullscreen.png'), auto;
+    }
     .nextArrowContainer {
-      all: unset;
-      height: 100%;
-      z-index: 1;
-      width: 50%;
       cursor: url('./right-arrow.png'), auto;
     }
 

@@ -434,29 +434,65 @@ export const PROJECT_IMAGES = {
   [PROJECT_KEYS.DIVYANSHU_BALI_HOUSE]: {
     pictures: [
       {
-        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750577985/DBH_02_g2qmry.jpg",
-        alt: "DBH - Model Photo 01",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751628122/DBH_05_hrpqpd.jpg",
+        alt: "DBH - Complete Model Exterior",
         link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
       },
       {
         src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750577985/DBH_01_k2sq2x.jpg",
+        alt: "DBH - Model Photo 01",
+        link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750577985/DBH_02_g2qmry.jpg",
         alt: "DBH - Model Photo 02",
+        link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751628122/DBH_03_nttnxb.jpg",
+        alt: "DBH - Inner staircase design model",
+        link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751628122/DBH_04_gfppch.jpg",
+        alt: "DBH - Model Photo 03",
         link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
       },
     ],
     sketches: [
       {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751627716/DBH_SKETCH01_plmrh0.jpg",
+        alt: "DBH - Front Facade Ideation Sketch",
+        link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751627716/DBH_SKETCH02_dqxlpd.jpg",
+        alt: "DBH - Model making work in progress picture",
+        link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751627716/DBH_SKETCH03_ddbjd9.jpg",
+        alt: "DBH - Le Corbusier inspiration image",
+        link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751627716/DBH_SKETCH04_i0tieu.jpg",
+        alt: "DBH - Hempcrete material for front facade",
+        link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
+      },
+    ],
+    drawings: [
+      {
         src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750577752/DBH_SKETCH01_ru0oxr.jpg",
-        alt: "DBH - Ground Floor Sketch",
+        alt: "DBH - Ground Floor Drawing",
         link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
       },
       {
         src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750577752/DBH_SKETCH02_lco5qo.jpg",
-        alt: "DBH - First Floor Sketch",
+        alt: "DBH - First Floor Drawing",
         link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
       },
     ],
-    drawings: [],
     thumbnails: [
       "https://res.cloudinary.com/drcns5wjs/image/upload/v1750255104/DBH_THUMB01_moqr4j.png",
       "https://res.cloudinary.com/drcns5wjs/image/upload/v1750255104/DBH_THUMB02_nrhuqd.png",
