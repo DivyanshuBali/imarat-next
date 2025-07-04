@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { AppProvider } from "./_contexts/AppContext";
 import BackgroundGrid from "./_components/BackgroundGrid/BackgroundGrid";
 
 import "./globals.css";
@@ -19,15 +18,13 @@ export default function RootLayout(
   props: Readonly<{ children: React.ReactNode }>
 ) {
   return (
-    <AppProvider>
-      <html lang="en">
-        <body>
-          <BackgroundGrid />
-          <Header />
-          <div className="max-content-width">{props.children}</div>
-          <EventsPanel />
-        </body>
-      </html>
-    </AppProvider>
+    <html lang="en">
+      <body>
+        <BackgroundGrid />
+        <Header />
+        <div className="max-content-width">{props.children}</div>
+        <EventsPanel />
+      </body>
+    </html>
   );
 }
