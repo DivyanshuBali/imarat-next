@@ -483,6 +483,21 @@ export const PROJECT_IMAGES = {
     ],
     drawings: [
       {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1752064406/DBH_DRAWING03_bigloq.jpg",
+        alt: "DBH - Front Elevation",
+        link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1752064406/DBH_DRAWING04_ks3pbv.jpg",
+        alt: "DBH - Side Elevation",
+        link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1752064406/DBH_DRAWING05_gkfyzs.jpg",
+        alt: "DBH - Side Elevation 02",
+        link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
+      },
+      {
         src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750577752/DBH_SKETCH01_ru0oxr.jpg",
         alt: "DBH - Ground Floor Drawing",
         link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
@@ -600,9 +615,14 @@ export const PROJECT_DATA = {
     methodology: "",
     materials: "Mild Steel, Pine, Kota Stone, Lime, Polycarbonate",
     description: `
-      Control Z had a vision for changing the consumption of the artefact of the 21st century; the phone. Phones go in and out of fashion each year, and this results in a devastating impact on the mineral resources of earth. Their company tries to tackle this by refurbishing new, older phones. Doing so also reselling luxury phones at affordable prices. The task was to represent this vision in the architecture of their first retail store.
+      Control Z set out to rethink how we consume the defining artefact of the 21st century: the phone. In a world where phone models go out of style each year, the cost isn’t just financial—it’s environmental. The brand’s mission is to counteract this by refurbishing older phones, extending their life cycles, and making premium devices accessible at lower price points.
       \n \n
-      The idea was to bring the energy of their workshops to the people. Inducing transparency in their process, would build trust to the consumer. To bring out the ideas of sustainability that power their vision, local materials with low embodied energy were introduced; lime for the walls and Kota stone for the floor. To introduce their process and story, tools from their actual labs are pinned to the walls. In this way, the tradition of a clean, minimal store that hides behind the covers is broken; what one gets is edgy raw and in a process of assembly and refinement. The architecture becomes a metaphor of their assembly line. The technophilic enthusiasm which is in the hands is spread out on the walls. 
+      The brief was to translate that mission into architecture—for their first retail store.
+      The design needed to echo their ethos: raw, transparent, and in motion.
+      \n \n
+      Rather than hide the mechanics behind sleek surfaces, the store reveals its process. Tools from their refurbishment labs line the walls. The floor is laid in unpolished Kota stone; the walls finished in lime—materials chosen not just for their honesty, but for their low embodied energy. The goal? To bring the energy of the workshop to the street. To let people see how things are made, fixed, and reimagined.
+      \n \n
+      It’s a deliberate break from retail minimalism. Instead of pristine displays and polish, the store feels alive—mid-assembly, mid-idea. Like the phones it houses, it’s a space of revival, not replacement.
     `,
     images: PROJECT_IMAGES[PROJECT_KEYS.CTRL_Z],
   },
