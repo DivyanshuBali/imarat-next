@@ -483,17 +483,17 @@ export const PROJECT_IMAGES = {
     ],
     drawings: [
       {
-        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1752064406/DBH_DRAWING03_bigloq.jpg",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1752166455/DBH_DRAWING03_chbgxl.jpg",
         alt: "DBH - Front Elevation",
         link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
       },
       {
-        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1752064406/DBH_DRAWING04_ks3pbv.jpg",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1752166456/DBH_DRAWING04_jkex5y.jpg",
         alt: "DBH - Side Elevation",
         link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
       },
       {
-        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1752064406/DBH_DRAWING05_gkfyzs.jpg",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1752166456/DBH_DRAWING05_hibaer.jpg",
         alt: "DBH - Side Elevation 02",
         link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
       },
