@@ -251,7 +251,28 @@ export const PROJECT_IMAGES = {
         link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
       },
     ],
-    drawings: [],
+    drawings: [
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1752166777/NYH_DRAWING01_obc5i2.jpg",
+        alt: "Nyaypuri House - North Elevation",
+        link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1752166777/NYH_DRAWING02_rzxpss.jpg",
+        alt: "Nyaypuri House - East Elevation",
+        link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1752166777/NYH_DRAWING03_zjv4ah.jpg",
+        alt: "Nyaypuri House - West Elevation",
+        link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1752166778/NYH_DRAWING04_mfiv32.jpg",
+        alt: "Nyaypuri House - South Elevation",
+        link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
+      },
+    ],
     thumbnails: [NYH_THUMB01, NYH_THUMB02],
   },
   [PROJECT_KEYS.VRINDAVAN]: {
