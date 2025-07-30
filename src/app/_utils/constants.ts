@@ -312,28 +312,53 @@ export const PROJECT_IMAGES = {
   [PROJECT_KEYS.CTRL_Z]: {
     pictures: [
       {
-        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580649/CTRL_Z_01_esj0nt.jpg",
-        alt: "CTRL Z - Store Front 3D Render",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1753855394/CTRL_Z01_nd5evq.jpg",
+        alt: "CTRL Z - Store Front Facade",
         link: `projects/${PROJECT_KEYS.CTRL_Z}`,
       },
       {
-        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580649/CTRL_Z_02_pu0ag3.jpg",
-        alt: "CTRL Z - Store Ground Floor 3D Render",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1753855395/CTRL_Z02_yrchcq.jpg",
+        alt: "CTRL Z - Store Interior, Motion Blur Shot",
         link: `projects/${PROJECT_KEYS.CTRL_Z}`,
       },
       {
-        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580650/CTRL_Z_03_mtf9j0.jpg",
-        alt: "CTRL Z - Store Upper Floor 3D Render",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1753855395/CTRL_Z03_bk06w2.jpg",
+        alt: "CTRL Z - Store Interior ground floor",
         link: `projects/${PROJECT_KEYS.CTRL_Z}`,
       },
       {
-        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580650/CTRL_Z_04_uynzvf.jpg",
-        alt: "CTRL Z - Store Entrance 3D Render",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1753855395/CTRL_Z04_ivgj9l.jpg",
+        alt: "CTRL Z - Waiting Area",
         link: `projects/${PROJECT_KEYS.CTRL_Z}`,
       },
       {
-        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580650/CTRL_Z_05_rsuojp.jpg",
-        alt: "CTRL Z - Store Front Facade 3D Render",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1753855396/CTRL_Z05_a2xwvb.jpg",
+        alt: "CTRL Z - person exiting the store",
+        link: `projects/${PROJECT_KEYS.CTRL_Z}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1753855396/CTRL_Z07_hcdsre.jpg",
+        alt: "CTRL Z - First Floor View",
+        link: `projects/${PROJECT_KEYS.CTRL_Z}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1753855395/CTRL_Z08_jqj7nl.jpg",
+        alt: "CTRL Z - Phones on display for customers",
+        link: `projects/${PROJECT_KEYS.CTRL_Z}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1753855396/CTRL_Z09_o6gbun.jpg",
+        alt: "CTRL Z - People interacting in the store",
+        link: `projects/${PROJECT_KEYS.CTRL_Z}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1753855395/CTRL_Z10_zt1i5x.jpg",
+        alt: "CTRL Z - Store Workspace",
+        link: `projects/${PROJECT_KEYS.CTRL_Z}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1753855395/CTRL_Z11_o386ra.jpg",
+        alt: "CTRL Z - Interior View at night",
         link: `projects/${PROJECT_KEYS.CTRL_Z}`,
       },
     ],
@@ -357,6 +382,33 @@ export const PROJECT_IMAGES = {
       {
         src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580801/CTRL_Z_DRG_04_vlyfxq.jpg",
         alt: "",
+        link: `projects/${PROJECT_KEYS.CTRL_Z}`,
+      },
+
+      // 3d renders
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580649/CTRL_Z_01_esj0nt.jpg",
+        alt: "CTRL Z - Store Front 3D Render",
+        link: `projects/${PROJECT_KEYS.CTRL_Z}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580649/CTRL_Z_02_pu0ag3.jpg",
+        alt: "CTRL Z - Store Ground Floor 3D Render",
+        link: `projects/${PROJECT_KEYS.CTRL_Z}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580650/CTRL_Z_03_mtf9j0.jpg",
+        alt: "CTRL Z - Store Upper Floor 3D Render",
+        link: `projects/${PROJECT_KEYS.CTRL_Z}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580650/CTRL_Z_04_uynzvf.jpg",
+        alt: "CTRL Z - Store Entrance 3D Render",
+        link: `projects/${PROJECT_KEYS.CTRL_Z}`,
+      },
+      {
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580650/CTRL_Z_05_rsuojp.jpg",
+        alt: "CTRL Z - Store Front Facade 3D Render",
         link: `projects/${PROJECT_KEYS.CTRL_Z}`,
       },
     ],
