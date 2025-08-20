@@ -12,14 +12,14 @@ import Image from "next/image";
 const EVENTS = [
   {
     title: "BUILDING AS A LIVING ARCHIVE",
-    date: "2025-09-12 to 2025-19-16",
+    date: "12-09-25 to 16-09-25",
     href: "https://forms.gle/1397yw9Q5vhbSjFY8",
     image:
       "https://res.cloudinary.com/drcns5wjs/image/upload/v1755686186/shangarh-event_-_1_z6t1uu.jpg",
   },
   {
     title: "HANDMADE EARTH",
-    date: "2025-06-24",
+    date: "24-06-25",
     href: "https://www.instagram.com/p/DLSXgBxy6bu/",
   },
 ];
