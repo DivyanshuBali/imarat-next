@@ -7,8 +7,16 @@ import { motion } from "motion/react";
 import React from "react";
 import Link from "next/link";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
+import Image from "next/image";
 
 const EVENTS = [
+  {
+    title: "BUILDING AS A LIVING ARCHIVE",
+    date: "2025-09-12 to 2025-19-16",
+    href: "https://forms.gle/1397yw9Q5vhbSjFY8",
+    image:
+      "https://res.cloudinary.com/drcns5wjs/image/upload/v1755686186/shangarh-event_-_1_z6t1uu.jpg",
+  },
   {
     title: "HANDMADE EARTH",
     date: "2025-06-24",
@@ -45,6 +53,7 @@ function EventsPanel() {
           ></path>
         </motion.svg>
       </div>
+
       <div className={styles.eventsPanelContent}>
         {EVENTS.map((ev, index) => {
           return (
@@ -55,19 +64,29 @@ function EventsPanel() {
               referrerPolicy="no-referrer"
             >
               <div className={styles.eventWrapper}>
-                <div className={styles.eventTitle}>{ev.title}</div>
-                <div
-                  className={styles.eventTitle}
-                  style={{ display: "flex", gap: "1rem" }}
-                >
-                  {ev.date}
-                  <ArrowRightIcon />
-                </div>
-              </div>
+                {ev.image && (
+                  <div className={styles.eventImage}>
+                    <Image src={ev.image} alt={ev.title} fill />
+                  </div>
+                )}
 
-              {index === EVENTS.length - 1 && (
-                <div className={styles.divider}></div>
-              )}
+                <div className={styles.eventContent}>
+                  <div className={styles.eventTitle}>{ev.title}</div>
+                  <div style={{ display: "flex", gap: "1rem" }}>
+                    <div
+                      className={styles.eventTitle}
+                      style={{ display: "flex", gap: "1rem" }}
+                    >
+                      {ev.date}
+                      <ArrowRightIcon />
+                    </div>
+                  </div>
+                </div>
+
+                {index === EVENTS.length - 1 && (
+                  <div className={styles.divider} />
+                )}
+              </div>
             </Link>
           );
         })}
