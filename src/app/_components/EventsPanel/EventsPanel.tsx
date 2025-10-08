@@ -28,13 +28,23 @@ function EventsPanel() {
   const [state, toggle] = useToggle();
 
   return (
-    <div
+    <section
       className={`${styles.eventsPanelContainer} ${
         state ? styles.animateIn : ""
       } `}
+      data-nosnippet="true" // hide from search engines
+      aria-label="Upcoming Events"
+      tabIndex={-1}
     >
-      <div className={styles.eventsPanelHeader} onClick={toggle}>
-        <div className={styles.title}>EVENTS</div>
+      <button
+        className={styles.eventsPanelHeader}
+        onClick={toggle}
+        aria-expanded={state}
+        aria-controls="events-panel-content"
+        type="button"
+        tabIndex={0}
+      >
+        <span className={styles.title}>EVENTS</span>
         <motion.svg
           width="15"
           height="15"
@@ -44,6 +54,8 @@ function EventsPanel() {
           initial={false}
           animate={{ rotate: state ? 180 : 0 }}
           transition={{ duration: 0.4 }}
+          aria-hidden="true"
+          focusable="false"
         >
           <path
             d="M7.14645 2.14645C7.34171 1.95118 7.65829 1.95118 7.85355 2.14645L11.8536 6.14645C12.0488 6.34171 12.0488 6.65829 11.8536 6.85355C11.6583 7.04882 11.3417 7.04882 11.1464 6.85355L8 3.70711L8 12.5C8 12.7761 7.77614 13 7.5 13C7.22386 13 7 12.7761 7 12.5L7 3.70711L3.85355 6.85355C3.65829 7.04882 3.34171 7.04882 3.14645 6.85355C2.95118 6.65829 2.95118 6.34171 3.14645 6.14645L7.14645 2.14645Z"
@@ -52,9 +64,16 @@ function EventsPanel() {
             clipRule="evenodd"
           ></path>
         </motion.svg>
-      </div>
+      </button>
 
-      <div className={styles.eventsPanelContent}>
+      <div
+        className={styles.eventsPanelContent}
+        id="events-panel-content"
+        role="region"
+        aria-live="polite"
+        aria-hidden={!state}
+        tabIndex={0}
+      >
         {EVENTS.map((ev, index) => {
           return (
             <Link
@@ -62,6 +81,8 @@ function EventsPanel() {
               key={ev.date}
               target="_blank"
               referrerPolicy="no-referrer"
+              tabIndex={state ? 0 : -1}
+              aria-label={`${ev.title}, ${ev.date}. Opens in a new tab.`}
             >
               <div className={styles.eventWrapper}>
                 {ev.image && (
@@ -78,7 +99,7 @@ function EventsPanel() {
                       style={{ display: "flex", gap: "1rem" }}
                     >
                       {ev.date}
-                      <ArrowRightIcon />
+                      <ArrowRightIcon aria-hidden="true" />
                     </div>
                   </div>
                 </div>
@@ -91,7 +112,7 @@ function EventsPanel() {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }
 

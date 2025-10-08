@@ -26,11 +26,14 @@
     width: 100vw;
     max-width: 100vw;
   }
+
   .eventsPanelHeader {
+    border: none;
+    width: 100%;
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
     height: var(--pull-out-header-height);
     background-color: #cecece83;
     backdrop-filter: blur(4px);
