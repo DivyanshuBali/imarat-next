@@ -51,7 +51,7 @@ export enum PROJECT_KEYS {
   CTRL_Z = "202506-ctrl-z",
   BILLY_GOAT_RESORT = "202506-billy-goat-resort",
   STUDIO_1252 = "201701-studio-1252",
-  BUDDHIST_MONASTERY = "202308-buddhist-monastery",
+  ARANYA_SANGHARAMA_MONASTERY = "202308-aranya-sangharama-monastery",
   VRINDAVAN = "202308-vrindavan",
   HOUSE_OF_THE_SPEAKER = "202507-house-of-the-speaker",
 }
@@ -170,45 +170,45 @@ export const PROJECT_IMAGES = {
     ],
     thumbnails: [IMO_THUMB01, IMO_THUMB02],
   },
-  [PROJECT_KEYS.BUDDHIST_MONASTERY]: {
+  [PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY]: {
     pictures: [],
     sketches: [
       {
         src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751470402/BTM_SKETCH01_yrzjqc.jpg",
-        alt: "Buddhist Monastery - Concept Sketch",
-        link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
+        alt: "Aranya Sangharama Monastery - Concept Sketch",
+        link: `projects/${PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY}`,
       },
       {
         src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751470401/BTM_SKETCH02_io6cnk.jpg",
-        alt: "Buddhist Monastery - Elevation Sketch",
-        link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
+        alt: "Aranya Sangharama Monastery - Elevation Sketch",
+        link: `projects/${PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY}`,
       },
       {
         src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751470402/BTM_SKETCH03_wabrs6.jpg",
-        alt: "Buddhist Monastery - Sketch 3",
-        link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
+        alt: "Aranya Sangharama Monastery - Sketch 3",
+        link: `projects/${PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY}`,
       },
     ],
     drawings: [
       {
         src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751461754/BTM_DRAWING01_txncho.jpg",
-        alt: "Buddhist Monastery - Drawing 01",
-        link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
+        alt: "Aranya Sangharama Monastery - Drawing 01",
+        link: `projects/${PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY}`,
       },
       {
         src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751461752/BTM_DRAWING02_pyqrvf.jpg",
-        alt: "Buddhist Monastery - Drawing 02",
-        link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
+        alt: "Aranya Sangharama Monastery - Drawing 02",
+        link: `projects/${PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY}`,
       },
       {
         src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751461753/BTM_DRAWING03_o0ymmm.jpg",
-        alt: "Buddhist Monastery - Drawing 03",
-        link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
+        alt: "Aranya Sangharama Monastery - Drawing 03",
+        link: `projects/${PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY}`,
       },
       {
         src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1751461755/BTM_DRAWING04_swk3dx.jpg",
-        alt: "Buddhist Monastery - Drawing 04",
-        link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
+        alt: "Aranya Sangharama Monastery - Drawing 04",
+        link: `projects/${PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY}`,
       },
     ],
     thumbnails: [
@@ -610,7 +610,7 @@ export const PROJECT_IMAGES = {
 
 export const PROJECT_DATA = {
   [PROJECT_KEYS.IMARAT_EARTH_CENTRE]: {
-    title: "200901 - IMARAT EARTH CENTRE (ICEA)",
+    title: "IMARAT EARTH CENTRE",
     link: PROJECT_KEYS.IMARAT_EARTH_CENTRE,
     date: "2009 - ONGOING",
     type: "Institution",
@@ -624,7 +624,7 @@ export const PROJECT_DATA = {
     images: PROJECT_IMAGES[PROJECT_KEYS.IMARAT_EARTH_CENTRE],
   },
   [PROJECT_KEYS.STUDIO_1252]: {
-    title: "201701 - STUDIO 1252",
+    title: "STUDIO 1252",
     link: PROJECT_KEYS.STUDIO_1252,
     date: "2018",
     type: "Studio/Multi-use",
@@ -637,9 +637,9 @@ export const PROJECT_DATA = {
     images: PROJECT_IMAGES[PROJECT_KEYS.STUDIO_1252],
   },
   [PROJECT_KEYS.NYAYPURI_HOUSE]: {
-    title: "201801 - NYAYPURI HOUSE",
+    title: "NYAYPURI HOUSE",
     link: PROJECT_KEYS.NYAYPURI_HOUSE,
-    date: "2018 - ONGOING",
+    date: "2018 - Ongoing",
     type: "Residence",
     area: "1000 sq yd",
     location: "Nyaypuri, Karnal",
@@ -651,7 +651,7 @@ export const PROJECT_DATA = {
     images: PROJECT_IMAGES[PROJECT_KEYS.NYAYPURI_HOUSE],
   },
   [PROJECT_KEYS.VRINDAVAN]: {
-    title: "202308 - VRINDAVAN",
+    title: "VRINDAVAN",
     link: PROJECT_KEYS.VRINDAVAN,
     date: "2023 - ONGOING",
     type: "Institution",
@@ -664,9 +664,9 @@ export const PROJECT_DATA = {
       "Vrindavan is invisioned as ‘an Indian village’. The visual logic of villages, clustered, huddle around open spaces that account for activities. The challenge of this brief is to accomplish the puritan vision of building naturally- to the level that no cement is brought to the site. The program as well as the construction aim to respond to this. The masterplan is organised to create an atmosphere of a rural setting with densely clustered masses, spaced around open areas. The idea of meandering through and that of the promenade are the two movement patterns which shape its structure as well. This vision has allowed the client to build slowly and due to this slow pace, lime has been favoured with local additives such as jaggery and jackfruit to be used as mortar, replacing cement while kota stone in combination with lime becomes the damp proof course.",
     images: PROJECT_IMAGES[PROJECT_KEYS.VRINDAVAN],
   },
-  [PROJECT_KEYS.BUDDHIST_MONASTERY]: {
-    title: "202308 - BUDDHIST MONASTERY",
-    link: PROJECT_KEYS.BUDDHIST_MONASTERY,
+  [PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY]: {
+    title: "ARANYA SANGHARAMA MONASTERY",
+    link: PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY,
     date: "2023, unbuilt",
     type: "Insitution",
     area: "1500 sq yd",
@@ -676,10 +676,10 @@ export const PROJECT_DATA = {
     materials: "Mud Bricks, Timber, RCC",
     description:
       "Imarat was chosen for designing the first centre for Thai Forest Buddhism, with the venerable Ajahn Jivako as the representative of the sect. The first vision is sketched to the ideals of monastic living, the path to asceticism, and the elements of the architecture that establish its identity. This vision is worked towards refinement into the section and the general plan and onwards until the detailed wall section itself is resolved. The elements of the monastic life, its rituals guide aspects of the design, each activity is granted circular walls while the service spaces are rectilinear. A simpler design by a different agency was ultimately procured for a temporary shelter for the monks.",
-    images: PROJECT_IMAGES[PROJECT_KEYS.BUDDHIST_MONASTERY],
+    images: PROJECT_IMAGES[PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY],
   },
   [PROJECT_KEYS.CTRL_Z]: {
-    title: "202506 - CTRL Z",
+    title: "CTRL Z",
     link: PROJECT_KEYS.CTRL_Z,
     date: "2025, Ongoing",
     type: "Retail Store",
@@ -700,7 +700,7 @@ export const PROJECT_DATA = {
     images: PROJECT_IMAGES[PROJECT_KEYS.CTRL_Z],
   },
   [PROJECT_KEYS.BILLY_GOAT_RESORT]: {
-    title: "202506 - BILLY GOAT RESORT",
+    title: "BILLY GOAT RESORT",
     link: PROJECT_KEYS.BILLY_GOAT_RESORT,
     date: "2024",
     type: "Resort",
@@ -716,7 +716,7 @@ export const PROJECT_DATA = {
     images: PROJECT_IMAGES[PROJECT_KEYS.BILLY_GOAT_RESORT],
   },
   [PROJECT_KEYS.DIVYANSHU_BALI_HOUSE]: {
-    title: "202502 - DBH",
+    title: "DBH",
     link: PROJECT_KEYS.DIVYANSHU_BALI_HOUSE,
     date: "2025",
     type: "Residence",
@@ -733,7 +733,7 @@ export const PROJECT_DATA = {
     images: PROJECT_IMAGES[PROJECT_KEYS.DIVYANSHU_BALI_HOUSE],
   },
   [PROJECT_KEYS.HOUSE_OF_THE_SPEAKER]: {
-    title: "202507 - HOUSE OF THE SPEAKER",
+    title: "HOUSE OF THE SPEAKER",
     link: PROJECT_KEYS.HOUSE_OF_THE_SPEAKER,
     date: "2025",
     type: "Office",

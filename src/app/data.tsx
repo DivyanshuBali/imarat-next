@@ -21,14 +21,17 @@ export const LANDING_CAROUSEL_DATA = [
   {
     content: (
       <Image
-        src={PROJECT_IMAGES[PROJECT_KEYS.BUDDHIST_MONASTERY].sketches[0].src}
-        alt={"A sketch of Buddhist Monastry Concept"}
+        src={
+          PROJECT_IMAGES[PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY].sketches[0]
+            .src
+        }
+        alt={"A sketch of Aranya Sangharama Monastry Concept"}
         fill
         priority
       />
     ),
-    title: "Buddhist Monastry",
-    link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
+    title: "Aranya Sangharama Monastry",
+    link: `projects/${PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY}`,
   },
   {
     content: (
@@ -81,14 +84,17 @@ export const LANDING_CAROUSEL_DATA = [
   {
     content: (
       <Image
-        src={PROJECT_IMAGES[PROJECT_KEYS.BUDDHIST_MONASTERY].sketches[1].src}
-        alt={"A sketch of Buddhist Monastry Concept"}
+        src={
+          PROJECT_IMAGES[PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY].sketches[1]
+            .src
+        }
+        alt={"A sketch of Aranya Sangharama Monastry Concept"}
         fill
         style={{ objectFit: "contain" }}
         priority
       />
     ),
-    title: "Buddhist Monastry",
-    link: `projects/${PROJECT_KEYS.BUDDHIST_MONASTERY}`,
+    title: "Aranya Sangharama Monastry",
+    link: `projects/${PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY}`,
   },
 ];

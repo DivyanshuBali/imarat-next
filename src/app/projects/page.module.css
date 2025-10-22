@@ -64,7 +64,9 @@
     }
     
     .projectTitle {
+      font-size: 14px;
       margin-bottom: 0.2rem;
+      letter-spacing: 1.1px;
     }
 
     .projectDetails {
