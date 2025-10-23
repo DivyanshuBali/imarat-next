@@ -1,0 +1,12 @@
+.masonryItem {
+  /* Prevents images from breaking across columns */
+  break-inside: avoid;
+  margin-bottom: 1rem;
+  display: block;
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
