@@ -26,11 +26,6 @@ import IMO_THUMB01 from "../../../public/assets/IMO_THUMB01.png";
 import IMO_THUMB02 from "../../../public/assets/IMO_THUMB02.png";
 
 // Nyaypuri House
-import NYH01 from "../../../public/assets/NYH01.jpeg";
-import NYH02 from "../../../public/assets/NYH02.jpg";
-import NYH03 from "../../../public/assets/NYH03.jpg";
-import NYH04 from "../../../public/assets/NYH04.jpg";
-import NYH05 from "../../../public/assets/NYH05.jpeg";
 import NYH_SKETCH01 from "../../../public/assets/NYH_SKETCH01.jpeg";
 import NYH_THUMB01 from "../../../public/assets/NYH_THUMB01.png";
 import NYH_THUMB02 from "../../../public/assets/NYH_THUMB02.png";
@@ -246,32 +241,44 @@ export const PROJECT_IMAGES = {
     pictures: [
       {
         id: "nyh-pic-001",
-        src: NYH01,
-        alt: "Nyaypuri House - Exterior View",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1761396543/NYH01_djrbgh.jpg",
+        alt: "Nyaypuri House - Interior View",
         link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
       },
       {
         id: "nyh-pic-002",
-        src: NYH02,
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1761396565/NYH02_ox7pxo.jpg",
         alt: "Nyaypuri House - Courtyard View",
         link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
       },
       {
         id: "nyh-pic-003",
-        src: NYH03,
-        alt: "Nyaypuri House - Interior View",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1761396565/NYH03_cy2jvh.jpg",
+        alt: "Nyaypuri House - Interior View 2",
         link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
       },
       {
         id: "nyh-pic-004",
-        src: NYH04,
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1761397002/NYH04_eirdpd.jpg",
         alt: "Nyaypuri House - Landscape View",
         link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
       },
       {
-        id: "nyh-pic-005",
-        src: NYH05,
-        alt: "Nyaypuri House",
+        id: "nyh-pic-006",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1761396543/NYH06_kyr63f.jpg",
+        alt: "Nyaypuri House - Interior View 3",
+        link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
+      },
+      {
+        id: "nyh-pic-007",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1761396543/NYH07_z1ibgk.jpg",
+        alt: "Nyaypuri House - Interior View 4",
+        link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
+      },
+      {
+        id: "nyh-pic-008",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1761396543/NYH08_bzi16n.jpg",
+        alt: "Nyaypuri House - Interior View 5",
         link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
       },
     ],
@@ -872,11 +879,6 @@ export {
   IMO_THUMB02,
 
   // Nyaypuri
-  NYH01,
-  NYH02,
-  NYH03,
-  NYH04,
-  NYH05,
   NYH_SKETCH01,
   NYH_THUMB01,
   NYH_THUMB02,
