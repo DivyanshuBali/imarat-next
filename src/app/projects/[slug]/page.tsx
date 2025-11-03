@@ -2,9 +2,8 @@ import styles from "./page.module.css";
 
 import { PROJECT_DATA, PROJECT_KEYS } from "@/app/_utils/constants";
 import { notFound } from "next/navigation";
-import ScrollButton from "./_components/ScrollToContentButton";
-import NextImageWrapper from "@/app/_components/NextImageWrapper/NextImageWrapper";
 import MasonryLayout from "./_components/MasonryLayout";
+import HeroSectionGallery from "./_components/HeroSectionGallery";
 
 // This becomes a Server Component by default
 export default async function ProjectPage({
@@ -87,39 +86,12 @@ export default async function ProjectPage({
   const PROJECT_IMAGES = [
     ...projectData.images.pictures,
     ...projectData.images.sketches,
-    ...projectData.images.drawings,
   ];
 
   return (
     <section>
       {/* PROJECT PAGE HERO SECTION */}
-      <div className={styles.projectPageHeader}>
-        <div className={styles.projectPageHeaderImageAndTitle}>
-          <div className={styles.projectItem}>
-            <div className={styles.projectImage}>
-              <div className={styles.imageContainer}>
-                <NextImageWrapper
-                  src={projectData.images.thumbnails[0]}
-                  alt={projectData.title}
-                  height={450}
-                  width={300}
-                />
-              </div>
-              <div className={styles.imageOverlay}>
-                <NextImageWrapper
-                  src={projectData.images.thumbnails[1]}
-                  alt={projectData.title}
-                  height={450}
-                  width={300}
-                />
-              </div>
-            </div>
-          </div>
-          <h3>{projectData.title}</h3>
-        </div>
-
-        <ScrollButton />
-      </div>
+      <HeroSectionGallery projectData={projectData} />
 
       <div className={styles.projectContent} id="projectContent">
         <MasonryLayout

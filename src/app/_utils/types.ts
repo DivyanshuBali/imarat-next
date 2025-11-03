@@ -9,6 +9,13 @@ export type ProjectImage = {
   link: string;
 };
 
+export type ProjectAssets = {
+  pictures: ProjectImage[];
+  sketches: ProjectImage[];
+  drawings: ProjectImage[];
+  thumbnails: string[] | StaticImageData[];
+};
+
 export type ProjectData = {
   title: string;
   link: PROJECT_KEYS;
@@ -18,5 +25,5 @@ export type ProjectData = {
   methodology: string;
   materials: string;
   description: string;
-  images: ProjectImage[];
+  images: ProjectAssets;
 };
