@@ -21,7 +21,7 @@ function Header() {
       <div className={styles.firstLayoutDiv} />
 
       <Link href="/" style={{ height: "40px" }}>
-        <Image src={imaratLogo} alt="imarat logo" />
+        <Image src={imaratLogo} alt="imarat logo" priority />
       </Link>
 
       <ul className={styles.fullScreen}>
