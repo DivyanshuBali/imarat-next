@@ -4,28 +4,45 @@ import { useToggle } from "@/app/_hooks/useToggle";
 import styles from "./EventsPanel.module.css";
 import { motion } from "motion/react";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-import { ArrowRightIcon } from "@radix-ui/react-icons";
-import Image from "next/image";
+import {
+  ArrowUpIcon,
+  CaretDownIcon,
+  ExternalLinkIcon,
+} from "@radix-ui/react-icons";
 
 const EVENTS = [
   {
+    id: 1,
     title: "BUILDING AS A LIVING ARCHIVE",
     date: "12-09-25 to 16-09-25",
-    href: "https://forms.gle/1397yw9Q5vhbSjFY8",
-    image:
-      "https://res.cloudinary.com/drcns5wjs/image/upload/v1755686186/shangarh-event_-_1_z6t1uu.jpg",
+    description: {
+      subtitle:
+        "Documenting historic site as a 'Living Archive' Condition assessment of historic site. Conservation approaches. Curating an on-site exhibition.",
+      href: "https://forms.gle/1397yw9Q5vhbSjFY8",
+      place: "Shamgarh, Karnal",
+      additionalInfo: ["Architects and Students of Architecture (2YR+)"],
+    },
   },
   {
+    id: 2,
     title: "HANDMADE EARTH",
     date: "24-06-25",
-    href: "https://www.instagram.com/p/DLSXgBxy6bu/",
+    description: {
+      href: "https://www.instagram.com/p/DLSXgBxy6bu/",
+      place: "IIT, Roorkee",
+    },
   },
 ];
 
 function EventsPanel() {
   const [state, toggle] = useToggle();
+  const [expandedEventId, setExpandedEventId] = useState<number | null>(null);
+
+  const handleEventClick = (eventId: number) => {
+    setExpandedEventId(expandedEventId === eventId ? null : eventId);
+  };
 
   return (
     <section
@@ -45,25 +62,14 @@ function EventsPanel() {
         tabIndex={0}
       >
         <span className={styles.title}>EVENTS</span>
-        <motion.svg
-          width="15"
-          height="15"
-          viewBox="0 0 15 15"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+        <motion.div
           initial={false}
           animate={{ rotate: state ? 180 : 0 }}
           transition={{ duration: 0.4 }}
           aria-hidden="true"
-          focusable="false"
         >
-          <path
-            d="M7.14645 2.14645C7.34171 1.95118 7.65829 1.95118 7.85355 2.14645L11.8536 6.14645C12.0488 6.34171 12.0488 6.65829 11.8536 6.85355C11.6583 7.04882 11.3417 7.04882 11.1464 6.85355L8 3.70711L8 12.5C8 12.7761 7.77614 13 7.5 13C7.22386 13 7 12.7761 7 12.5L7 3.70711L3.85355 6.85355C3.65829 7.04882 3.34171 7.04882 3.14645 6.85355C2.95118 6.65829 2.95118 6.34171 3.14645 6.14645L7.14645 2.14645Z"
-            fill="black"
-            fillRule="evenodd"
-            clipRule="evenodd"
-          ></path>
-        </motion.svg>
+          <ArrowUpIcon />
+        </motion.div>
       </button>
 
       <div
@@ -75,40 +81,92 @@ function EventsPanel() {
         tabIndex={0}
       >
         {EVENTS.map((ev, index) => {
+          const isExpanded = expandedEventId === ev.id;
           return (
-            <Link
-              href={ev.href}
-              key={ev.date}
-              target="_blank"
-              referrerPolicy="no-referrer"
+            <div
+              key={ev.id}
               tabIndex={state ? 0 : -1}
-              aria-label={`${ev.title}, ${ev.date}. Opens in a new tab.`}
+              aria-label={`${ev.title}, ${ev.date}`}
             >
               <div className={styles.eventWrapper}>
-                {ev.image && (
-                  <div className={styles.eventImage}>
-                    <Image src={ev.image} alt={ev.title} fill />
-                  </div>
-                )}
-
-                <div className={styles.eventContent}>
+                <button
+                  className={styles.eventContent}
+                  onClick={() => handleEventClick(ev.id)}
+                  type="button"
+                  aria-expanded={isExpanded}
+                  aria-controls={`event-description-${ev.id}`}
+                >
                   <div className={styles.eventTitle}>{ev.title}</div>
-                  <div style={{ display: "flex", gap: "1rem" }}>
-                    <div
-                      className={styles.eventTitle}
-                      style={{ display: "flex", gap: "1rem" }}
+                  <div
+                    className={styles.eventTitle}
+                    style={{ display: "flex", gap: "0.2rem" }}
+                  >
+                    {ev.date}
+                    <motion.div
+                      initial={false}
+                      animate={{ rotate: isExpanded ? 0 : 180 }}
+                      transition={{ duration: 0.4 }}
+                      aria-hidden="true"
                     >
-                      {ev.date}
-                      <ArrowRightIcon aria-hidden="true" />
-                    </div>
+                      <CaretDownIcon
+                        aria-hidden="true"
+                        height={15}
+                        width={15}
+                        style={{ transform: "translateY(2px)" }}
+                      />
+                    </motion.div>
                   </div>
-                </div>
+                </button>
+
+                <motion.div
+                  className={styles.eventDescription}
+                  id={`event-description-${ev.id}`}
+                  initial={false}
+                  animate={{
+                    height: isExpanded ? "auto" : 0,
+                    opacity: isExpanded ? 1 : 0,
+                  }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                  style={{ overflow: "hidden" }}
+                  aria-hidden={!isExpanded}
+                >
+                  <div className={styles.eventDescriptionLeftColumn}>
+                    {ev.description.subtitle && (
+                      <div className={styles.eventDescriptionSubtitle}>
+                        {ev.description.subtitle}
+                      </div>
+                    )}
+
+                    {ev.description.href && (
+                      <Link
+                        href={ev.description.href}
+                        target="_blank"
+                        referrerPolicy="no-referrer"
+                      >
+                        <span>More Info</span>
+                        <ExternalLinkIcon
+                          height={12}
+                          width={12}
+                          aria-hidden="true"
+                        />
+                      </Link>
+                    )}
+                  </div>
+
+                  <div className={styles.eventDescriptionRightColumn}>
+                    {ev.description.place && (
+                      <div className={styles.eventDescriptionPlace}>
+                        {ev.description.place}
+                      </div>
+                    )}
+                  </div>
+                </motion.div>
 
                 {index === EVENTS.length - 1 && (
                   <div className={styles.divider} />
                 )}
               </div>
-            </Link>
+            </div>
           );
         })}
       </div>

@@ -3,9 +3,17 @@ import { PROJECT_KEYS } from "./constants";
 
 // Interface for a project image
 export type ProjectImage = {
+  id: string;
   src: string | StaticImageData | null;
   alt: string;
   link: string;
+};
+
+export type ProjectAssets = {
+  pictures: ProjectImage[];
+  sketches: ProjectImage[];
+  drawings: ProjectImage[];
+  thumbnails: string[] | StaticImageData[];
 };
 
 export type ProjectData = {
@@ -17,5 +25,5 @@ export type ProjectData = {
   methodology: string;
   materials: string;
   description: string;
-  images: ProjectImage[];
+  images: ProjectAssets;
 };

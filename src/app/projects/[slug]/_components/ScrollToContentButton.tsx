@@ -2,9 +2,12 @@
 
 import { motion } from "motion/react";
 
-export default function ScrollButton() {
+export default function ScrollButton(props: { className?: string }) {
+  const { className } = props;
+
   return (
     <motion.svg
+      className={className}
       width="15"
       height="15"
       viewBox="0 0 15 15"
