@@ -7,6 +7,10 @@ import { ProjectData } from "@/app/_utils/types";
 import { motion, AnimatePresence } from "motion/react";
 import { CaretLeftIcon, CaretRightIcon } from "@radix-ui/react-icons";
 import ScrollButton from "./ScrollToContentButton";
+import Lightbox from "yet-another-react-lightbox";
+import { useToggle } from "@/app/_hooks/useToggle";
+import { Zoom } from "yet-another-react-lightbox/plugins";
+import "yet-another-react-lightbox/styles.css";
 
 type Props = {
   projectData: ProjectData;
@@ -14,6 +18,11 @@ type Props = {
 
 function HeroSectionGallery(props: Props) {
   const { projectData } = props;
+
+  const [currentDrawingIndex, setCurrentDrawingIndex] = useState(0);
+  const [direction, setDirection] = useState(1); // 1 for next, -1 for previous
+  const [lightboxOpen, toggleLightbox] = useToggle(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
 
   const drawings = [
     <HeroSectionAxo key="axo-0" projectData={projectData} />,
@@ -28,13 +37,15 @@ function HeroSectionGallery(props: Props) {
           objectFit: "contain",
           width: "100%",
           height: "100%",
+          cursor: "pointer",
+        }}
+        onClick={() => {
+          setLightboxIndex(currentDrawingIndex - 1); // Subtract 1 to account for Axo at index 0
+          toggleLightbox();
         }}
       />
     )),
   ];
-
-  const [currentDrawingIndex, setCurrentDrawingIndex] = useState(0);
-  const [direction, setDirection] = useState(1); // 1 for next, -1 for previous
 
   // Variants that depend on the navigation direction.
   const slideVariants = {
@@ -95,6 +106,16 @@ function HeroSectionGallery(props: Props) {
         <h3>{projectData.title}</h3>
         <ScrollButton className={styles.scrollToContentButton} />
       </div>
+
+      <Lightbox
+        open={lightboxOpen}
+        close={toggleLightbox}
+        slides={projectData.images.drawings.map((img) => ({
+          src: typeof img.src === "string" ? img.src : img.src?.src ?? "",
+        }))}
+        index={lightboxIndex}
+        plugins={[Zoom]}
+      />
     </div>
   );
 }
