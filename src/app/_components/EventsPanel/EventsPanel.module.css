@@ -1,5 +1,8 @@
 .eventsPanelContainer {
   --pull-out-header-height: 40px;
+  --past-event-background-color: rgba(0, 0, 0, 0.1);
+  --past-event-color: var(--black-faded);
+  --upcoming-event-background-color: #f9eb7a99;
 
   z-index: 999;
 
@@ -44,6 +47,7 @@
       font-size: 0.8rem;
       color: black;
       letter-spacing: 1.2px;
+      font-family: 'Regular';
     }
   }
 
@@ -123,13 +127,56 @@
           flex: 1;
           padding: 0 0.5rem;
           font-size: 11px;
+
+          & ul {
+            list-style: none;
+            padding: 0;
+            margin: 0.5rem 0 0 0;
+
+            & li {
+              margin-bottom: 0.5rem;
+            }
+          }
         }
       }
+    }
+
+    .pastEvent {
+      background-color: rgba(0, 0, 0, 0.1);
+      color: var(--black);
+    }
+
+    .upcomingEvent {
+      background-color: var(--upcoming-event-background-color);
     }
 
     .divider {
       width: 100%;
       border-bottom: 1px solid;
+    }
+  }
+
+  .eventsPanelFooter {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 0 0.5rem 0;
+    text-transform: uppercase;
+    font-size: 12px;
+
+    .upcomingColor {
+      border: 0.5px solid;
+      width: 12px;
+      height: 12px;
+      background-color: var(--upcoming-event-background-color);
+    }
+
+    .pastColor {
+      border: 0.5px solid;
+      width: 12px;
+      height: 12px;
+      background-color: var(--past-event-background-color);
     }
   }
 }
