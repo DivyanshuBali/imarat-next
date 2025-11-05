@@ -8,29 +8,89 @@ import React, { useState } from "react";
 import Link from "next/link";
 import {
   ArrowUpIcon,
-  CaretDownIcon,
+  CaretUpIcon,
   ExternalLinkIcon,
 } from "@radix-ui/react-icons";
 
-const EVENTS = [
+type Event = {
+  id: number;
+  title: string;
+  date: string;
+  dateString: Date;
+  description: {
+    href: string;
+    hrefText: string;
+    place: string;
+    subtitle?: string;
+    additionalInfo?: string[];
+  };
+};
+
+const EVENTS: Event[] = [
   {
     id: 1,
+    title: "LECTURE BY TONK AND ANNA LIU",
+    date: "15 Nov 2025",
+    dateString: new Date("2025-11-15"),
+    description: {
+      subtitle:
+        "Launching Imarat Forum with an exhibition and inaugural lecture by London based architects, Anna and Tonkin Liu on Asking, Looking, Playing, Making: A nature-focused design process.",
+      href: "https://forms.gle/TzE3TduTmsV9mxMj7",
+      hrefText: "Registration Link",
+      place: "Cafe Well Being, sector 22C Chandigarh",
+      additionalInfo: ["Food and Beverages are included in the registration"],
+    },
+  },
+  {
+    id: 2,
+    title: "BUILDING WITH HEMPCRETE",
+    date: "18 Nov 2025",
+    dateString: new Date("2025-11-18"),
+    description: {
+      subtitle:
+        "A hands on workshop for architects and aspirants to explore working with hempcrete; a regenerative material offering alternate possibilities in construction.",
+      href: "https://forms.gle/7qDE34FRbwQAU3HY9",
+      hrefText: "Registration Link",
+      place: "3448, Sector 89 Mohali",
+      additionalInfo: ["Tea and snacks will be included"],
+    },
+  },
+  {
+    id: 3,
+    title: "MATERIAL STUDIES",
+    date: "21 Nov 2025",
+    dateString: new Date("2025-11-21"),
+    description: {
+      subtitle:
+        "Figure out how to use technical research for creative possibilities in the field of construction by a hands-on demonstration of diverse materials including lime, pine, slate and steel",
+      href: "https://forms.gle/TEhnHhTSbdYreFDy6",
+      hrefText: "Registration Link",
+      place: "3448, sector 89 Mohali",
+      additionalInfo: ["Tea and Snacks will be served"],
+    },
+  },
+  {
+    id: 4,
     title: "BUILDING AS A LIVING ARCHIVE",
-    date: "12-09-25 to 16-09-25",
+    date: "12 Sep 2025 - 16 Sep 2025",
+    dateString: new Date("2025-09-12"),
     description: {
       subtitle:
         "Documenting historic site as a 'Living Archive' Condition assessment of historic site. Conservation approaches. Curating an on-site exhibition.",
       href: "https://forms.gle/1397yw9Q5vhbSjFY8",
+      hrefText: "Registration Link",
       place: "Shamgarh, Karnal",
       additionalInfo: ["Architects and Students of Architecture (2YR+)"],
     },
   },
   {
-    id: 2,
+    id: 5,
     title: "HANDMADE EARTH",
-    date: "24-06-25",
+    date: "24 Jun 2025",
+    dateString: new Date("2025-06-24"),
     description: {
       href: "https://www.instagram.com/p/DLSXgBxy6bu/",
+      hrefText: "Instagram Post",
       place: "IIT, Roorkee",
     },
   },
@@ -87,6 +147,11 @@ function EventsPanel() {
               key={ev.id}
               tabIndex={state ? 0 : -1}
               aria-label={`${ev.title}, ${ev.date}`}
+              className={`${
+                ev.dateString < new Date()
+                  ? styles.pastEvent
+                  : styles.upcomingEvent
+              }`}
             >
               <div className={styles.eventWrapper}>
                 <button
@@ -108,7 +173,7 @@ function EventsPanel() {
                       transition={{ duration: 0.4 }}
                       aria-hidden="true"
                     >
-                      <CaretDownIcon
+                      <CaretUpIcon
                         aria-hidden="true"
                         height={15}
                         width={15}
@@ -143,7 +208,7 @@ function EventsPanel() {
                         target="_blank"
                         referrerPolicy="no-referrer"
                       >
-                        <span>More Info</span>
+                        <span>{ev.description.hrefText || "More Info"}</span>
                         <ExternalLinkIcon
                           height={12}
                           width={12}
@@ -169,6 +234,17 @@ function EventsPanel() {
             </div>
           );
         })}
+
+        <div className={styles.eventsPanelFooter}>
+          <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+            <div className={styles.upcomingColor}></div>
+            <span>Upcoming Events</span>
+          </div>
+          <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+            <div className={styles.pastColor}></div>
+            <span>Past Events</span>
+          </div>
+        </div>
       </div>
     </section>
   );
