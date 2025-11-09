@@ -41,60 +41,6 @@ export const PROJECT_IMAGES = {
   [PROJECT_KEYS.IMARAT_EARTH_CENTRE]: {
     pictures: [
       {
-        id: "iec-pic-001",
-        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078160/IEC_01_e7hzsa.jpg",
-        alt: "Imarat Earth Centre",
-        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
-      },
-      {
-        id: "iec-pic-002",
-        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078067/IEC_02_wmeu6i.jpg",
-        alt: "Imarat Earth Centre",
-        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
-      },
-      {
-        id: "iec-pic-003",
-        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078128/IEC_03_qwhbv7.jpg",
-        alt: "Imarat Earth Centre",
-        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
-      },
-      {
-        id: "iec-pic-004",
-        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078092/IEC_04_sjx3cx.jpg",
-        alt: "Imarat Earth Centre",
-        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
-      },
-      {
-        id: "iec-pic-005",
-        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078153/IEC_05_vmnyfm.jpg",
-        alt: "Imarat Earth Centre",
-        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
-      },
-      {
-        id: "iec-pic-006",
-        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078101/IEC_06_z0lgas.jpg",
-        alt: "Imarat Earth Centre",
-        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
-      },
-      {
-        id: "iec-pic-007",
-        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078148/IEC_07_puemxn.jpg",
-        alt: "Imarat Earth Centre",
-        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
-      },
-      {
-        id: "iec-pic-008",
-        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078134/IEC_08_zlecuv.jpg",
-        alt: "Imarat Earth Centre",
-        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
-      },
-      {
-        id: "iec-pic-009",
-        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078132/IEC_09_rleiib.jpg",
-        alt: "Imarat Earth Centre",
-        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
-      },
-      {
         id: "iec-pic-0010",
         src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1762617443/20140823-IMG_9998_u59yav.jpg",
         alt: "Imarat Earth Centre",
@@ -175,6 +121,60 @@ export const PROJECT_IMAGES = {
       {
         id: "iec-pic-0023",
         src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1762617429/20140823-IMG_0002_o2jxv7.jpg",
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        id: "iec-pic-001",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078160/IEC_01_e7hzsa.jpg",
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        id: "iec-pic-002",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078067/IEC_02_wmeu6i.jpg",
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        id: "iec-pic-003",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078128/IEC_03_qwhbv7.jpg",
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        id: "iec-pic-004",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078092/IEC_04_sjx3cx.jpg",
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        id: "iec-pic-005",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078153/IEC_05_vmnyfm.jpg",
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        id: "iec-pic-006",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078101/IEC_06_z0lgas.jpg",
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        id: "iec-pic-007",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078148/IEC_07_puemxn.jpg",
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        id: "iec-pic-008",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078134/IEC_08_zlecuv.jpg",
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        id: "iec-pic-009",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078132/IEC_09_rleiib.jpg",
         alt: "Imarat Earth Centre",
         link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
       },
