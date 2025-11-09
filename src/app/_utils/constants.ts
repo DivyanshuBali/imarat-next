@@ -1,17 +1,3 @@
-// Imarat Earth Center
-import IEC_01 from "../../../public/assets/IEC_01.jpg";
-import IEC_02 from "../../../public/assets/IEC_02.jpg";
-import IEC_03 from "../../../public/assets/IEC_03.jpg";
-import IEC_04 from "../../../public/assets/IEC_04.jpg";
-import IEC_05 from "../../../public/assets/IEC_05.jpg";
-import IEC_06 from "../../../public/assets/IEC_06.jpg";
-import IEC_07 from "../../../public/assets/IEC_07.jpg";
-import IEC_08 from "../../../public/assets/IEC_08.jpg";
-import IEC_09 from "../../../public/assets/IEC_09.jpg";
-import IEC_10 from "../../../public/assets/IEC_10.jpg";
-import IEC_THUMB01 from "../../../public/assets/IEC_THUMB01.png";
-import IEC_THUMB02 from "../../../public/assets/IEC_THUMB02.png";
-
 // Imarat Office Studio 1252
 import IMO_01 from "../../../public/assets/IMO_01.jpeg";
 import IMO_02 from "../../../public/assets/IMO_02.jpeg";
@@ -109,8 +95,86 @@ export const PROJECT_IMAGES = {
         link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
       },
       {
-        id: "iec-pic-010",
-        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750078153/IEC_10_xafeqv.jpg",
+        id: "iec-pic-0010",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1762617443/20140823-IMG_9998_u59yav.jpg",
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        id: "iec-pic-0011",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1762617435/20140823-IMG_9999_inb1c6.jpg",
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        id: "iec-pic-0012",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1762617432/20140823-IMG_9997_nno88r.jpg",
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        id: "iec-pic-0013",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1762617432/20140823-IMG_9996_xedrtn.jpg",
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        id: "iec-pic-0014",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1762617431/20140823-IMG_9995_ymtrmh.jpg",
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        id: "iec-pic-0015",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1762617431/20140823-IMG_9994_wmgpum.jpg",
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        id: "iec-pic-0016",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1762617430/20140823-IMG_9993_jwcotq.jpg",
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        id: "iec-pic-0017",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1762617431/20140823-IMG_9992_wndfsi.jpg",
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        id: "iec-pic-0018",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1762617431/20140823-IMG_9991_ji4erc.jpg",
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        id: "iec-pic-0019",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1762617430/20140823-IMG_0015_afp9pu.jpg",
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        id: "iec-pic-0020",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1762617429/20140823-IMG_0014_pmbude.jpg",
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        id: "iec-pic-0021",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1762617430/20140823-IMG_0007_xlawxi.jpg",
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        id: "iec-pic-0022",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1762617429/20140823-IMG_0003_ohdall.jpg",
+        alt: "Imarat Earth Centre",
+        link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
+      },
+      {
+        id: "iec-pic-0023",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1762617429/20140823-IMG_0002_o2jxv7.jpg",
         alt: "Imarat Earth Centre",
         link: `projects/${PROJECT_KEYS.IMARAT_EARTH_CENTRE}`,
       },
@@ -419,33 +483,6 @@ export const PROJECT_IMAGES = {
         alt: "CTRL Z - Interior View at night",
         link: `projects/${PROJECT_KEYS.CTRL_Z}`,
       },
-    ],
-    sketches: [],
-    drawings: [
-      {
-        id: "ctrl-draw-001",
-        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580798/CTRL_Z_DRG_01_ks8avq.jpg",
-        alt: "",
-        link: `projects/${PROJECT_KEYS.CTRL_Z}`,
-      },
-      {
-        id: "ctrl-draw-002",
-        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580799/CTRL_Z_DRG_02_muiqap.jpg",
-        alt: "",
-        link: `projects/${PROJECT_KEYS.CTRL_Z}`,
-      },
-      {
-        id: "ctrl-draw-003",
-        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580800/CTRL_Z_DRG_03_mcm6ul.jpg",
-        alt: "",
-        link: `projects/${PROJECT_KEYS.CTRL_Z}`,
-      },
-      {
-        id: "ctrl-draw-004",
-        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580801/CTRL_Z_DRG_04_vlyfxq.jpg",
-        alt: "",
-        link: `projects/${PROJECT_KEYS.CTRL_Z}`,
-      },
 
       // 3d renders
       {
@@ -476,6 +513,33 @@ export const PROJECT_IMAGES = {
         id: "ctrl-draw-009",
         src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580650/CTRL_Z_05_rsuojp.jpg",
         alt: "CTRL Z - Store Front Facade 3D Render",
+        link: `projects/${PROJECT_KEYS.CTRL_Z}`,
+      },
+    ],
+    sketches: [],
+    drawings: [
+      {
+        id: "ctrl-draw-001",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580798/CTRL_Z_DRG_01_ks8avq.jpg",
+        alt: "",
+        link: `projects/${PROJECT_KEYS.CTRL_Z}`,
+      },
+      {
+        id: "ctrl-draw-002",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580799/CTRL_Z_DRG_02_muiqap.jpg",
+        alt: "",
+        link: `projects/${PROJECT_KEYS.CTRL_Z}`,
+      },
+      {
+        id: "ctrl-draw-003",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580800/CTRL_Z_DRG_03_mcm6ul.jpg",
+        alt: "",
+        link: `projects/${PROJECT_KEYS.CTRL_Z}`,
+      },
+      {
+        id: "ctrl-draw-004",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1750580801/CTRL_Z_DRG_04_vlyfxq.jpg",
+        alt: "",
         link: `projects/${PROJECT_KEYS.CTRL_Z}`,
       },
     ],
@@ -851,20 +915,6 @@ export const PROJECT_DATA = {
 
 // Also export individual image references for direct access
 export {
-  // Earth Centre
-  IEC_01,
-  IEC_02,
-  IEC_03,
-  IEC_04,
-  IEC_05,
-  IEC_06,
-  IEC_07,
-  IEC_08,
-  IEC_09,
-  IEC_10,
-  IEC_THUMB01,
-  IEC_THUMB02,
-
   // Studio - 1252
   IMO_01,
   IMO_02,

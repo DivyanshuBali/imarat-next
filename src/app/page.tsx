@@ -26,10 +26,6 @@ export default function Home() {
     setImageIndex(imageIndex - 1);
   };
 
-  const textColor = LANDING_CAROUSEL_DATA[imageIndex].textWhite
-    ? "white"
-    : "black";
-
   return (
     <section className={styles.landingContainer}>
       <div className={styles.landingContent}>
@@ -59,9 +55,9 @@ export default function Home() {
               onClick={handlePrev}
               aria-label="Previous slide"
             >
-              <ArrowLeftIcon color={textColor} height={20} width={20} />
+              <ArrowLeftIcon color={"black"} height={20} width={20} />
             </button>
-            <div className={styles.navTitle} style={{ color: textColor }}>
+            <div className={styles.navTitle} style={{ color: "black" }}>
               {imageIndex + 1}/{LANDING_CAROUSEL_DATA.length}{" "}
               <Link href={LANDING_CAROUSEL_DATA[imageIndex].link}>
                 {LANDING_CAROUSEL_DATA[imageIndex].title}
@@ -72,7 +68,7 @@ export default function Home() {
               onClick={handleNext}
               aria-label="Next slide"
             >
-              <ArrowRightIcon color={textColor} height={20} width={20} />
+              <ArrowRightIcon color={"black"} height={20} width={20} />
             </button>
           </div>
         </div>
