@@ -32,10 +32,10 @@ function ProjectItem(props: { project: PROJECT_KEYS }) {
         <div className={styles.projectInfo}>
           <h5 className={styles.projectTitle}>{PROJECT_DATA[project].title}</h5>
 
-          <p className={styles.projectDetails}>
+          {/* <p className={styles.projectDetails}>
             {PROJECT_DATA[project].date} / {PROJECT_DATA[project].area} /{" "}
             {PROJECT_DATA[project].type}
-          </p>
+          </p> */}
         </div>
       </div>
     </Link>
