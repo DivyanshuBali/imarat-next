@@ -64,15 +64,16 @@
     }
     
     .projectTitle {
-      font-size: 14px;
+      font-size: 12px;
       margin-bottom: 0.2rem;
       letter-spacing: 1.1px;
+      font-weight: 500;
     }
 
-    .projectDetails {
+    /* .projectDetails {
       font-size: 12px;
       color: var(--black-faded);
-    }
+    } */
 
     &:hover {
       .imageContainer {
