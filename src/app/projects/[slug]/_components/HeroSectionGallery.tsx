@@ -73,9 +73,11 @@ function HeroSectionGallery(props: Props) {
       <div className={styles.projectPageHeaderImageAndTitle}>
         {/* Project Drawings Carousel */}
         <div className={styles.projectDrawingsCarouselContainer}>
-          <button onClick={handlePrevious}>
-            <CaretLeftIcon height={30} width={30} />
-          </button>
+          {drawings.length > 1 && (
+            <button onClick={handlePrevious}>
+              <CaretLeftIcon height={30} width={30} />
+            </button>
+          )}
 
           <div className={styles.projectDrawingsCarousel}>
             <AnimatePresence mode="wait" custom={direction}>
@@ -98,9 +100,11 @@ function HeroSectionGallery(props: Props) {
             </AnimatePresence>
           </div>
 
-          <button onClick={handleNext}>
-            <CaretRightIcon height={30} width={30} />
-          </button>
+          {drawings.length > 1 && (
+            <button onClick={handleNext}>
+              <CaretRightIcon height={30} width={30} />
+            </button>
+          )}
         </div>
 
         <h3>{projectData.title}</h3>
