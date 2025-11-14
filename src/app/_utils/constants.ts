@@ -682,6 +682,66 @@ export const PROJECT_IMAGES = {
         alt: "DBH - Model Photo 03",
         link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
       },
+      {
+        id: "dbh-pic-006",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1763115142/DBH_-_1_klxboo.jpg",
+        alt: "DBH - Light Slit",
+        link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
+      },
+      {
+        id: "dbh-pic-007",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1763115142/DBH_-_2_gglxpv.jpg",
+        alt: "DBH - Wiring Conduits",
+        link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
+      },
+      {
+        id: "dbh-pic-008",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1763115142/DBH_-_3_wp3h6t.jpg",
+        alt: "DBH - Happy Client",
+        link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
+      },
+      {
+        id: "dbh-pic-009",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1763115144/DBH_-_4_rbwcpv.jpg",
+        alt: "DBH - Architect and Carpenter",
+        link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
+      },
+      {
+        id: "dbh-pic-010",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1763115144/DBH_-_5_utzohq.jpg",
+        alt: "DBH - Flitch Beams, top down view",
+        link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
+      },
+      {
+        id: "dbh-pic-011",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1763115143/DBH_-_6_drsd6p.jpg",
+        alt: "DBH - Flitch Beams, side view",
+        link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
+      },
+      {
+        id: "dbh-pic-012",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1763115145/DBH_-_7_aa4fqd.jpg",
+        alt: "DBH - Flitch Beams, cross section",
+        link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
+      },
+      {
+        id: "dbh-pic-013",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1763115144/DBH_-_8_aoaow0.jpg",
+        alt: "DBH - Pine Wood Columns",
+        link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
+      },
+      {
+        id: "dbh-pic-014",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1763115143/DBH_-_9_w30il0.jpg",
+        alt: "DBH - Pine wall bottom up view",
+        link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
+      },
+      {
+        id: "dbh-pic-015",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1763115143/DBH_-_10_gwqqcv.jpg",
+        alt: "DBH - Pine wall evening light",
+        link: `projects/${PROJECT_KEYS.DIVYANSHU_BALI_HOUSE}`,
+      },
     ],
     sketches: [
       {
