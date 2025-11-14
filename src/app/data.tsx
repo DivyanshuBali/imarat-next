@@ -17,7 +17,7 @@ export const LANDING_CAROUSEL_DATA = [
       <Image
         src={
           PROJECT_IMAGES[PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY].sketches[0]
-            .src
+            .src as string
         }
         alt={"A sketch of Aranya Sangharama Monastry Concept"}
         fill

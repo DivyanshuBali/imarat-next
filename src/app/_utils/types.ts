@@ -13,7 +13,7 @@ export type ProjectAssets = {
   pictures: ProjectImage[];
   sketches: ProjectImage[];
   drawings: ProjectImage[];
-  thumbnails: string[] | StaticImageData[];
+  thumbnails: string[];
 };
 
 export type ProjectData = {
@@ -26,4 +26,6 @@ export type ProjectData = {
   materials: string;
   description: string;
   images: ProjectAssets;
+  ogDesc: string;
+  location: string;
 };

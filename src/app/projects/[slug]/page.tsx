@@ -118,10 +118,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: projectData.title,
-    description: projectData.description,
+    description: projectData.ogDesc,
     openGraph: {
       title: projectData.title,
-      description: projectData.description,
+      description: projectData.ogDesc,
       url: `https://imaratarchitects.com/projects/${slug}`,
       siteName: "Imarat Architects",
       images: [

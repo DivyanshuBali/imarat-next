@@ -18,6 +18,7 @@ import VVC02 from "../../../public/assets/VVC02.jpeg";
 import VVC_SKETCH01 from "../../../public/assets/VVC_SKETCH01.png";
 import VVC_SKETCH02 from "../../../public/assets/VVC_SKETCH02.jpg";
 import VVC_DRAWING01 from "../../../public/assets/VVC_DRAWING01.jpg";
+import { ProjectAssets, ProjectData } from "./types";
 
 export enum PROJECT_KEYS {
   IMARAT_EARTH_CENTRE = "200901-imarat-earth-centre-icea",
@@ -31,7 +32,7 @@ export enum PROJECT_KEYS {
   HOUSE_OF_THE_SPEAKER = "202507-house-of-the-speaker",
 }
 
-export const PROJECT_IMAGES = {
+export const PROJECT_IMAGES: Record<PROJECT_KEYS, ProjectAssets> = {
   [PROJECT_KEYS.IMARAT_EARTH_CENTRE]: {
     pictures: [
       {
@@ -900,7 +901,7 @@ export const PROJECT_IMAGES = {
   },
 };
 
-export const PROJECT_DATA = {
+export const PROJECT_DATA: Record<PROJECT_KEYS, ProjectData> = {
   [PROJECT_KEYS.IMARAT_EARTH_CENTRE]: {
     title: "IMARAT EARTH CENTRE",
     link: PROJECT_KEYS.IMARAT_EARTH_CENTRE,
@@ -914,6 +915,8 @@ export const PROJECT_DATA = {
       The Earth Centre began in 2009 with a simple dwelling. The challenge was to use mud architecture in the challenging climate of the gangetic plains, to build economically and to demonstrate a vocabulary of natural materials. The result was a 2 bed room dwelling, where the lower mezzanine room is the excavated earth used to manufacture mud bricks. For the project, natural systems such as filler slabs, Wood and Bamboo roofs, stack ventilation, Earth berming, Thatch roofing and in the further stages, lime and oxide flooring, Chachra and bamboo roofing and ferrocement roofing as well. The dwelling was built economically at a total cost of just 26,00,000 INR in 2014. Since then, the site has expanded to include 6 more smaller dwellings to cater to the new institution of 'Imarat Centre for Earth Architecture'.
     `,
     images: PROJECT_IMAGES[PROJECT_KEYS.IMARAT_EARTH_CENTRE],
+    ogDesc:
+      "A pioneering mud-architecture dwelling that evolved into the Imarat Centre, showcasing natural, economical building techniques.",
   },
   [PROJECT_KEYS.STUDIO_1252]: {
     title: "STUDIO 1252",
@@ -927,6 +930,8 @@ export const PROJECT_DATA = {
     description:
       "The greatest act of building sustainably means not building at all. In recent years, architects have forayed into the potential of an architecture of retrofit. Studio 1252 was Imarat’s response to this challenge, by attempting to convert an HIG government housing apartment into a mixed use studio cum residence. The studio is now the headquarters for Imarat Architects at Chandigarh. What was before a dark dingy space was converted into an open setting of various walls, some which allow views, others physical access. By inserting slabs at the 7 foot level circulation spaces were given greater definition, making hallway spaces seem higher. Lastly, the finishes of mud plasters with rice husk fibres, exposed bricks and wooden fitting demonstrate the timeless and resilient qualities of natural materials, creating a material vocabulary for clients of the firm.",
     images: PROJECT_IMAGES[PROJECT_KEYS.STUDIO_1252],
+    ogDesc:
+      "A sustainable retrofit turning a dark HIG apartment into Imarat’s Chandigarh studio, using natural materials and thoughtful spatial edits.",
   },
   [PROJECT_KEYS.NYAYPURI_HOUSE]: {
     title: "NYAYPURI HOUSE",
@@ -941,6 +946,8 @@ export const PROJECT_DATA = {
     \n
     In a leap of experimentation, the making of this house brought in a team of talented woodworkers, producing furniture and furnishings in house. The experimentations were carried on with several other artisans such as the stone mason for the use of terrazzo and the use of a ferrocement slab over timber joists for spanning. The most liberating visual aspect, though, is the 6 foot cantilevers in heavy sloped concrete slabs supported by mud walls, breaking  the assumptions about mud as a kucca construction.`,
     images: PROJECT_IMAGES[PROJECT_KEYS.NYAYPURI_HOUSE],
+    ogDesc:
+      "An urban mud-house hybrid using mud walls, concrete, and brick to create a sustainable, low-carbon home with bold structural experiments.",
   },
   [PROJECT_KEYS.VRINDAVAN]: {
     title: "VRINDAVAN",
@@ -955,6 +962,8 @@ export const PROJECT_DATA = {
     description:
       "Vrindavan is invisioned as ‘an Indian village’. The visual logic of villages, clustered, huddle around open spaces that account for activities. The challenge of this brief is to accomplish the puritan vision of building naturally- to the level that no cement is brought to the site. The program as well as the construction aim to respond to this. The masterplan is organised to create an atmosphere of a rural setting with densely clustered masses, spaced around open areas. The idea of meandering through and that of the promenade are the two movement patterns which shape its structure as well. This vision has allowed the client to build slowly and due to this slow pace, lime has been favoured with local additives such as jaggery and jackfruit to be used as mortar, replacing cement while kota stone in combination with lime becomes the damp proof course.",
     images: PROJECT_IMAGES[PROJECT_KEYS.VRINDAVAN],
+    ogDesc:
+      "A cement-free masterplan for Vrindavan shaped as an Indian village, using clustered forms, lime mortar, and meandering rural pathways.",
   },
   [PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY]: {
     title: "ARANYA SANGHARAMA MONASTERY",
@@ -969,6 +978,8 @@ export const PROJECT_DATA = {
     description:
       "Imarat was chosen for designing the first centre for Thai Forest Buddhism, with the venerable Ajahn Jivako as the representative of the sect. The first vision is sketched to the ideals of monastic living, the path to asceticism, and the elements of the architecture that establish its identity. This vision is worked towards refinement into the section and the general plan and onwards until the detailed wall section itself is resolved. The elements of the monastic life, its rituals guide aspects of the design, each activity is granted circular walls while the service spaces are rectilinear. A simpler design by a different agency was ultimately procured for a temporary shelter for the monks.",
     images: PROJECT_IMAGES[PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY],
+    ogDesc:
+      "A design vision for a Thai Forest Buddhist centre shaped by monastic rituals, circular forms, and the ideals of ascetic living.",
   },
   [PROJECT_KEYS.CTRL_Z]: {
     title: "CTRL Z",
@@ -990,6 +1001,8 @@ export const PROJECT_DATA = {
       It’s a deliberate break from retail minimalism. Instead of pristine displays and polish, the store feels alive—mid-assembly, mid-idea. Like the phones it houses, it’s a space of revival, not replacement.
     `,
     images: PROJECT_IMAGES[PROJECT_KEYS.CTRL_Z],
+    ogDesc:
+      "A raw, workshop-inspired store that reflects Control Z’s mission of refurbishing phones and redefining sustainable tech retail.",
   },
   [PROJECT_KEYS.BILLY_GOAT_RESORT]: {
     title: "BILLY GOAT RESORT",
@@ -1006,6 +1019,8 @@ export const PROJECT_DATA = {
       The conditions of the site shape the imaginations of this project. Nostalgic to the typical movement patterns of cities in the Himalayan region, the project seeks to capture the spirit of a Himalayan settlement. The generosity of Chaugans that restore leisures of time, The clustered hawkers lavishing food and craft and, the snug village houses with niches and small wooden windows; all cultivate the atmospheres of Himalayan Habitats.They work with the vegetation. Facts of simple pleasure which are left behind in modern luxury resorts. A green metal bench next to a cliff, well placed, with an absence of whirring sounds of generators can work wonders. The idea is simple; to preserve what is good and to make what is missing.
     `,
     images: PROJECT_IMAGES[PROJECT_KEYS.BILLY_GOAT_RESORT],
+    ogDesc:
+      "A Barog retreat rooted in Himalayan settlement patterns, lightly engaging the steep site with split levels and intimate, scattered spaces.",
   },
   [PROJECT_KEYS.DIVYANSHU_BALI_HOUSE]: {
     title: "DBH",
@@ -1023,6 +1038,8 @@ export const PROJECT_DATA = {
       The client, an eccentric engineer, is also a skateboarder. The house is such a boyhood club. The house grows into a home and with time the spaces are meant to adapt. The floor above which contains a small room connected to the terrace garden also bears a study hanging out of it, ‘the cockpit’. Overlooking the larger double volume, it brings a sense of exteriority to the living space. And with the lamp post and the tree and the glass wall, it cultivates a magical surrealism. The practical intentions are to imagine  beautiful conditions of living in a small plot of 45’ by 20’. But the impractical dream is what makes this project one of the favourites on our drafting boards.
     `,
     images: PROJECT_IMAGES[PROJECT_KEYS.DIVYANSHU_BALI_HOUSE],
+    ogDesc:
+      "A surreal glass-walled home in North India, blending light steel, brick, and nature to turn an impractical dream into living art.",
   },
   [PROJECT_KEYS.HOUSE_OF_THE_SPEAKER]: {
     title: "HOUSE OF THE SPEAKER",
@@ -1040,6 +1057,8 @@ export const PROJECT_DATA = {
       The blocks are planned without a single concrete column and with pitched roofs. The volumes face open courts to allow for flexibility in accommodating wider populations. The existing trees on site were not displaced in the process of this construction. Lying on the north south axis are wall articulations which offer greater support than singular straight walls and further chop down the harsh Indian sun. This reduces glare inside while filling the spaces with ample light. Despite the functional and climatic concerns, the project inquires about local living patterns with manjis in verandahs and veras in the shade of lofty trees, where village gatherings typically happened to resolve matters. Beyond the local mud plaster techniques which derive from Indian building traditions it is these mannerisms which cultivate the architecture of this project.
     `,
     images: PROJECT_IMAGES[PROJECT_KEYS.HOUSE_OF_THE_SPEAKER],
+    ogDesc:
+      "A courtyard-centred public office for Haryana, using natural materials and vernacular forms to redefine government architecture.",
   },
 };
 
