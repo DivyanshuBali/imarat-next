@@ -4,13 +4,14 @@ import { PROJECT_DATA, PROJECT_KEYS } from "@/app/_utils/constants";
 import { notFound } from "next/navigation";
 import MasonryLayout from "./_components/MasonryLayout";
 import HeroSectionGallery from "./_components/HeroSectionGallery";
+import { Metadata } from "next";
+
+type Props = {
+  params: Promise<{ slug: string }>;
+};
 
 // This becomes a Server Component by default
-export default async function ProjectPage({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
+export default async function ProjectPage({ params }: Props) {
   const { slug } = await params;
   const projectData = PROJECT_DATA[slug as PROJECT_KEYS];
 
@@ -109,4 +110,27 @@ export async function generateStaticParams() {
   return projects.map((slug: string) => ({
     slug,
   }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const projectData = PROJECT_DATA[slug as PROJECT_KEYS];
+
+  return {
+    title: projectData.title,
+    description: projectData.description,
+    openGraph: {
+      title: projectData.title,
+      description: projectData.description,
+      url: `https://imaratarchitects.com/projects/${slug}`,
+      siteName: "Imarat Architects",
+      images: [
+        {
+          url: projectData.images.thumbnails[0], // Must be an absolute URL
+        },
+      ],
+      locale: "en_US",
+      type: "website",
+    },
+  };
 }

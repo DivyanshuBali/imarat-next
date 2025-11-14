@@ -8,13 +8,9 @@ import IMO_06 from "../../../public/assets/IMO_06.jpeg";
 import IMO_AXO01 from "../../../public/assets/IMO_AXO01.png";
 import IMO_AXO02 from "../../../public/assets/IMO_AXO02.png";
 import IMO_DRAWING01 from "../../../public/assets/IMO_DRAWING01.png";
-import IMO_THUMB01 from "../../../public/assets/IMO_THUMB01.png";
-import IMO_THUMB02 from "../../../public/assets/IMO_THUMB02.png";
 
 // Nyaypuri House
 import NYH_SKETCH01 from "../../../public/assets/NYH_SKETCH01.jpeg";
-import NYH_THUMB01 from "../../../public/assets/NYH_THUMB01.png";
-import NYH_THUMB02 from "../../../public/assets/NYH_THUMB02.png";
 
 // Vrindavan
 import VVC01 from "../../../public/assets/VVC01.jpeg";
@@ -22,8 +18,6 @@ import VVC02 from "../../../public/assets/VVC02.jpeg";
 import VVC_SKETCH01 from "../../../public/assets/VVC_SKETCH01.png";
 import VVC_SKETCH02 from "../../../public/assets/VVC_SKETCH02.jpg";
 import VVC_DRAWING01 from "../../../public/assets/VVC_DRAWING01.jpg";
-import VVC_THUMB01 from "../../../public/assets/VVC_THUMB01.png";
-import VVC_THUMB02 from "../../../public/assets/VVC_THUMB02.png";
 
 export enum PROJECT_KEYS {
   IMARAT_EARTH_CENTRE = "200901-imarat-earth-centre-icea",
@@ -246,7 +240,10 @@ export const PROJECT_IMAGES = {
         link: `projects/${PROJECT_KEYS.STUDIO_1252}`,
       },
     ],
-    thumbnails: [IMO_THUMB01, IMO_THUMB02],
+    thumbnails: [
+      "https://res.cloudinary.com/drcns5wjs/image/upload/v1763128175/IMO_THUMB01_cv1kq7.png",
+      "https://res.cloudinary.com/drcns5wjs/image/upload/v1763128175/IMO_THUMB01_cv1kq7.png",
+    ],
   },
   [PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY]: {
     pictures: [
@@ -447,7 +444,10 @@ export const PROJECT_IMAGES = {
         link: `projects/${PROJECT_KEYS.NYAYPURI_HOUSE}`,
       },
     ],
-    thumbnails: [NYH_THUMB01, NYH_THUMB02],
+    thumbnails: [
+      "https://res.cloudinary.com/drcns5wjs/image/upload/v1763128239/NYH_THUMB01_t6uylw.png",
+      "https://res.cloudinary.com/drcns5wjs/image/upload/v1763128238/NYH_THUMB02_k7ezqz.png",
+    ],
   },
   [PROJECT_KEYS.VRINDAVAN]: {
     pictures: [
@@ -486,7 +486,10 @@ export const PROJECT_IMAGES = {
         link: `projects/${PROJECT_KEYS.VRINDAVAN}`,
       },
     ],
-    thumbnails: [VVC_THUMB01, VVC_THUMB02],
+    thumbnails: [
+      "https://res.cloudinary.com/drcns5wjs/image/upload/v1763128289/VVC_THUMB01_e2s5hk.png",
+      "https://res.cloudinary.com/drcns5wjs/image/upload/v1763128289/VVC_THUMB01_e2s5hk.png",
+    ],
   },
   [PROJECT_KEYS.CTRL_Z]: {
     pictures: [
@@ -1052,13 +1055,9 @@ export {
   IMO_AXO01,
   IMO_AXO02,
   IMO_DRAWING01,
-  IMO_THUMB01,
-  IMO_THUMB02,
 
   // Nyaypuri
   NYH_SKETCH01,
-  NYH_THUMB01,
-  NYH_THUMB02,
 
   // Vrindavan
   VVC01,
@@ -1066,6 +1065,4 @@ export {
   VVC_SKETCH01,
   VVC_SKETCH02,
   VVC_DRAWING01,
-  VVC_THUMB01,
-  VVC_THUMB02,
 };
