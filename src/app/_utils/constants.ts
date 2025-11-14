@@ -249,7 +249,74 @@ export const PROJECT_IMAGES = {
     thumbnails: [IMO_THUMB01, IMO_THUMB02],
   },
   [PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY]: {
-    pictures: [],
+    pictures: [
+      {
+        id: "btm-pic-001",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1763125108/ASM_-_1_pfyntt.jpg",
+        alt: "ASM - water painting by architect",
+        link: `projects/${PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY}`,
+      },
+      {
+        id: "btm-pic-002",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1763125108/ASM_-_2_owiixn.jpg",
+        alt: "Architect interacting with the monks",
+        link: `projects/${PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY}`,
+      },
+      {
+        id: "btm-pic-003",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1763125108/ASM_-_3_sap9ty.jpg",
+        alt: "Architect interacting with the monks outdoors",
+        link: `projects/${PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY}`,
+      },
+      {
+        id: "btm-pic-004",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1763125108/ASM_-_4_rt4ua9.jpg",
+        alt: "Intern holding a model",
+        link: `projects/${PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY}`,
+      },
+      {
+        id: "btm-pic-005",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1763125110/ASM_-_5_esllb2.jpg",
+        alt: "Architect explaining his design and idea",
+        link: `projects/${PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY}`,
+      },
+      {
+        id: "btm-pic-006",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1763125110/ASM_-_6_j7tnlh.jpg",
+        alt: "Architect explaining his vision",
+        link: `projects/${PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY}`,
+      },
+      {
+        id: "btm-pic-007",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1763125110/ASM_-_7_ntsea5.jpg",
+        alt: "Crowd gathers around the architect",
+        link: `projects/${PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY}`,
+      },
+      {
+        id: "btm-pic-008",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1763125110/ASM_-_8_daakv4.jpg",
+        alt: "Monks discussing the design",
+        link: `projects/${PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY}`,
+      },
+      {
+        id: "btm-pic-009",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1763125112/ASM_-_9_ayqdzu.jpg",
+        alt: "Stylized picture of the model",
+        link: `projects/${PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY}`,
+      },
+      {
+        id: "btm-pic-010",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1763125113/ASM_-_10_fdbuij.jpg",
+        alt: "Model making",
+        link: `projects/${PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY}`,
+      },
+      {
+        id: "btm-pic-011",
+        src: "https://res.cloudinary.com/drcns5wjs/image/upload/v1763125115/ASM_-_11_wozwir.jpg",
+        alt: "People amused by the model at display",
+        link: `projects/${PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY}`,
+      },
+    ],
     sketches: [
       {
         id: "btm-sketch-001",
