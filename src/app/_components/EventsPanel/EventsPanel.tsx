@@ -79,7 +79,7 @@ function EventsPanel() {
               tabIndex={state ? 0 : -1}
               aria-label={`${ev.title}, ${ev.date}`}
               className={`${
-                ev.dateString < new Date()
+                new Date(ev.dateString) < new Date()
                   ? styles.pastEvent
                   : styles.upcomingEvent
               }`}
