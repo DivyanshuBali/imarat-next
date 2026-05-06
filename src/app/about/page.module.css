@@ -1,86 +1,71 @@
-.aboutContainer {
-  height: 100%;
-  width: 100%;
-  padding: 1rem;
+.aboutContent {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  gap: 3.5rem;
+  padding: 0 0 0 1.25rem;
+  margin-top: 2rem;
 
-  .aboutContent {
-    max-width: 600px;
+  /* Update this after mobile designs */
+  @media only screen and (max-width: 768px) {
+    gap: 2rem;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    gap: 1.5rem;
+    padding: 0.25rem 0 0 0;
+  }
+}
+
+.photoWrapper {
+  width: fit-content;
+
+  @media only screen and (max-width: 600px) {
+    align-self: center;
+  }
+}
+
+.photo {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 11.25rem;
+  max-height: 11.25rem;
+  object-fit: cover;
+  filter: grayscale(100%);
+  border: 1px solid var(--black);
+  padding: 2px;
+
+  @media only screen and (max-width: 768px) {
+    max-width: 9rem;
+    max-height: 9rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    max-width: 7.5rem;
+    max-height: 7.5rem;
+  }
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  & p {
+    font-family: "Regular";
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+    color: var(--black);
+    text-transform: uppercase;
 
     @media only screen and (max-width: 768px) {
-      margin-bottom: 50px;
-    }
-
-    .imageContainer {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 2rem;
-
-      .image {
-        height: 100%;
-        width: 100%;
-        max-width: 180px;
-        object-fit: contain;
-        filter: grayscale(100%);
-        border: 1px solid black;
-        padding: 2px;
-
-        @media only screen and (max-width: 600px) {
-          max-width: 120px;
-        }
-      }
-
-    }
-
-    .content {
-      margin-bottom: 2rem;
-
-      & p {
-        letter-spacing: 1px;
-        line-height: 1.4;
-        font-size: 15px;
-        margin-bottom: 0.5rem;
-        text-align: justify;
-        color: rgba(0, 0, 0, 60%);
-
-        @media only screen and (max-width: 768px) {
-          font-size: 13px
-        }
-      }
-    }
-
-    .teamInfo {
-      font-size: 14px;
-      text-align: left;
-      display: flex;
-      gap: 2rem;
-      letter-spacing: 1.2px;
-
-      @media only screen and (max-width: 768px) {
-        font-size: 12px
-      }
-
-      div.bold {
-        font-weight: 800;
-        text-decoration-line: underline;
-        text-decoration-color: black;
-        text-decoration-thickness: 2px;
-      }
-    }
-
-    .hiddenScrollbar {
-      overflow: scroll;
-      scrollbar-width: none;
-      /* For Firefox */
-      -ms-overflow-style: none;
-      /* For Internet Explorer and Edge */
-
-      &::-webkit-scrollbar {
-        display: none;
-        /* For Chrome, Safari, and Opera */
-      }
+      font-size: 0.8125rem;
     }
   }
+}
+
+.bold {
+  font-family: "Bold";
 }

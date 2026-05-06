@@ -28,7 +28,7 @@ function Header() {
         <li className={pathname === "/projects" ? styles.active : ""}>
           <Link href="/projects">PROJECTS</Link>
         </li>
-        <li className={pathname === "/about" ? styles.active : ""}>
+        <li className={pathname.startsWith("/about") ? styles.active : ""}>
           <Link href="/about">ABOUT</Link>
         </li>
         <li className={pathname === "/contact" ? styles.active : ""}>
@@ -66,7 +66,7 @@ function Header() {
               PROJECTS
             </Link>
           </li>
-          <li className={pathname === "/about" ? styles.active : ""}>
+          <li className={pathname.startsWith("/about") ? styles.active : ""}>
             <Link onClick={setIsHamburgerMenuOpen} href="/about">
               ABOUT
             </Link>
