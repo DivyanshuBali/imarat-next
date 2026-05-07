@@ -243,7 +243,7 @@ export const PROJECT_IMAGES: Record<PROJECT_KEYS, ProjectAssets> = {
     ],
     thumbnails: [
       "https://res.cloudinary.com/drcns5wjs/image/upload/v1763128175/IMO_THUMB01_cv1kq7.png",
-      "https://res.cloudinary.com/drcns5wjs/image/upload/v1763128175/IMO_THUMB01_cv1kq7.png",
+      "https://res.cloudinary.com/drcns5wjs/image/upload/v1763128175/IMO_THUMB02_rymk0v.png",
     ],
   },
   [PROJECT_KEYS.ARANYA_SANGHARAMA_MONASTERY]: {
@@ -489,7 +489,7 @@ export const PROJECT_IMAGES: Record<PROJECT_KEYS, ProjectAssets> = {
     ],
     thumbnails: [
       "https://res.cloudinary.com/drcns5wjs/image/upload/v1763128289/VVC_THUMB01_e2s5hk.png",
-      "https://res.cloudinary.com/drcns5wjs/image/upload/v1763128289/VVC_THUMB01_e2s5hk.png",
+      "https://res.cloudinary.com/drcns5wjs/image/upload/v1763128292/VVC_THUMB02_yphrev.png",
     ],
   },
   [PROJECT_KEYS.CTRL_Z]: {
