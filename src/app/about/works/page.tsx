@@ -1,10 +1,45 @@
 import type { Metadata } from "next";
 import styles from "./page.module.css";
+import { getCldOgImageUrl } from "next-cloudinary";
+
+const ogImage = getCldOgImageUrl({
+  src: "BTM_SKETCH01_yrzjqc",
+  width: 1200,
+  height: 627,
+  format: "jpg",
+});
 
 export const metadata: Metadata = {
   title: "Works",
   description:
     "A record of completed, ongoing, and under-design projects by Imarat Architects spanning three decades.",
+  alternates: {
+    canonical: "/about/works",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "/about/works",
+    title: "Works | Imarat Architects",
+    description:
+      "A record of completed, ongoing, and under-design projects by Imarat Architects spanning three decades.",
+    siteName: "Imarat Architects",
+    images: [
+      {
+        url: ogImage,
+        width: 1200,
+        height: 627,
+        alt: "Imarat Architects — Works",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Works | Imarat Architects",
+    description:
+      "A record of completed, ongoing, and under-design projects by Imarat Architects spanning three decades.",
+    images: [ogImage],
+  },
 };
 
 type WorksGroup = {

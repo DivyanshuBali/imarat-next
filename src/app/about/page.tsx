@@ -3,11 +3,46 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import * as motion from "motion/react-client";
 import AR_SK from "../../../public/assets/AR_SAVNEET_KAUR.jpeg";
+import { getCldOgImageUrl } from "next-cloudinary";
+
+const ogImage = getCldOgImageUrl({
+  src: "BTM_SKETCH01_yrzjqc",
+  width: 1200,
+  height: 627,
+  format: "jpg",
+});
 
 export const metadata: Metadata = {
   title: "About Us",
   description:
     "Ar. Savneet Kaur founded Imarat Architects in 1995 after graduating from Chandigarh College of Architecture. The studio is devoted to sustainability, research, and vernacular knowledge systems.",
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "/about",
+    title: "About Us | Imarat Architects",
+    description:
+      "Ar. Savneet Kaur founded Imarat Architects in 1995 after graduating from Chandigarh College of Architecture. The studio is devoted to sustainability, research, and vernacular knowledge systems.",
+    siteName: "Imarat Architects",
+    images: [
+      {
+        url: ogImage,
+        width: 1200,
+        height: 627,
+        alt: "Imarat Architects — About Us",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us | Imarat Architects",
+    description:
+      "Ar. Savneet Kaur founded Imarat Architects in 1995 after graduating from Chandigarh College of Architecture. The studio is devoted to sustainability, research, and vernacular knowledge systems.",
+    images: [ogImage],
+  },
 };
 
 export default function AboutPage() {

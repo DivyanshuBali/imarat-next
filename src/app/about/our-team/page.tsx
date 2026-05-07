@@ -1,10 +1,45 @@
 import type { Metadata } from "next";
 import styles from "./page.module.css";
+import { getCldOgImageUrl } from "next-cloudinary";
+
+const ogImage = getCldOgImageUrl({
+  src: "BTM_SKETCH01_yrzjqc",
+  width: 1200,
+  height: 627,
+  format: "jpg",
+});
 
 export const metadata: Metadata = {
   title: "Our Team",
   description:
     "Meet the architects, researchers, designers and interns who make up the Imarat Architects studio.",
+  alternates: {
+    canonical: "/about/our-team",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "/about/our-team",
+    title: "Our Team | Imarat Architects",
+    description:
+      "Meet the architects, researchers, designers and interns who make up the Imarat Architects studio.",
+    siteName: "Imarat Architects",
+    images: [
+      {
+        url: ogImage,
+        width: 1200,
+        height: 627,
+        alt: "Imarat Architects — Our Team",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Team | Imarat Architects",
+    description:
+      "Meet the architects, researchers, designers and interns who make up the Imarat Architects studio.",
+    images: [ogImage],
+  },
 };
 
 type TeamGroup = {
