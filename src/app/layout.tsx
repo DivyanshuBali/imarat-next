@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://imaratarchitects.com"), // Replace with your actual domain
+  metadataBase: new URL("https://imaratarchitects.com"),
   alternates: {
     canonical: "/",
   },
