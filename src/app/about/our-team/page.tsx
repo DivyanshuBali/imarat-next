@@ -58,7 +58,7 @@ const TEAM: TeamGroup[] = [
   },
   {
     heading: "RESEARCH TEAM",
-    members: ["MANNAT", "MANAN", "IVA", "DARRELL ANSHPREET"],
+    members: ["MANNAT", "MANAN", "IVA", "DARRELL", "ANSHPREET"],
   },
   {
     heading: "INTERIOR DESIGNER",
