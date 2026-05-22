@@ -23,7 +23,7 @@
 
 .groupHeading {
   font-family: "Bold";
-  font-size: 15px;
+  font-size: 12px;
   font-weight: normal;
   letter-spacing: 1;
   color: var(--black);
@@ -43,6 +43,7 @@
   text-transform: uppercase;
 
   @media only screen and (max-width: 768px) {
-    font-size: 0.8125rem;
+    font-size: 12px;
+    gap: 0.3rem;
   }
 }
