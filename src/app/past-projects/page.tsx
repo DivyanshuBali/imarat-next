@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
 import styles from "./page.module.css";
 import { getCldOgImageUrl } from "next-cloudinary";
-import pastProjectPhotos from "../../../scripts/upload-manifest.json";
+import pastProjectPhotos from "./data.json";
 import PastProjectsMasonry from "./PastProjectsMasonry";
-import Link from "next/link";
-import { ArrowLeftIcon } from "@radix-ui/react-icons";
 
 const PAST_PROJECT_PHOTOS = pastProjectPhotos.filter((photo) => photo.ok);
 

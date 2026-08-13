@@ -4,7 +4,7 @@ import { getCldOgImageUrl } from "next-cloudinary";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import NextImageWrapper from "@/app/_components/NextImageWrapper/NextImageWrapper";
-import pastProjectPhotos from "../../../../scripts/upload-manifest.json";
+import pastProjectPhotos from "@/app/past-projects/data.json";
 
 const PAST_PROJECT_PHOTOS = pastProjectPhotos.filter((photo) => photo.ok);
 
