@@ -1,6 +1,7 @@
 import styles from "./page.module.css";
 
 import { PROJECT_DATA, PROJECT_KEYS } from "@/app/_utils/constants";
+import { ProjectData } from "@/app/_utils/types";
 import { notFound } from "next/navigation";
 import MasonryLayout from "./_components/MasonryLayout";
 import HeroSectionGallery from "./_components/HeroSectionGallery";
@@ -10,6 +11,68 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
+function ProjectTextContent({ projectData }: { projectData: ProjectData }) {
+  return (
+    <div className={styles.sideColumn}>
+      <h1 className={styles.projectTitle}>{projectData.title}</h1>
+
+      <div className={styles.projectDetails}>
+        {projectData.date && (
+          <div className={styles.detailRow}>
+            <span className={styles.detailValue}>{projectData.date}</span>
+          </div>
+        )}
+
+        {projectData.type && (
+          <div className={styles.detailRow}>
+            <span className={styles.detailLabel}>TYPE </span>
+            <span className={styles.detailValue}>{projectData.type}</span>
+          </div>
+        )}
+
+        {projectData.location && (
+          <div className={styles.detailRow}>
+            <span className={styles.detailLabel}>Location </span>
+            <span className={styles.detailValue}>{projectData.location}</span>
+          </div>
+        )}
+
+        {projectData.area && (
+          <div className={styles.detailRow}>
+            <span className={styles.detailLabel}>Area </span>
+            <span className={styles.detailValue}>{projectData.area}</span>
+          </div>
+        )}
+
+        {projectData.methodology && (
+          <div className={styles.detailRow}>
+            <span className={styles.detailLabel}>Methodology </span>
+            <span className={styles.detailValue}>
+              {projectData.methodology}
+            </span>
+          </div>
+        )}
+
+        {projectData.materials && (
+          <div className={styles.detailRow}>
+            <span className={styles.detailLabel}>Materials </span>
+            <span className={styles.detailValue}>{projectData.materials}</span>
+          </div>
+        )}
+      </div>
+
+      {projectData.description && (
+        <div className={styles.projectDescription}>
+          <h4 className={styles.descriptionTitle}>NOTES</h4>
+          {projectData.description.split("\n").map((line, index) => (
+            <p key={index}>{line}</p>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 // This becomes a Server Component by default
 export default async function ProjectPage({ params }: Props) {
   const { slug } = await params;
@@ -18,70 +81,6 @@ export default async function ProjectPage({ params }: Props) {
   // Handle case when project doesn't exist
   if (!projectData) {
     notFound();
-  }
-
-  function ProjectTextContent() {
-    return (
-      <div className={styles.sideColumn}>
-        <h1 className={styles.projectTitle}>{projectData.title}</h1>
-
-        <div className={styles.projectDetails}>
-          {projectData.date && (
-            <div className={styles.detailRow}>
-              <span className={styles.detailValue}>{projectData.date}</span>
-            </div>
-          )}
-
-          {projectData.type && (
-            <div className={styles.detailRow}>
-              <span className={styles.detailLabel}>TYPE </span>
-              <span className={styles.detailValue}>{projectData.type}</span>
-            </div>
-          )}
-
-          {projectData.location && (
-            <div className={styles.detailRow}>
-              <span className={styles.detailLabel}>Location </span>
-              <span className={styles.detailValue}>{projectData.location}</span>
-            </div>
-          )}
-
-          {projectData.area && (
-            <div className={styles.detailRow}>
-              <span className={styles.detailLabel}>Area </span>
-              <span className={styles.detailValue}>{projectData.area}</span>
-            </div>
-          )}
-
-          {projectData.methodology && (
-            <div className={styles.detailRow}>
-              <span className={styles.detailLabel}>Methodology </span>
-              <span className={styles.detailValue}>
-                {projectData.methodology}
-              </span>
-            </div>
-          )}
-
-          {projectData.materials && (
-            <div className={styles.detailRow}>
-              <span className={styles.detailLabel}>Materials </span>
-              <span className={styles.detailValue}>
-                {projectData.materials}
-              </span>
-            </div>
-          )}
-        </div>
-
-        {projectData.description && (
-          <div className={styles.projectDescription}>
-            <h4 className={styles.descriptionTitle}>NOTES</h4>
-            {projectData.description.split("\n").map((line, index) => (
-              <p key={index}>{line}</p>
-            ))}
-          </div>
-        )}
-      </div>
-    );
   }
 
   const PROJECT_IMAGES = [
@@ -96,7 +95,7 @@ export default async function ProjectPage({ params }: Props) {
 
       <div className={styles.projectContent} id="projectContent">
         <MasonryLayout
-          projectDescription={<ProjectTextContent />}
+          projectDescription={<ProjectTextContent projectData={projectData} />}
           images={PROJECT_IMAGES}
         />
       </div>

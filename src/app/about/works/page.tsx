@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import styles from "./page.module.css";
 import { getCldOgImageUrl } from "next-cloudinary";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
+import Link from "next/link";
+import NextImageWrapper from "@/app/_components/NextImageWrapper/NextImageWrapper";
+import pastProjectPhotos from "../../../../scripts/upload-manifest.json";
+
+const PAST_PROJECT_PHOTOS = pastProjectPhotos.filter((photo) => photo.ok);
 
 const ogImage = getCldOgImageUrl({
   src: "BTM_SKETCH01_yrzjqc",
@@ -40,11 +46,6 @@ export const metadata: Metadata = {
       "A record of completed, ongoing, and under-design projects by Imarat Architects spanning three decades.",
     images: [ogImage],
   },
-};
-
-type WorksGroup = {
-  heading: string;
-  projects: string[];
 };
 
 const RECENTLY_COMPLETED: string[] = [
@@ -174,26 +175,27 @@ const BUILT_90S: string[] = [
   "VIJH N",
 ];
 
-const TOP_GROUPS: WorksGroup[] = [
-  { heading: "RECENTLY COMPLETED PROJECTS", projects: RECENTLY_COMPLETED },
-  { heading: "ONGOING PROJECTS", projects: ONGOING },
-];
-
 export default function WorksPage() {
   return (
     <article className={styles.worksContent}>
-      <div className={styles.topRow}>
-        {TOP_GROUPS.map((group) => (
-          <section key={group.heading} className={styles.worksGroup}>
-            <h2 className={styles.groupHeading}>{group.heading}</h2>
-            <ol className={styles.projectList}>
-              {group.projects.map((project, i) => (
-                <li key={i}>{project}</li>
-              ))}
-            </ol>
-          </section>
-        ))}
-      </div>
+      <div className={styles.projectsListColumn}>
+      <section className={styles.worksGroup}>
+        <h2 className={styles.groupHeading}>ONGOING PROJECTS</h2>
+        <ol className={styles.projectList}>
+          {ONGOING.map((project, i) => (
+            <li key={i}>{project}</li>
+          ))}
+        </ol>
+      </section>
+
+      <section className={styles.worksGroup}>
+        <h2 className={styles.groupHeading}>RECENTLY COMPLETED PROJECTS</h2>
+        <ol className={styles.projectList}>
+          {RECENTLY_COMPLETED.map((project, i) => (
+            <li key={i}>{project}</li>
+          ))}
+        </ol>
+      </section>
 
       <section className={styles.worksGroup}>
         <h2 className={styles.groupHeading}>UNDER DESIGN PROJECTS</h2>
@@ -206,12 +208,35 @@ export default function WorksPage() {
 
       <section className={styles.worksGroup}>
         <h2 className={styles.groupHeading}>BUILT PROJECTS IN THE 90s</h2>
-        <ol className={`${styles.projectList} ${styles.twoColList}`}>
+        <ol className={styles.projectList}>
           {BUILT_90S.map((project, i) => (
             <li key={i}>{project}</li>
           ))}
         </ol>
       </section>
+      </div>
+
+      <div className={styles.projectsPhotosColumn}>
+        <div className={styles.photosStack}>
+          {PAST_PROJECT_PHOTOS.map((photo) => (
+            <div key={photo.public_id} className={styles.photoItem}>
+              <NextImageWrapper
+                src={photo.url}
+                alt={photo.file.replace(/\.[^.]+$/, "")}
+                width={photo.width}
+                height={photo.height}
+                sizes="(max-width: 768px) 100vw, 55vw"
+              />
+            </div>
+          ))}
+        </div>
+        {PAST_PROJECT_PHOTOS.length > 0 && (
+          <Link href="/past-projects" className={styles.viewAllButton}>
+            VIEW ALL
+            <ArrowRightIcon className={styles.viewAllArrow} aria-hidden />
+          </Link>
+        )}
+      </div>
     </article>
   );
 }

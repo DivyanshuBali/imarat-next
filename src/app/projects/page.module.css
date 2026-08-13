@@ -1,8 +1,12 @@
 .projectsPage {
+  position: relative;
   max-width: 1400px;
   margin: 0 auto;
-  /* Accomodate events panel */
-  padding-bottom: 40px;
+  /* Fill viewport below header so the footer can sit at screen bottom when content is short */
+  min-height: 100%;
+
+  /* Accomodate events panel & view past projects button */
+  padding-bottom: 100px;
   display: grid;
   grid-template-columns: repeat(5, minmax(auto, 1fr));
 
@@ -70,10 +74,10 @@
       font-weight: 500;
     }
 
-    /* .projectDetails {
-      font-size: 12px;
+    .projectDetails {
+      font-size: 10px;
       color: var(--black-faded);
-    } */
+    }
 
     &:hover {
       .imageContainer {
@@ -84,5 +88,58 @@
         opacity: 1;
       }
     }
+  }
+
+  .projectsStickyFooter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* accomodate events panel */
+    padding-bottom: 50px;
+
+    @media screen and (max-width: 600px) {
+      /* Sit flush above the events panel with no extra gap */
+      padding-bottom: 40px;
+    }
+  }
+
+  .viewAllButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    border: none;
+    background: none;
+    font: inherit;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+    color: var(--black-faded);
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover .viewAllArrow,
+    &:focus-visible .viewAllArrow {
+      transform: translateX(4px);
+    }
+
+    &:focus-visible {
+      outline: 1px solid currentColor;
+      outline-offset: 4px;
+    }
+
+    /* Mobile + iPad */
+    @media only screen and (max-width: 1024px) {
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem;
+    }
+  }
+
+  .viewAllArrow {
+    transition: transform 0.25s ease;
   }
 }
